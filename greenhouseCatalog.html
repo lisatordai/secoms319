@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Greenhouse Gallery</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -180,12 +185,18 @@
                         <h4>Contact Us</h4>
 
                         <ul class="list-unstyled">
-                            <li class="text-white">You can reach us at</li>
+                            <li><a href="#" class="text-white">You can reach us at</a></li>
                             <li><a href="#" class="text-white">ltordai@iastate.edu</a></li>
                             <li><a href="#" class="text-white">jayaed16@iastate.edu</a></li>
                         </ul>
+                        <a href="index.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                                Homepage
+                            </button></a>
                         <a href="developers.html"><button type="button" class="btn btn-sm btn-outline-secondary">Learn
                                 About the Developers
+                            </button></a>
+                        <a href="plantCatalog.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                                View Plant Catalog
                             </button></a>
                     </div>
                 </div>
@@ -195,10 +206,13 @@
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                    <circle cx="12" cy="13" r="4" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+                        viewBox="0 0 24 24">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" />
                     </svg>
-                    <strong>Navagation Bar</strong>
+                    <strong>Album</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,9 +222,111 @@
         </div>
     </header>
 
-    <footer>
-        © 2023 Lisa Tordai and Jaya Davis
-    </footer>
+    <main>
+        <section>
+            <h1 style="text-align: center ; font-family: cursive;">Greenhouse Gallery</h1>
+        </section>
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/greenhouse1.jpg" alt="greenhouse1">
+                            <div class="card-body">
+                                <p class="card-text">Greenhouse image 1</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="plantCatalog.html"><button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View Plants Here
+                                            </button></a>
+                                    </div>
+                                    <!-- <small class="text-body-secondary">9 mins</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/greenhouse2.jpg" alt="greenhouse2" height="300">
+                            <div class="card-body">
+                                <p class="card-text">Greenhouse image 2</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    </div>
+                                    <!-- <small class="text-body-secondary"></small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/greenhouse3.jpg" alt="greenhouse3">
+                            <div class="card-body">
+                                <p class="card-text">Greenhouse image 3</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                    </div>
+                                    <small class="text-body-secondary"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/greenhouse4.jpg" alt="greenhouse4">
+                            <div class="card-body">
+                                <p class="card-text">Greenhouse image 4</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/greenhouse5.jpg" alt="greenhouse5">
+                            <div class="card-body">
+                                <p class="card-text">Greenhouse image 5</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/greenhouse6.jpg" alt="greenhouse6" height="300">
+                            <div class="card-body">
+                                <p class="card-text">Greenhouse image 6</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>You can reach us at ltordai@iastate.edu or jayaed16@iastate.edu</p>
+    </div>
+    </section>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

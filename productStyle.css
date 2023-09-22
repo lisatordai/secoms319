@@ -1,14 +1,15 @@
 body {
-    background-color:#6d724b;
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-  
-  h2 {
-    color: black;
-  }
-  
-  div {
-    background-color: #f0f4d3;;
-    color: grey;
-    text-align: center;
-  }
+  background-color: #6d724b;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h2 {
+  color: black;
+}
+
+div {
+  background-color: #f0f4d3;
+  ;
+  color: grey;
+  text-align: center;
+}
