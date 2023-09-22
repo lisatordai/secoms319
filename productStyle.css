@@ -12,3 +12,17 @@ div {
   color: grey;
   text-align: center;
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.item img {
+  width: 25vw;
+  height: auto;
+  padding: 0px;
+  border: 50px solid transparent;
+  border-image: url(./images/border.png) 40 round;
+}
