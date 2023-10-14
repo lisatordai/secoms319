@@ -103,62 +103,19 @@
         .bd-mode-toggle {
             z-index: 1500;
         }
+
+        .marketing .col-lg-6 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+ 
     </style>
 
 
 </head>
 
 <body>
-
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
-            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-                <use href="#circle-half"></use>
-            </svg>
-            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-            <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-                    aria-pressed="false">
-                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-                        <use href="#sun-fill"></use>
-                    </svg>
-                    Light
-                    <svg class="bi ms-auto d-none" width="1em" height="1em">
-                        <use href="#check2"></use>
-                    </svg>
-                </button>
-            </li>
-            <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-                    aria-pressed="false">
-                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-                        <use href="#moon-stars-fill"></use>
-                    </svg>
-                    Dark
-                    <svg class="bi ms-auto d-none" width="1em" height="1em">
-                        <use href="#check2"></use>
-                    </svg>
-                </button>
-            </li>
-            <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-                    aria-pressed="true">
-                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-                        <use href="#circle-half"></use>
-                    </svg>
-                    Auto
-                    <svg class="bi ms-auto d-none" width="1em" height="1em">
-                        <use href="#check2"></use>
-                    </svg>
-                </button>
-            </li>
-        </ul>
-    </div>
-
-
     <header data-bs-theme="dark">
         <div class="collapse text-bg-dark" id="navbarHeader">
             <div class="container">
@@ -201,7 +158,8 @@
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
                     <circle cx="12" cy="13" r="4" />
                     </svg>
-                    <strong>Navagation Bar</strong>
+
+                    <strong >Plant Living</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -210,7 +168,8 @@
             </div>
         </div>
     </header>
-    <section id="about1">
+
+    <!-- <section id="about1">
         <div class="container">
             <img src="./images/profile1.jpg" alt="Profile 1 Photo" width=300 height=auto>
             <h1>Jaya Davis</h1>
@@ -231,13 +190,51 @@
 
 
         </div>
+    </section> -->
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="bd-placeholder-img rounded-circle" width="225" height="300"
+                    src="./images/profile.jpg" aria-label="Placeholder"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder1</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            </img>
+                <h2 class="fw-normal">Lisa Tordai</h2>
+                <p>I am Software Engineering Student at Iowa State University. This semester Fall2023 I
+                    am taking ComS363, ComS321, ComS309, SE319 and Engl314. During the school year, I am on part time coop with 
+                    CNH Industrial as a software engineering intern and also work for digital Ag. as an undergraduate research 
+                    assistant. 
+                </p>
+                <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-6">
+                <img class="bd-placeholder-img rounded-circle" width="225" height="300"
+                    src="./images/profile1.jpg" aria-label="Placeholder"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder2</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                <h2 class="fw-normal">Jaya Davis</h2>
+                <p>I am a junior at Iowa State university. I am planning to get my MBA after Graduation.
+                    i am very active here at iowa state. When I'm not doing homework I am a member of 4
+                    on campus clubs and on executive council for my sorority. </p>
+                <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+            </div><!-- /.col-lg-4 -->
+        </div>
+        
+        <!-- /.row -->
     </section>
+
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
             <p>You can reach us at ltordai@iastate.edu or jayaed16@iastate.edu</p>
         </div>
     </section>
+</div>
+
     <footer>
         © 2023 Lisa Tordai and Jaya Davis
     </footer>

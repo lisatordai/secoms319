@@ -1,0 +1,49 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #6d724b;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h2 {
+  color: black;
+}
+
+div {
+  background-color: #f0f4d3;
+  color: grey;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.item img {
+  width: 25vw;
+  height: auto;
+  padding: 0px;
+  border: 50px solid transparent;
+  border-image: url(./images/border.png) 40 round;
+}
