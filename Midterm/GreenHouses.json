@@ -1,0 +1,40 @@
+{
+    "Plant": [
+        {
+            "Name": "Greenhouse 1",
+            "bio": "This photo showcases greenhouse structure.",
+            "url": "./images/greenhouse1.jpg",
+            "alt": "greenhouse1"
+        },
+        {
+            "Name": "Greenhouse Inside View",
+            "bio": "This is a cool image of tomatoes growing in a greenhouse.",
+            "url": "./images/greenhouse2.jpg",
+            "alt": "greenhouse2"
+        },
+        {
+            "Name": "Greenhouse Inside View",
+            "bio": "You can see a person working inside this greenhouse.",
+            "url": "./images/greenhouse3.jpg",
+            "alt": "greenhouse3"
+        },
+        {
+            "Name": "Greenhouse Plants",
+            "bio": "This greehouse is growing many vegtables.",
+            "url": "./images/greenhouse4.jpg",
+            "alt": "greenhouse4"
+        },
+        {
+            "Name": "Greenhouse Hydroponics",
+            "bio": "Hydroponics is the technique of growing water-based instead of soil.",
+            "url": "./images/greenhouse5.jpg",
+            "alt": "greenhouse5"
+        },
+        {
+            "Name": "Greenhouse Tomatoes",
+            "bio": "A wide varitey of a single species many be grown in a greenhouse. Such as cherry tomatoes and roma tomatoes.",
+            "url": "./images/greenhouse6.jpg",
+            "alt": "greenhouse6"
+        }
+    ]
+}

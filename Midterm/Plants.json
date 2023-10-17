@@ -1,0 +1,40 @@
+{
+    "Plant": [
+        {
+            "Plantname": "Calathea",
+            "bio": " Plant",
+            "url": "./images/plant1.jpg",
+            "alt": "plant1"
+        },
+        {
+            "Plantname": "Maranta Leuconeura",
+            "bio": " Prayer Plant",
+            "url": "./images/plant2.jpg",
+            "alt": "plant2"
+        },
+        {
+            "Plantname": "Dracaena Trifasciata",
+            "bio": " Mother-in-law's Tongue",
+            "url": "./images/plant3.jpg",
+            "alt": "plant3"
+        },
+        {
+            "Plantname": "Begonia Maculata",
+            "bio": " Spotted Begonia",
+            "url": "./images/plant4.jpg",
+            "alt": "plant4"
+        },
+        {
+            "Plantname": "Sansevieria",
+            "bio": " Snake Plant",
+            "url": "./images/plant5.jpg",
+            "alt": "plant5"
+        },
+        {
+            "Plantname": "Common Houseleek",
+            "bio": " Hens and Chicks",
+            "url": "./images/plant6.jpg",
+            "alt": "plant6"
+        }
+    ]
+}
