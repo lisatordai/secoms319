@@ -101,6 +101,7 @@ integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQI
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="./styles/dashboard.css" rel="stylesheet">
+    <link href="./styles/sensorData.css" rel="stylesheet">
   </head>
   <body>
     
@@ -217,9 +218,9 @@ integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQI
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="sensorData.html">
+              <a class="nav-link d-flex align-items-center gap-2" href="dashboard.html">
                 <svg class="bi"><use xlink:href="#puzzle"/></svg>
-                Live Data
+                Yesterday's Data
               </a>
             </li>
           </ul>
@@ -229,26 +230,18 @@ integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQI
     </div>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="weather-box">
+            <h1> LIVE DATA</h1>
+            <div class="temp-box">
+                <p>Temperature:</p>
+                <span id="temperature">Loading...</span>
+            </div>
+            <div class="humidity-box">
+                <p>Humidity:</p>
+                <span id="humidity">Loading...</span>
+            </div>
+        </div>
 
-        <h2> Yesterday's Temperature Trend</h2>
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-    
-      <div class="table-responsive small">
-        
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th scope="col">Time</th>
-              <th scope="col">Location</th>
-              <th scope="col">Temperature</th>
-              <th scope="col">Humidity</th>
-              <th scope="col">Heat Index</th>
-            </tr>
-          </thead>
-          <tbody id="table-body">
-          </tbody>
-        </table>
-      </div>
       <script src="dashboardData.json"></script>
       <script src="dashboard.js"></script>
     </main>

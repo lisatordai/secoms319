@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.temp-box, .humidity-box {
+    margin: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin: 0;
+}
+
+span {
+    font-size: 24px;
+}

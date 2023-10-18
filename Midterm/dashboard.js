@@ -8,23 +8,23 @@
       type: 'line',
       data: {
         labels: [
-          'Sunday',
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday'
+          '12AM',
+          '4AM',
+          '8AM',
+          '12PM',
+          '4PM',
+          '8PM',
+          '11PM'
         ],
         datasets: [{
           data: [
             50,
             60,
-            50,
-            69,
+            68,
+            78,
             72,
-            70,
-            75
+            67,
+            61
           ],
           lineTension: 0,
           backgroundColor: 'transparent',
