@@ -1,0 +1,20 @@
+{
+    "data":[
+    {
+      "Time": "1,001",
+      "Location": "random",
+      "Temperature": "data",
+      "Humidity": "placeholder",
+      "Heat Index": "text"
+    },
+    {
+      "Time": "1,002",
+      "Location": "placeholder",
+      "Temperature": "irrelevant",
+      "Humidity": "visual",
+      "Heat Index": "layout"
+    },
+  
+  ]
+}
+  
