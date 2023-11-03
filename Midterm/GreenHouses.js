@@ -1,4 +1,4 @@
-fetch("./GreenHouses.json")
+fetch("./data_greenhouses.json")
 .then(response => response.json())
 .then(Plants => loadMovies(Plants));
 

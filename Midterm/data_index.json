@@ -1,0 +1,24 @@
+{
+    "researchTopics": [
+        {
+            "title": "Research Topic 1",
+            "text": "This section would share details of a research project done at the greenhouse, and the button below would link to a page with more information.",
+            "url": "researchPage.html"
+        },
+        {
+            "title": "Research Topic 2",
+            "text": "This section would share details of a research project done at the greenhouse, and the button below would link to a page with more information.",
+            "url": "researchPage.html"
+        },
+        {
+            "title": "Research Topic 3",
+            "text": "This section would share details of a research project done at the greenhouse, and the button below would link to a page with more information.",
+            "url": "researchPage.html"
+        }
+    ],
+    "carouselImages": [
+        "images/greenhouse4.jpg",
+        "images/greenhouse3.jpg",
+        "images/greenhouse5.jpg"
+    ]
+}

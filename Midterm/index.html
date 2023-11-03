@@ -8,100 +8,11 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link href="./styles/carousel.css" rel="stylesheet">
     <link href="./styles/bootstrap.css" rel="stylesheet">
 
-    <!-- <link href="theme.css" rel="stylesheet"> -->
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            width: 100%;
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .btn-bd-primary {
-            --bd-violet-bg: #712cf9;
-            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-            --bs-btn-font-weight: 600;
-            --bs-btn-color: var(--bs-white);
-            --bs-btn-bg: var(--bd-violet-bg);
-            --bs-btn-border-color: var(--bd-violet-bg);
-            --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: #6528e0;
-            --bs-btn-hover-border-color: #6528e0;
-            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            --bs-btn-active-color: var(--bs-btn-hover-color);
-            --bs-btn-active-bg: #5a23c8;
-            --bs-btn-active-border-color: #5a23c8;
-        }
-
-        .bd-mode-toggle {
-            z-index: 1500;
-        }
-
-        .bd-mode-toggle .dropdown-menu .active .bi {
-            display: block !important;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-    </style>
+    <link href="./styles/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -124,8 +35,8 @@
                             <li><a href="#" class="text-white">ltordai@iastate.edu</a></li>
                             <li><a href="#" class="text-white">jayaed16@iastate.edu</a></li>
                         </ul>
-                        <a href="index.html"><button type="button" class="btn btn-sm btn-outline-secondary">
-                                Homepage
+                        <a href="developers.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                                Learn About the Developers
                             </button></a>
                         <br>
                         <br>
@@ -141,7 +52,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a href="#" class="navbar-brand d-flex align-items-center">
@@ -221,45 +132,8 @@
         <div class="container marketing">
             <section class="container">
                 <!-- Three columns of text below the carousel -->
-                <div class="row">
-                    <div class="col-lg-4">
-                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg> -->
-                        <h2 class="fw-normal">Research Topic 1</h2>
-                        <p>This section would share details of a research project done at the greenhouse and
-                            the button below would link to a page with more information.</p>
-                        <p><a class="btn btn-secondary" href="researchPage.html">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg> -->
-                        <h2 class="fw-normal">Research Topic 2</h2>
-                        <p>This section would share details of a research project done at the greenhouse and
-                            the button below would link to a page with more information.</p>
-                        <p><a class="btn btn-secondary" href="researchPage.html">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                    </svg> -->
-                        <h2 class="fw-normal">Research Topic 3</h2>
-                        <p>This section would share details of a research project done at the greenhouse and
-                            the button below would link to a page with more information.</p>
-                        <p><a class="btn btn-secondary" href="researchPage.html">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                <div id="indextopics">
                 </div>
-                <!-- /.row -->
             </section>
 
             <section class="container">
@@ -273,7 +147,7 @@
                                 species of plants</span></h2>
                         <p class="lead">The variety of plants in our greenhouse rotates throughout the year.
                             Checkout our Plant Catalog to see what's growin'</p>
-                        <a href="developers.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                        <a href="plantCatalog.html"><button type="button" class="btn btn-sm btn-outline-secondary">
                                 Browse catalog
                             </button></a>
                     </div>
@@ -293,8 +167,11 @@
                         <h2 class="featurette-heading fw-normal lh-1">Data acquisition<span class="text-body-secondary">
                                 live from the greenhouse.</span></h2>
                         <p class="lead">Check out our dashboard reporting live data of our plants' enviroment.</p>
-                        <a href="developers.html"><button type="button" class="btn btn-sm btn-outline-secondary">
-                                View data
+                        <a href="sensorData.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                                View LIVE data
+                            </button></a>
+                        <a href="dashboard.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                                View our data dashboard
                             </button></a>
                     </div>
                     <div class="col-md-5 order-md-1">
@@ -337,8 +214,9 @@
             © 2023 Lisa Tordai and Jaya Davis
         </footer>
     </main>
-    <script src="./bootstrap.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
