@@ -21,6 +21,10 @@ fetch("./Plants.json")
     })
   })()
 
+  window.email = document.getElementById('firstname')
+  window.name = document.getElementById('lastname')
+  window.card = document.getElementById('address')
+
 
 function checkout(Plants){
     console.log("Reached checkout function");
@@ -34,6 +38,7 @@ function checkout(Plants){
     
         // Clear any existing items in the cart
         cartItems.innerHTML = '';
+        let total = 0; // Initialize total
     
         // Iterate through clickedItems and add them to the cart
         clickedItems.forEach(item => {
@@ -41,7 +46,13 @@ function checkout(Plants){
             //listItem.class = "list-group-item d-flex justify-content-between lh-sm";
             listItem.textContent = `Plant: ${item.PlantName}, Price: $${item.price}.00`;
             cartItems.appendChild(listItem);
-        });
+            total += item.price; // Add the price to total
+          });
+      
+          // Add a section to display the total
+          let totalSection = document.createElement('div');
+          totalSection.textContent = `Total: $${total}.00`;
+          cartItems.appendChild(totalSection);
     }
     displayClickedItems()
     
