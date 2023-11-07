@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Content page={'home'}/>
+      <Content page={'Developers'}/>
       <Footer />
     </div>
   );
