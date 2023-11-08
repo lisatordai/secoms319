@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 
 
-
+import items from "./Plants.json"
 
 const Header = (props) => {
 
@@ -81,8 +81,11 @@ const Footer = () => {
   );
 };
 
+
+
 const Content = (props) => {
   // Define state variables for plant data and cart items
+
   const [plants, setPlants] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
@@ -93,23 +96,57 @@ const Content = (props) => {
   const [email, setEmailName] = useState('')
   const [CardName, setCardName] = useState('')
   const [CardNum, setCardNum] = useState('')
-
+  const [card, setCards] = useState(items);
+  const [viewCart, setViewCart] = useState(false);
+  const [query, setQuery] = useState('');
   // Fetch plant data when component mounts
   const [data, setData] = useState(null);
-  const [searchInput, setSearchInput] = useState("");
-
-  const arrPlant = [
-    { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
-
-  const handleChange = (e) => {
-    e.preventDefault();
-    setSearchInput(e.target.value);
-  };
-  if (searchInput.length > 0) {
-    arrPlant.filter((plantFound) => {
-      return arrPlant.name.match(searchInput);
+  // const [searchInput, setSearchInput] = useState("");
+  const handleSearch = (e) => {
+    setQuery(e.target.value);
+    const results = items.filter(eachCard => {
+      if (e.target.value === "") return card;
+      return eachCard.cardName.toLowerCase().includes(e.target.value.toLowerCase())
     });
+    setCards(results);
   }
+  const listCards = (plants) => {
+    <div className="padding">
+    <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
+      {plants.Plant.map((plant, index) => (
+        <div key={index} className="col">
+          <div className="card h-100">
+            <img src={plant.url} className="card-img-top" alt={plant.alt} />
+            <div className="card-body">
+              <h5 className="card-title">{plant.Plantname}</h5>
+              <p className="card-text">{plant.bio}</p>
+              <p className="card-text">Price: ${plant.price}.00</p>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+  };
+  // const arrPlant = [
+  //   { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
+
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+  //   setSearchInput(e.target.value);
+  // };
+
+  // if (searchInput.length > 0) {
+  //   arrPlant.filter((plantFound) => {
+  //     return arrPlant.name.match(searchInput);
+  //   });
+  // }
   useEffect(() => {
     fetch('./Plants.json')
       .then(response => response.json())
@@ -156,12 +193,21 @@ const Content = (props) => {
     case 'home':
       content = (<div>
 
-        <input
+        {/* <input
           type="search"
           placeholder="Search here"
           onChange={handleChange}
-          value={searchInput} />
-
+          value={searchInput} /> */}
+          <div>
+         
+        <div>
+          <input id="searchbar" type="search" value={query} onChange={handleSearch} />
+          <button class="page_button" onClick={() => { setQuery(''); setCards(items); setViewCart(true) }}>
+            Search
+          </button>
+        </div>
+        <div>{listCards(card)}</div>
+          </div>
         <div className="padding">
           <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
             {plants.Plant.map((plant, index) => (
