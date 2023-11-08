@@ -5,7 +5,8 @@ import React, { useState, useEffect } from 'react';
 
 
 
-const Header = () => {
+const Header= (props) => {
+
   return (
     <header data-bs-theme="dark">
       <div className="collapse text-bg-dark" id="navbarHeader">
@@ -19,6 +20,7 @@ const Header = () => {
               <button
                 type="button"
                 className="btn btn-primary"
+                onClick={() => {props.setView('home')}}
                 >
                 Find Plants
                 </button>
@@ -27,6 +29,7 @@ const Header = () => {
               <button
                 type="button"
                 className="btn btn-primary"
+                onClick={() => {props.setView('Cart')}}
                 >
                 Checkout
               </button>
@@ -45,6 +48,7 @@ const Header = () => {
               <button
                 type="button"
                 className="btn btn-primary"
+                onClick={() => {props.setView('Developers')}}
                 >
                 Developers
               </button>
@@ -77,12 +81,14 @@ const Footer = () => {
     );
   };
 
-  const Content = ({ page, changeView }) => {
+  const Content = (props) => {
         // Define state variables for plant data and cart items
         const [plants, setPlants] = useState([]);
         const [cartItems, setCartItems] = useState([]);
         let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
         let total = 0;
+        const [firstName, setFirstName ] = useState('')
+        const [firstName, setFirstName ] = useState('')
         // Fetch plant data when component mounts
         const [data, setData] = useState(null);
 
@@ -115,7 +121,7 @@ const Footer = () => {
         }
         
         let content;// no idea what this does
-    switch (page) {
+    switch (props.page) {
       case 'home':
         content =   <div>
                       <div class="padding">
@@ -185,8 +191,9 @@ const Footer = () => {
                   <form className="needs-validation" noValidate>
                     <div className="row g-3">
                       <div className="col-sm-6">
+
                         <label htmlFor="firstName" className="form-label">First name</label>
-                        <input type="text" className="form-control" id="firstName" placeholder="" value="" required />
+                        <input type="text" className="form-control" id="firstName" placeholder="" value={firstName} name = "firstName" onChange={e => setFirstName(e.target.value)} required />
                         <div className="invalid-feedback">
                           Valid first name is required.
                         </div>
@@ -302,7 +309,13 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className = "padding">
-                    <button className="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                    <button
+                    type="button"
+                   className="btn btn-primary"
+                    onClick={() => {props.setView('Summary')}}
+                >
+                Checkout
+              </button>
                     </div>
                   </form>
                 </div>
@@ -312,14 +325,23 @@ const Footer = () => {
        
       case 'Summary':
          content = <div className="container">
+                      <div class="padding">
+                      <div class="py-5 text-center">
+                          <img src="./images/plant_logo.png" alt="" width="100" height="100"/>
+                          <h2>Order Summary</h2>
+                      </div>
+                      
                       <div className="row justify-content-center">
+                      
+
+
                         <div className="col-8">
                           <ul id="cart-items" className="list-group">
                             {clickedItems.map((item, index) => {
                               total += item.price;
                               return (
                                 <li key={index} className="list-group-item d-flex justify-content-between">
-                                  <span>Plant: {item.PlantName}:</span>
+                                  <span>{item.PlantName}:</span>
                                   <strong>${item.price}.00</strong>
                                   
                                 </li>
@@ -332,10 +354,23 @@ const Footer = () => {
                           </ul>
                         </div>
                       </div>
+                      <div>
+                      </div>
+
+                      <div className="row justify-content-center">
+                        <div className="col-8">
+                          <ul className="list-group"></ul>
+                                <li className="list-group d-flex justify-content-between">
+                                          <span>Name: {firstName}:</span>
+                                </li>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                   
         break;
       
-        case 'Developers':
+      case 'Developers':
          content = 
                     <div className="container">
                     <div className="row">
