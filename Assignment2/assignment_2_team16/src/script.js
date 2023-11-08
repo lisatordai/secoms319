@@ -88,6 +88,12 @@ const Footer = () => {
         let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
         let total = 0;
         const [firstName, setFirstName ] = useState('')
+        const [lastName, setLastName ] = useState('')
+        const [address, setAddressName ] = useState('')
+        const [email, setEmailName ] = useState('')
+        const [CardName, setCardName] = useState('')
+        const [CardNum, setCardNum ] = useState('')
+       
         // Fetch plant data when component mounts
         const [data, setData] = useState(null);
 
@@ -200,7 +206,7 @@ const Footer = () => {
           
                       <div className="col-sm-6">
                         <label htmlFor="lastName" className="form-label">Last name</label>
-                        <input type="text" className="form-control" id="lastName" placeholder="" value="" required />
+                        <input type="text" className="form-control" id="lastName" placeholder="" value={lastName} name = "lastName" onChange={e => setLastName(e.target.value)} required />
                         <div className="invalid-feedback">
                           Valid last name is required.
                         </div>
@@ -219,7 +225,7 @@ const Footer = () => {
           
                       <div className="col-12">
                         <label htmlFor="email" className="form-label">Email <span className="text-body-secondary">(Optional)</span></label>
-                        <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                          <input type="text" className="form-control" id="email"  value={email} name = "email" placeholder="you@example.com" onChange={e => setEmailName(e.target.value)}  />
                         <div className="invalid-feedback">
                           Please enter a valid email address for shipping updates.
                         </div>
@@ -227,7 +233,7 @@ const Footer = () => {
           
                       <div className="col-12">
                         <label htmlFor="address" className="form-label">Address</label>
-                        <input type="text" className="form-control" id="address" placeholder="1234 Main St" required />
+                        <input type="text" className="form-control" id="address" placeholder="" value={address} name = "address" onChange={e => setAddressName(e.target.value)} required />
                         <div className="invalid-feedback">
                           Please enter your shipping address.
                         </div>
@@ -276,7 +282,7 @@ const Footer = () => {
                     <div className="row gy-3">
                       <div className="col-md-6">
                         <label htmlFor="cc-name" className="form-label">Name on card</label>
-                        <input type="text" className="form-control" id="cc-name" placeholder="" required />
+                        <input type="text" className="form-control" id="CardName" placeholder="" value={CardName} name = "CardName" onChange={e => setCardName(e.target.value)} required />
                         <small className="text-body-secondary">Full name as displayed on card</small>
                         <div className="invalid-feedback">
                           Name on card is required
@@ -285,8 +291,9 @@ const Footer = () => {
           
                       <div className="col-md-6">
                         <label htmlFor="cc-number" className="form-label">Credit card number</label>
-                        <input type="text" className="form-control" id="cc-number" placeholder="" required />
-                        <div className="invalid-feedback">
+                        <input type="text" className="form-control" id="CardNum" placeholder="" value={CardNum} name = "CardNum" onChange={e => setCardNum(e.target.value)} required />
+                        
+                       <div className="invalid-feedback">
                           Credit card number is required
                         </div>
                       </div>
@@ -323,6 +330,7 @@ const Footer = () => {
             break;
        
       case 'Summary':
+        
          content = <div className="container">
                       <div class="padding">
                       <div class="py-5 text-center">
@@ -334,7 +342,7 @@ const Footer = () => {
                       
 
 
-                        <div className="col-8">
+                        <div className="col-10">
                           <ul id="cart-items" className="list-group">
                             {clickedItems.map((item, index) => {
                               total += item.price;
@@ -357,10 +365,16 @@ const Footer = () => {
                       </div>
 
                       <div className="row justify-content-center">
-                        <div className="col-8">
+                        <div className="col-10">
                           <ul className="list-group"></ul>
                                 <li className="list-group d-flex justify-content-between">
-                                          <span>Name: {firstName}:</span>
+                                          <strong>User Info: </strong>
+                                          <span>Name: {firstName} {lastName}</span>
+                                          <span>Email: {email}</span>
+                                          <span>Address: {address}</span>
+                                          <strong>Card Info: </strong>
+                                          <span> Card Name:{CardName}  
+                                           Card Number: {CardNum}</span>
                                 </li>
                       </div>
                     </div>
