@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 
 
-
+import items from "./Plants.json"
 
 const Header = (props) => {
 
@@ -93,23 +93,34 @@ const Content = (props) => {
   const [email, setEmailName] = useState('')
   const [CardName, setCardName] = useState('')
   const [CardNum, setCardNum] = useState('')
-
+  const [cards, setCards] = useState(items);
+  const [viewCart, setViewCart] = useState(false);
+  const [query, setQuery] = useState('');
   // Fetch plant data when component mounts
   const [data, setData] = useState(null);
   const [searchInput, setSearchInput] = useState("");
-
-  const arrPlant = [
-    { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
-
-  const handleChange = (e) => {
-    e.preventDefault();
-    setSearchInput(e.target.value);
-  };
-  if (searchInput.length > 0) {
-    arrPlant.filter((plantFound) => {
-      return arrPlant.name.match(searchInput);
+  const handleSearch = (e) => {
+    setQuery(e.target.value);
+    const results = items.filter(eachCard => {
+      if (e.target.value === "") return cards;
+      return eachCard.cardName.toLowerCase().includes(e.target.value.toLowerCase())
     });
+    setCards(results);
   }
+
+  // const arrPlant = [
+  //   { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
+
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+  //   setSearchInput(e.target.value);
+  // };
+
+  // if (searchInput.length > 0) {
+  //   arrPlant.filter((plantFound) => {
+  //     return arrPlant.name.match(searchInput);
+  //   });
+  // }
   useEffect(() => {
     fetch('./Plants.json')
       .then(response => response.json())
@@ -151,12 +162,17 @@ const Content = (props) => {
     case 'home':
       content = (<div>
 
-        <input
+        {/* <input
           type="search"
           placeholder="Search here"
           onChange={handleChange}
-          value={searchInput} />
-
+          value={searchInput} /> */}
+        <div>
+          <input id="searchbar" type="search" value={query} onChange={handleSearch} />
+          <button class="page_button" onClick={() => { setQuery(''); setCards(items.PlantName); setViewCart(true) }}>
+            Search
+          </button>
+        </div>
         <div className="padding">
           <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
             {plants.Plant.map((plant, index) => (
