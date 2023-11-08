@@ -88,7 +88,6 @@ const Footer = () => {
         let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
         let total = 0;
         const [firstName, setFirstName ] = useState('')
-        const [firstName, setFirstName ] = useState('')
         // Fetch plant data when component mounts
         const [data, setData] = useState(null);
 
