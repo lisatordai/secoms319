@@ -134,6 +134,11 @@ const Content = (props) => {
     setCartItems(clickedItems); // Update the cart items state
   }
 
+  function clearCart() {
+    sessionStorage.removeItem('clickedItems');
+    setCartItems([]);
+  }
+
   function displayClickedItems() {
     let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
     let message = "Cart:\n";
@@ -432,9 +437,18 @@ const Content = (props) => {
               </li>
             </div>
           </div>
+          <div className="padding">
+            <button
+              type="button"
+              className="btn btn-primary btn-lg btn-block w-100"
+              onClick={() => { props.setView('home');  clearCart(); }}>
+                 
+              Back to Shop
+            </button>
+          </div>
         </div>
       </div>
-
+      
       break;
 
     case 'Developers':
