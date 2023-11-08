@@ -96,7 +96,20 @@ const Footer = () => {
        
         // Fetch plant data when component mounts
         const [data, setData] = useState(null);
+        const [searchInput, setSearchInput] = useState("");
 
+        const arrPlant = [
+          { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
+      
+        const handleChange = (e) => {
+          e.preventDefault();
+          setSearchInput(e.target.value);
+        };
+        if (searchInput.length > 0) {
+          arrPlant.filter((plantFound) => {
+            return arrPlant.name.match(searchInput);
+          });
+        }
         useEffect(() => {
           fetch('./Plants.json')
             .then(response => response.json())
