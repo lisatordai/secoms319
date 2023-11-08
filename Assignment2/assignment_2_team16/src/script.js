@@ -107,10 +107,18 @@ const Footer = () => {
         }, []);
         //functions
         function handleAddToCart(PlantName, price) {
-            let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
-            clickedItems.push({ PlantName, price });
-            sessionStorage.setItem('clickedItems', JSON.stringify(clickedItems));
-            console.log(`Clicked item: ${PlantName}, Price: $${price}.00`);
+          let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
+          clickedItems.push({ PlantName, price });
+          sessionStorage.setItem('clickedItems', JSON.stringify(clickedItems));
+          setCartItems(clickedItems); // Update the cart items state
+          console.log(`Clicked item: ${PlantName}, Price: $${price}.00`);
+        }
+      
+        function handleRemoveFromCart(index) {
+          let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
+          clickedItems.splice(index, 1);
+          sessionStorage.setItem('clickedItems', JSON.stringify(clickedItems));
+          setCartItems(clickedItems); // Update the cart items state
         }
         
         function displayClickedItems() {
@@ -128,36 +136,62 @@ const Footer = () => {
         let content;// no idea what this does
     switch (props.page) {
       case 'home':
-        content =   <div>
-                      <div class="padding">
-                        <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
+        content =   ( <div>
+                        <div className="padding">
+                          <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
                             {plants.Plant.map((plant, index) => (
-                                <div key={index} className="col">
-                                    <div className="card h-100">
-                                      <img src={plant.url} className="card-img-top" alt={plant.alt} />
-                                      <div className="card-body">
-                                          <h5 className="card-title">{plant.Plantname}</h5>
-                                          <p className="card-text">{plant.bio}</p>
-                                          <p className="card-text">Price: ${plant.price}.00</p>
-                                      <button
-                                          type="button"
-                                          className="btn btn-primary"
-                                          onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
-                                          Add to Cart
-                                      </button>
-                                      </div>
-                                    </div>
+                              <div key={index} className="col">
+                                <div className="card h-100">
+                                  <img src={plant.url} className="card-img-top" alt={plant.alt} />
+                                  <div className="card-body">
+                                    <h5 className="card-title">{plant.Plantname}</h5>
+                                    <p className="card-text">{plant.bio}</p>
+                                    <p className="card-text">Price: ${plant.price}.00</p>
+                                    <button
+                                      type="button"
+                                      className="btn btn-primary"
+                                      onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
+                                      Add to Cart
+                                    </button>
                                   </div>
-                
+                                </div>
+                              </div>
                             ))}
+                          </div>
                         </div>
-                        <div class = 'padding'>
-                        <button type="button" className="btn btn-primary btn-lg btn-block w-100" onClick={displayClickedItems}>
-                          Show Cart
-                        </button>
+                        <div>
+                          <div className="padding">
+                            <ul id="cart-items" className="list-group">
+                              {cartItems.map((item, index) => {
+                                
+                                return (
+                                  <li key={index} className="list-group-item d-flex justify-content-between">
+                                    <button
+                                      type="button"
+                                      className="btn btn-danger btn-sm"
+                                      onClick={() => handleRemoveFromCart(index)}>
+                                      Remove
+                                    </button>
+                                    <span>{item.PlantName}:</span>
+                                    <strong>${item.price}.00</strong>
+                                  </li>
+                                );
+                              })}
+                              
+                            </ul>
+                          </div>
+                          <div className="padding">
+                            <button
+                              type="button"
+                              className="btn btn-primary btn-lg btn-block w-100"
+                              onClick={() => {props.setView('Cart')}}>
+                              Show Cart
+                            </button>
+                          </div>
                         </div>
-                      </div>;
-                    </div>
+                      </div>
+                     
+    );
         break;
       
       case 'Cart':
@@ -317,7 +351,7 @@ const Footer = () => {
                     <div className = "padding">
                     <button
                     type="button"
-                   className="btn btn-primary"
+                    className="btn btn-primary"
                     onClick={() => {props.setView('Summary')}}
                 >
                 Checkout
@@ -373,8 +407,8 @@ const Footer = () => {
                                           <span>Email: {email}</span>
                                           <span>Address: {address}</span>
                                           <strong>Card Info: </strong>
-                                          <span> Card Name:{CardName}  
-                                           Card Number: {CardNum}</span>
+                                          <span> Card Name:{CardName}</span>
+                                          <span>Card Number: {CardNum}</span>
                                 </li>
                       </div>
                     </div>
