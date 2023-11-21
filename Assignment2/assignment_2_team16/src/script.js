@@ -108,31 +108,31 @@ const Content = (props) => {
       if (e.target.value === "") return card;
       return eachCard.cardName.toLowerCase().includes(e.target.value.toLowerCase())
     });
-    setCards(results);
+    setPlants(results);
   }
   const listCards = (plants) => {
     <div className="padding">
-    <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
-      {plants.Plant.map((plant, index) => (
-        <div key={index} className="col">
-          <div className="card h-100">
-            <img src={plant.url} className="card-img-top" alt={plant.alt} />
-            <div className="card-body">
-              <h5 className="card-title">{plant.Plantname}</h5>
-              <p className="card-text">{plant.bio}</p>
-              <p className="card-text">Price: ${plant.price}.00</p>
-              <button
-                type="button"
-                className="btn btn-primary"
-                onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
-                Add to Cart
-              </button>
+      <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
+        {plants.Plant.map((plant, index) => (
+          <div key={index} className="col">
+            <div className="card h-100">
+              <img src={plant.url} className="card-img-top" alt={plant.alt} />
+              <div className="card-body">
+                <h5 className="card-title">{plant.Plantname}</h5>
+                <p className="card-text">{plant.bio}</p>
+                <p className="card-text">Price: ${plant.price}.00</p>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
   };
   // const arrPlant = [
   //   { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
@@ -198,16 +198,16 @@ const Content = (props) => {
           placeholder="Search here"
           onChange={handleChange}
           value={searchInput} /> */}
-          <div>
-         
         <div>
-          <input id="searchbar" type="search" value={query} onChange={handleSearch} />
-          <button class="page_button" onClick={() => { setQuery(''); setCards(items); setViewCart(true) }}>
-            Search
-          </button>
-        </div>
-        <div>{listCards(card)}</div>
+
+          <div>
+            <input id="searchbar" type="search" value={query} onChange={handleSearch} />
+            <button class="page_button" onClick={() => { setQuery(''); setCards(items); setViewCart(true) }}>
+              Search
+            </button>
           </div>
+          <div>{listCards(plants)}</div>
+        </div>
         <div className="padding">
           <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
             {plants.Plant.map((plant, index) => (
@@ -487,14 +487,14 @@ const Content = (props) => {
             <button
               type="button"
               className="btn btn-primary btn-lg btn-block w-100"
-              onClick={() => { props.setView('home');  clearCart(); }}>
-                 
+              onClick={() => { props.setView('home'); clearCart(); }}>
+
               Back to Shop
             </button>
           </div>
         </div>
       </div>
-      
+
       break;
 
     case 'Developers':
