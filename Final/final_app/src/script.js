@@ -1,6 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
 
+import items from "./GreenHouse.json"
+
+
 
 
 
@@ -9,547 +12,246 @@ const Header = (props) => {
 
   return (
     <div>
-  <nav class="navbar navbar-dark">
-    <div class="container-fluid">
-      <div class="row w-100 justify-content-between">
-        <div class="col-auto text-left">
-          <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
-          <a href="https://www.iastate.edu/index/A" class="btn btn-outline-primary">Index</a>
+      <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <div class="row w-100 justify-content-between">
+            <div class="col-auto text-left">
+              <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
+              <a href="https://www.iastate.edu/index/A" class="btn btn-outline-primary">Index</a>
+            </div>
+            <div class="col-auto text-right">
+              <a href="https://info.iastate.edu/" class="btn btn-outline-primary">Directory</a>
+              <a href="https://www.fpm.iastate.edu/maps/" class="btn btn-outline-primary">Maps</a>
+              <a href="https://web.iastate.edu/safety/" class="btn btn-outline-primary">Safety</a>
+              <a href="https://iastate.okta.com/" class="btn btn-outline-primary">Sign Ons</a>
+            </div>
+          </div>
         </div>
-        <div class="col-auto text-right">
-          <a href="https://info.iastate.edu/" class="btn btn-outline-primary">Directory</a>
-          <a href="https://www.fpm.iastate.edu/maps/" class="btn btn-outline-primary">Maps</a>
-          <a href="https://web.iastate.edu/safety/" class="btn btn-outline-primary">Safety</a>
-          <a href="https://iastate.okta.com/" class="btn btn-outline-primary">Sign Ons</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  
-  <div className="red-header left-aligned">
-    <img src="./images/logo.jpg" alt="Logo" />
-    <p><strong>Official site name TBD</strong></p>
-  </div>
-
-  <nav class="navbar2 navbar-dark">
-    <div class="container-fluid">
-      <div class="row w-100 justify-content-between">
-        <div class="col-auto text-left">
-          <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
-          <a href="https://www.iastate.edu/index/A" class="btn btn-outline-primary">Index</a>
+      </nav>
       
-          <a href="https://info.iastate.edu/" class="btn btn-outline-primary">Directory</a>
-          <a href="https://www.fpm.iastate.edu/maps/" class="btn btn-outline-primary">Maps</a>
-          <a href="https://web.iastate.edu/safety/" class="btn btn-outline-primary">Safety</a>
-          <a href="https://iastate.okta.com/" class="btn btn-outline-primary">Sign Ons</a>
-        </div>
+      <div className="red-header left-aligned">
+        <img src="./images/logo.jpg" alt="Logo" />
+        <p><strong>Official site name TBD</strong></p>
       </div>
+
+      <nav class="navbar2 navbar-dark">
+        <div class="container-fluid">
+          <div class="row w-100 justify-content-between">
+            <div class="col-auto text-left">
+              <a class="btn btn-outline-primary"  onClick={() => { props.setView('page1') }}>page1</a>
+              <a  class="btn btn-outline-primary"  onClick={() => { props.setView('page2') }}>page2</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>the Greenhouses</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
+              <a class="btn btn-outline-primary">page6</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
   
   );
 };
 
 const Footer = () => {
   return (
-    <footer className="my-5 pt-5 text-body-secondary text-center text-small">
-      <p className="mb-1">&copy; Lisa and Jaya</p>
+    <footer className="footer">
+      <div className="container-fluid">
+        <div className="row w-100 justify-content-between align-items-center">
+          {/* Left side with logo */}
+          <div className="col-auto" style={{ marginLeft: '200px' }}>
+            <img src="./images/logo2.jpg" alt="Logo2" style={{ maxWidth: '250px' }} />
+          </div>
+    
+          {/* Right side with buttons (removed text-right class) */}
+          <div className="col-auto d-flex flex-column text-left" style={{ marginRight: '200px', marginTop: '40px', marginBottom: '40px' }}>
+            <p> Copyright © 2023<br/>
+              Iowa State University<br/>
+              of Science and Technology<br/>
+              All rights reserved.
+            </p>
+            <a href="https://www.policy.iastate.edu/policy/discrimination" className="btn btn-outline-primary mb-0 ">Non-discrimination Policy</a>
+            <a href="https://www.policy.iastate.edu/electronicprivacy" className="btn btn-outline-primary mb-0">Privacy Policy</a>
+            <a href="https://www.it.iastate.edu/teams/digital-accessibility" className="btn btn-outline-primary mb-0">Digital Access & Accessibility</a>
+            <a href="https://www.iastate.edu/consumer-information" className="btn btn-outline-primary mb-0">Consumer Information</a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
 
 
 
-// const Content = (props) => {
-//   // Define state variables for plant data and cart items
+const Content = (props) => {
 
-//   const [plants, setPlants] = useState([]);
-//   const [cartItems, setCartItems] = useState([]);
-//   let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
-//   let total = 0;
-//   const [firstName, setFirstName] = useState('')
-//   const [lastName, setLastName] = useState('')
-//   const [address, setAddressName] = useState('')
-//   const [email, setEmailName] = useState('')
-//   const [CardName, setCardName] = useState('')
-//   const [CardNum, setCardNum] = useState('')
-//   const [card, setCards] = useState(items);
-//   const [viewCart, setViewCart] = useState(false);
-//   const [query, setQuery] = useState('');
-//   // Fetch plant data when component mounts
-//   const [data, setData] = useState(null);
-//   // const [searchInput, setSearchInput] = useState("");
-//   const handleSearch = (e) => {
-//     setQuery(e.target.value);
-//     const results = items.filter(eachCard => {
-//       if (e.target.value === "") return card;
-//       return eachCard.cardName.toLowerCase().includes(e.target.value.toLowerCase())
-//     });
-//     setPlants(results);
-//   }
-//   const listCards = (plants) => {
-//     <div className="padding">
-//       <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
-//         {plants.Plant.map((plant, index) => (
-//           <div key={index} className="col">
-//             <div className="card h-100">
-//               <img src={plant.url} className="card-img-top" alt={plant.alt} />
-//               <div className="card-body">
-//                 <h5 className="card-title">{plant.Plantname}</h5>
-//                 <p className="card-text">{plant.bio}</p>
-//                 <p className="card-text">Price: ${plant.price}.00</p>
-//                 <button
-//                   type="button"
-//                   className="btn btn-primary"
-//                   onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
-//                   Add to Cart
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   };
-//   // const arrPlant = [
-//   //   { name: "Calathea" }, { name: "Maranta Leuconeura" }, { name: "Dracaena Trifasciata" }, { name: "Begonia Maculata" }, { name: "Sansevieria" }, { name: "Common Houseleek" }];
+  const [GreenHouse, setPlants] = useState([]);
 
-//   // const handleChange = (e) => {
-//   //   e.preventDefault();
-//   //   setSearchInput(e.target.value);
-//   // };
-
-//   // if (searchInput.length > 0) {
-//   //   arrPlant.filter((plantFound) => {
-//   //     return arrPlant.name.match(searchInput);
-//   //   });
-//   // }
-//   useEffect(() => {
-//     fetch('./Plants.json')
-//       .then(response => response.json())
-//       .then(plants => {
-//         console.log(plants); // Log the fetched data
-//         setPlants(plants);
-//       });
-//   }, []);
-//   //functions
-//   function handleAddToCart(PlantName, price) {
-//     let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
-//     clickedItems.push({ PlantName, price });
-//     sessionStorage.setItem('clickedItems', JSON.stringify(clickedItems));
-//     setCartItems(clickedItems); // Update the cart items state
-//     console.log(`Clicked item: ${PlantName}, Price: $${price}.00`);
-//   }
-
-//   function handleRemoveFromCart(index) {
-//     let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
-//     clickedItems.splice(index, 1);
-//     sessionStorage.setItem('clickedItems', JSON.stringify(clickedItems));
-//     setCartItems(clickedItems); // Update the cart items state
-//   }
-
-//   function clearCart() {
-//     sessionStorage.removeItem('clickedItems');
-//     setCartItems([]);
-//   }
-
-//   function displayClickedItems() {
-//     let clickedItems = JSON.parse(sessionStorage.getItem('clickedItems')) || [];
-//     let message = "Cart:\n";
-//     clickedItems.forEach(item => {
-//       message += `Plant: ${item.PlantName}, Price: $${item.price}.00\n`;
-//     });
-//     alert(message);
-//   }
-//   if (!Array.isArray(plants.Plant)) {
-//     return <div>Error: plants.Plant is not an array</div>;
-//   }
-
-//   let content;// no idea what this does
-//   switch (props.page) {
-//     case 'home':
-//       content = (<div>
-
-//         {/* <input
-//           type="search"
-//           placeholder="Search here"
-//           onChange={handleChange}
-//           value={searchInput} /> */}
-//         <div>
-
-//           <div>
-//             <input id="searchbar" type="search" value={query} onChange={handleSearch} />
-//             <button class="page_button" onClick={() => { setQuery(''); setCards(items); setViewCart(true) }}>
-//               Search
-//             </button>
-//           </div>
-//           <div>{listCards(plants)}</div>
-//         </div>
-//         <div className="padding">
-//           <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
-//             {plants.Plant.map((plant, index) => (
-//               <div key={index} className="col">
-//                 <div className="card h-100">
-//                   <img src={plant.url} className="card-img-top" alt={plant.alt} />
-//                   <div className="card-body">
-//                     <h5 className="card-title">{plant.Plantname}</h5>
-//                     <p className="card-text">{plant.bio}</p>
-//                     <p className="card-text">Price: ${plant.price}.00</p>
-//                     <button
-//                       type="button"
-//                       className="btn btn-primary"
-//                       onClick={() => handleAddToCart(plant.Plantname, plant.price)}>
-//                       Add to Cart
-//                     </button>
-//                   </div>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//         <div>
-//           <div className="padding">
-//             <ul id="cart-items" className="list-group">
-//               {cartItems.map((item, index) => {
-
-//                 return (
-//                   <li key={index} className="list-group-item d-flex justify-content-between">
-//                     <button
-//                       type="button"
-//                       className="btn btn-danger btn-sm"
-//                       onClick={() => handleRemoveFromCart(index)}>
-//                       Remove
-//                     </button>
-//                     <span>{item.PlantName}:</span>
-//                     <strong>${item.price}.00</strong>
-//                   </li>
-//                 );
-//               })}
-
-//             </ul>
-//           </div>
-//           <div className="padding">
-//             <button
-//               type="button"
-//               className="btn btn-primary btn-lg btn-block w-100"
-//               onClick={() => { props.setView('Cart') }}>
-//               Show Cart
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-
-//       );
-//       break;
-
-//     case 'Cart':
-//       content = (
-//         <div class="padding">
-//           <div class="py-5 text-center">
-
-//             <img src="./images/plant_logo.png" alt="" width="100" height="100" />
-//             <h2>Checkout form</h2>
-//             <p class="lead">Below is your shopping cart</p>
-//             <div className="container">
-//               <div className="row justify-content-center">
-//                 <div className="col-8">
-//                   <ul id="cart-items" className="list-group">
-//                     {clickedItems.map((item, index) => {
-//                       total += item.price;
-//                       return (
-//                         <li key={index} className="list-group-item d-flex justify-content-between">
-//                           <span>Plant: {item.PlantName}:</span>
-//                           <strong>${item.price}.00</strong>
-
-//                         </li>
-//                       );
-//                     })}
-//                     <li className="list-group-item d-flex justify-content-between">
-//                       <span>Total:</span>
-//                       <strong>${total}.00</strong>
-//                     </li>
-//                   </ul>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="padding">
-//             <h4 className="mb-3">Billing address</h4>
-//             <form className="needs-validation" noValidate>
-//               <div className="row g-3">
-//                 <div className="col-sm-6">
-
-//                   <label htmlFor="firstName" className="form-label">First name</label>
-//                   <input type="text" className="form-control" id="firstName" placeholder="" value={firstName} name="firstName" onChange={e => setFirstName(e.target.value)} required />
-//                   <div className="invalid-feedback">
-//                     Valid first name is required.
-//                   </div>
-//                 </div>
-
-//                 <div className="col-sm-6">
-//                   <label htmlFor="lastName" className="form-label">Last name</label>
-//                   <input type="text" className="form-control" id="lastName" placeholder="" value={lastName} name="lastName" onChange={e => setLastName(e.target.value)} required />
-//                   <div className="invalid-feedback">
-//                     Valid last name is required.
-//                   </div>
-//                 </div>
-
-//                 <div className="col-12">
-//                   <label htmlFor="username" className="form-label">Username</label>
-//                   <div className="input-group has-validation">
-//                     <span className="input-group-text">@</span>
-//                     <input type="text" className="form-control" id="username" placeholder="Username" required />
-//                     <div className="invalid-feedback">
-//                       Your username is required.
-//                     </div>
-//                   </div>
-//                 </div>
-
-//                 <div className="col-12">
-//                   <label htmlFor="email" className="form-label">Email <span className="text-body-secondary">(Optional)</span></label>
-//                   <input type="text" className="form-control" id="email" value={email} name="email" placeholder="you@example.com" onChange={e => setEmailName(e.target.value)} />
-//                   <div className="invalid-feedback">
-//                     Please enter a valid email address for shipping updates.
-//                   </div>
-//                 </div>
-
-//                 <div className="col-12">
-//                   <label htmlFor="address" className="form-label">Address</label>
-//                   <input type="text" className="form-control" id="address" placeholder="" value={address} name="address" onChange={e => setAddressName(e.target.value)} required />
-//                   <div className="invalid-feedback">
-//                     Please enter your shipping address.
-//                   </div>
-//                 </div>
-
-//                 <div className="col-12">
-//                   <label htmlFor="address2" className="form-label">Address 2 <span className="text-body-secondary">(Optional)</span></label>
-//                   <input type="text" className="form-control" id="address2" placeholder="Apartment or suite" />
-//                 </div>
-
-//                 <div className="col-md-5">
-//                   <label htmlFor="country" className="form-label">Country</label>
-//                   <select className="form-select" id="country" required>
-//                     <option value="">Choose...</option>
-//                     <option>United States</option>
-//                   </select>
-//                   <div className="invalid-feedback">
-//                     Please select a valid country.
-//                   </div>
-//                 </div>
-
-//                 <div className="col-md-4">
-//                   <label htmlFor="state" className="form-label">State</label>
-//                   <select className="form-select" id="state" required>
-//                     <option value="">Choose...</option>
-//                     <option>IA</option>
-//                     <option>IL</option>
-//                     <option>MN</option>
-//                   </select>
-//                   <div className="invalid-feedback">
-//                     Please provide a valid state.
-//                   </div>
-//                 </div>
-
-//                 <div className="col-md-3">
-//                   <label htmlFor="zip" className="form-label">Zip</label>
-//                   <input type="text" className="form-control" id="zip" placeholder="" required />
-//                   <div className="invalid-feedback">
-//                     Zip code required.
-//                   </div>
-//                 </div>
-//               </div>
-
-//               <hr className="my-4" />
-
-//               <div className="row gy-3">
-//                 <div className="col-md-6">
-//                   <label htmlFor="cc-name" className="form-label">Name on card</label>
-//                   <input type="text" className="form-control" id="CardName" placeholder="" value={CardName} name="CardName" onChange={e => setCardName(e.target.value)} required />
-//                   <small className="text-body-secondary">Full name as displayed on card</small>
-//                   <div className="invalid-feedback">
-//                     Name on card is required
-//                   </div>
-//                 </div>
-
-//                 <div className="col-md-6">
-//                   <label htmlFor="cc-number" className="form-label">Credit card number</label>
-//                   <input type="text" className="form-control" id="CardNum" placeholder="" value={CardNum} name="CardNum" onChange={e => setCardNum(e.target.value)} required />
-
-//                   <div className="invalid-feedback">
-//                     Credit card number is required
-//                   </div>
-//                 </div>
-
-//                 <div className="col-md-3">
-//                   <label htmlFor="cc-expiration" className="form-label">Expiration</label>
-//                   <input type="text" className="form-control" id="cc-expiration" placeholder="" required />
-//                   <div className="invalid-feedback">
-//                     Expiration date required
-//                   </div>
-//                 </div>
-
-//                 <div className="col-md-3">
-//                   <label htmlFor="cc-cvv" className="form-label">CVV</label>
-//                   <input type="text" className="form-control" id="cc-cvv" placeholder="" required />
-//                   <div className="invalid-feedback">
-//                     Security code required
-//                   </div>
-//                 </div>
-//               </div>
-//               <div className="padding">
-//                 <button
-//                   type="button"
-//                   className="btn btn-primary"
-//                   onClick={() => { props.setView('Summary') }}
-//                 >
-//                   Checkout
-//                 </button>
-//               </div>
-//             </form>
-//           </div>
-//         </div>
-//       );
-//       break;
-
-//     case 'Summary':
-
-//       content = <div className="container">
-//         <div class="padding">
-//           <div class="py-5 text-center">
-//             <img src="./images/plant_logo.png" alt="" width="100" height="100" />
-//             <h2>Order Summary</h2>
-//           </div>
-
-//           <div className="row justify-content-center">
+  useEffect(() => {
+    fetch('./GreenHouse.json')
+      .then(response => response.json())
+      .then(GreenHouseData => {
+        console.log(GreenHouseData); // Log the fetched data
+        if (Array.isArray(GreenHouseData.House)) {
+          setPlants(GreenHouseData);
+        } else {
+          console.error('Error: plantsData.Plant is not an array', GreenHouse);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+  
 
 
+  if (!Array.isArray(GreenHouse.House)) {
+    return <div>Error: plants.Plant is not an array</div>;
+  }
 
-//             <div className="col-10">
-//               <ul id="cart-items" className="list-group">
-//                 {clickedItems.map((item, index) => {
-//                   total += item.price;
-//                   return (
-//                     <li key={index} className="list-group-item d-flex justify-content-between">
-//                       <span>{item.PlantName}:</span>
-//                       <strong>${item.price}.00</strong>
+  let content;// no idea what this does
+  switch (props.page) {
+    case 'page1':
+      content = ( 
+        <div>
+          <p>
+          page 1
+          </p>
+        </div>
+      );
+      break;
 
-//                     </li>
-//                   );
-//                 })}
-//                 <li className="list-group-item d-flex justify-content-between">
-//                   <span>Total:</span>
-//                   <strong>${total}.00</strong>
-//                 </li>
-//               </ul>
-//             </div>
-//           </div>
-//           <div>
-//           </div>
+      case 'page2':
+      content = ( 
+      <div>
+          <p>
+          page 2
+          </p>
+        </div>
+      );
+      break;
 
-//           <div className="row justify-content-center">
-//             <div className="col-10">
-//               <ul className="list-group"></ul>
-//               <li className="list-group d-flex justify-content-between">
-//                 <strong>User Info: </strong>
-//                 <span>Name: {firstName} {lastName}</span>
-//                 <span>Email: {email}</span>
-//                 <span>Address: {address}</span>
-//                 <strong>Card Info: </strong>
-//                 <span> Card Name:{CardName}</span>
-//                 <span>Card Number: {CardNum}</span>
-//               </li>
-//             </div>
-//           </div>
-//           <div className="padding">
-//             <button
-//               type="button"
-//               className="btn btn-primary btn-lg btn-block w-100"
-//               onClick={() => { props.setView('home'); clearCart(); }}>
+      case 'page3':
+      content = ( 
+      <div>
+          <p>
+          page 3
+          </p>
+        </div>
+      );
+      break;
 
-//               Back to Shop
-//             </button>
-//           </div>
-//         </div>
-//       </div>
+      case 'the Greenhouses':
+      content = ( 
+        <div>
+          <h1 style={{marginTop:"10px"}}>About the Greenhouses</h1>
+        <div className="padding">
+          <div id="plant-container" className="row row-cols-1 row-cols-md-3 g-4">
+            {GreenHouse.House.map((GreenHouse, index) => (
+              <div key={index} className="col">
+                <div className="card h-100">
+                  <img src={GreenHouse.url} className="card-img-top" alt={GreenHouse.alt} />
+                  <div className="card-body">
+                    <h5 className="card-title">{GreenHouse.GreenHouse}</h5>
+                    <p className="card-text">{GreenHouse.bio}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      
+      
+    </div>
+      );
+      break;
 
-//       break;
+      case 'page5':
+      content = ( 
+      <div>
+          
+          <h1 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Current Research</h1>
+          <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+          Welcome to the Shared Plant Growth Facilities Current Research page.
+          Our facilities support a range of projects across various disciplines,
+          providing a platform for scientific curiosity and discovery.Here are a
+          few activities within our shared spaces that we are currently working on. 
+          </p>
 
-//     case 'Developers':
-//       content =
-//         <div className="container">
-//           <div className="row">
-//             <div className="col-lg-6">
-//               <img
-//                 className="bd-placeholder-img rounded-circle"
-//                 width="225"
-//                 height="300"
-//                 src="./images/profile.jpg"
-//                 alt="Placeholder1"
-//                 aria-label="Placeholder"
-//                 preserveAspectRatio="xMidYMid slice"
-//                 focusable="false"
-//               />
-//               <h2 className="fw-normal">Lisa Tordai</h2>
-//               <p>
-//                 I am Software Engineering Student at Iowa State University. This
-//                 semester Fall2023 I am taking ComS363, ComS321, ComS309, SE319 and Engl314.
-//                 During the school year, I am on part time coop with CNH Industrial as a
-//                 software engineering intern and also work for digital Ag. as an undergraduate
-//                 research assistant.
-//               </p>
-//             </div>
-//             <div className="col-lg-6">
-//               <img
-//                 className="bd-placeholder-img rounded-circle"
-//                 width="225"
-//                 height="300"
-//                 src="./images/profile1.jpg"
-//                 alt="Placeholder2"
-//                 aria-label="Placeholder"
-//                 preserveAspectRatio="xMidYMid slice"
-//                 focusable="false"
-//               />
-//               <h2 className="fw-normal">Jaya Davis</h2>
-//               <p>
-//                 I am a junior at Iowa State university studying software engineering. This
-//                 semester I am taking ComS321, ComS309, SE319 Stats330 and HPSM383. Along with
-//                 school I work Part time for Kent Corperation as a business architect intern.
-//                 I am also a member of executive council for engineers week and Alpha Gamma
-//                 Delta.
-//               </p>
-//             </div>
-//           </div>
-//           <div>
-//             <h2 className="fw-normal">Our Project</h2>
-//             <p>
-//               Our project aims to create something to help with documentation, organization,
-//               and advertisement within greenhouses. This would be a public place for a
-//               community to view what plants are growing within a greenhouse or garden. This
-//               would prevent someone from needing to physically go to a greenhouse and walk
-//               around to see what plants are being grown. The purpose of this project is also
-//               to create a base for what we plan our final project will be based from. We are
-//               intending to utilize Raspberry Pi to track the temperature and humidity levels
-//               of the greenhouses. This experience would provide us both the opportunity to
-//               learn more about how to incorporate Raspberry Pi with a website in a way that
-//               serves real life purposes.
-//             </p>
-//           </div>
-//         </div>;
-//       <section id="contact">
-//         <div class="container">
-//           <h2>Contact Us</h2>
-//           <p>You can reach us at ltordai@iastate.edu or jayaed16@iastate.edu</p>
-//         </div>
-//       </section>
+          <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px", color: "#CC0001" }} />
 
-//       break;
+          <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Agronomy Greenhouse room 131</h4>
+          <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            With the evolution of greenhouse lighting technology there
+            comes obsolescence. Current lighting technology is rumored 
+            to be on its way to obsolescence in the near future. Most LED
+            lighting research has been conducted with plants that are 
+            much shorter than corn and soybeans at full maturity so a
+            lighting trial is being conducted to see if those crops can 
+            be successful under standard toplighting or if additional
+            methods need to be investigated before the current lighting 
+            technology is gone. 
+            </p>
 
-//     default:
-//       content = <div>Default Content</div>;
-//   }
+          <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
 
-//   return <div>{content}</div>;
-// };
-export { Header, Footer};
+          <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Horticulture Hall rooms 82 and 86</h4>
+          <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+          The ISU Horticulture Club is producing a Poinsettia crop to be sold 
+          before the end of the semester.  
+            </p>
+
+            <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
+
+            <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Agronomy Hall Room 116 and ATRB room 6302</h4>
+            <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            The Iowa Monarch Conservation Consortium is raising milkweed plants to feed Monarch
+             butterfly butterfly caterpillars in their colony.   
+              </p>
+
+              <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
+
+            <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Plant Pathology Greenhouse room 115</h4>
+            <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            An experiment on soil applied herbicides and their effect on weed seed germination.  
+              </p>
+
+              <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
+
+            <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Plant Pathology Greenhouse room 121</h4>
+            <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            A winter seed increase on soybeans for use in field trials for summer 2024.
+             </p>
+
+             <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
+
+            <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Agronomy Greenhouse room 119</h4>
+            <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            Genetic research on Sorghum plants for food and biofuel uses.
+            </p>
+
+            <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
+
+            <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Horticulture Hall room 46J</h4>
+            <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            Research on Mungbean to investigate its suitability as a staple crop in North America. 
+            </p>
+
+            <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />
+
+            <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>Agronomy Greenhouse and Agronomy Hall – multiple chambers</h4>
+            <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>
+            Climate change research investigating soybean production under different climate parameters. 
+            </p>
+        </div>
+      );
+      break;
+
+    default:
+      content = <div>Default Content</div>;
+  }
+
+  return <div>{content}</div>;
+};
+export { Header, Footer, Content};
 

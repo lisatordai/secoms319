@@ -71,7 +71,7 @@
 
 .navbar2 {
   padding: 0.1rem 1rem;
-  background-color: #cccccc; /* Dark grey background color */
+  background-color: #F3F3F3; /* Dark grey background color */
 }
 
 
@@ -85,6 +85,32 @@
   }
 
 .navbar2 .btn:hover {
+  background-color: #a19e9e; /* Light grey background color on hover */
+}
+
+.footer {
+  padding: 0.1rem 1rem;
+  background-color: #F3F3F3; /* Dark grey background color */
+  width: 100%;
+  height: auto
+
+}
+
+
+.footer .btn {
+  
+  color: #CC0001; /* Button text color */
+  border-color: transparent; /* Transparent button border */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  border-radius: 0; /* Remove rounded corners */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  
+
+  }
+
+.footer .btn:hover {
   background-color: #a19e9e; /* Light grey background color on hover */
 }
 /* Spacer between button 2 and 3 */
