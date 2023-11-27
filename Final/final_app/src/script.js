@@ -40,8 +40,8 @@ const Header = (props) => {
         <div class="container-fluid">
           <div class="row w-100 justify-content-between">
             <div class="col-auto text-left">
-              <a class="btn btn-outline-primary"  onClick={() => { props.setView('page1') }}>page1</a>
-              <a  class="btn btn-outline-primary"  onClick={() => { props.setView('page2') }}>page2</a>
+              <a class="btn btn-outline-primary"  onClick={() => { props.setView('Home') }}>Home</a>
+              <a  class="btn btn-outline-primary"  onClick={() => { props.setView('Managers') }}>Managers</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
@@ -113,21 +113,21 @@ const Content = (props) => {
 
   let content;// no idea what this does
   switch (props.page) {
-    case 'page1':
+    case 'Home':
       content = ( 
         <div>
           <p>
-          page 1
+          page 1 Home
           </p>
         </div>
       );
       break;
 
-      case 'page2':
+      case 'Managers':
       content = ( 
       <div>
           <p>
-          page 2
+          page 2 Managers
           </p>
         </div>
       );
