@@ -1,5 +1,4 @@
-{
-    "SectionText": [
+[
         {
             "title": "About the Facilities",
             "text": "The Shared Plant Growth Facilities encompasses 43,967 square feet of greenhouse space in the
@@ -33,7 +32,7 @@
         {
             "title": "Reservations",
             "text": "Reservations are managed through an online reservation system called RedBud.",
-            "url":"https://iowastate.redbudsaas.us/"
+            "url":"https://iowastate.redbudsaas.us/",
+            "urlButton": "Reserve"
         }
     ]
-}
