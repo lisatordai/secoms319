@@ -13,7 +13,7 @@ const Header = (props) => {
   return (
     <div>
       <nav class="navbar navbar-dark">
-        <div class="container-fluid">
+        <div style = {{marginLeft:"135px", marginRight:"135px"}} class="container-fluid">
           <div class="row w-100 justify-content-between">
             <div class="col-auto text-left">
               <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
@@ -30,13 +30,13 @@ const Header = (props) => {
       </nav>
       
       <div className="red-header left-aligned">
-        <img src="./images/logo.jpg" alt="Logo" />
-        <p><strong>Official site name TBD</strong></p>
+        <img style={{marginLeft:"135px"}} src="./images/logo.jpg" alt="Logo"/>
+        <p style={{marginLeft:"155px"}}><strong>Shared Plant Growth Facilities</strong></p>
       </div>
 
       <nav class="navbar2 navbar-dark">
         <div class="container-fluid">
-          <div class="row w-100 justify-content-between">
+          <div style={{marginLeft:"135px"}} class="row w-100 justify-content-between">
             <div class="col-auto text-left">
               <a class="btn btn-outline-primary"  onClick={() => { props.setView('page1') }}>page1</a>
               <a  class="btn btn-outline-primary"  onClick={() => { props.setView('page2') }}>page2</a>
@@ -104,19 +104,25 @@ const Content = (props) => {
   }, []);
   
 
-
-  if (!Array.isArray(GreenHouse.House)) {
-    return <div>Error: plants.Plant is not an array</div>;
-  }
-
-  let content;// no idea what this does
+  let content;
   switch (props.page) {
     case 'page1':
       content = ( 
         <div>
-          <p>
-          page 1
-          </p>
+          <body>
+          <div id="green-house-container">
+              <img style={{marginTop:"30px"}} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House Image"></img>
+              <div id="green-label">Horticulture Hall greenhouse</div>
+              <h2 style={{marginTop:"10px"}}>About the Facilities</h2>
+              <p style={{marginTop:"10px"}}>
+              The Shared Plant Growth Facilities encompasses 43,967 square feet of greenhouse space in the Advanced Teaching and Research Building (ATRB), Agronomy Greenhouse, Agronomy Hall, Horticulture Hall, and Plant Pathology Greenhouse with a total of 84 rooms to house instructional and research projects as well as 56 plant growth chambers in Agronomy Hall and Horticulture Hall that have a total growing space of over 985 square feet. The greenhouses range in construction dates from 1967 through 2018. The Agronomy Hall, Horticulture Hall, and ATRB greenhouses have computer control systems to ensure proper environmental conditions and to provide specific conditions for research and instructional projects. The growth chambers are able to simulate the climate of many locations from around the globe with lighting and temperature control in all changes and some chambers also have humidity and CO2 controls as well. 
+              <br/> <br/>
+              The majority of the insect pest control in the Shared Plant Growth Facilities is accomplished with the use of beneficial insects, predatory mites, and parasitic wasps to significantly decrease the use of chemical pesticides and the risks associated with them for all of our faculty, staff, and students. 
+
+              </p>
+          </div>
+          
+          </body>
         </div>
       );
       break;
