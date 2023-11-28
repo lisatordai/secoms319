@@ -30,8 +30,8 @@ const Header = (props) => {
       </nav>
       
       <div className="red-header left-aligned">
-        <img style={{marginLeft:"135px"}} src="./images/logo.jpg" alt="Logo"/>
-        <p style={{marginLeft:"155px"}}><strong>Shared Plant Growth Facilities</strong></p>
+      <img  style={{marginLeft:"135px"}}  src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
+        <p  style={{marginLeft:"1555px"}} ><strong>Shared Plant Growth Facilities</strong></p>
       </div>
 
       <nav class="navbar2 navbar-dark">
@@ -41,7 +41,7 @@ const Header = (props) => {
               <a class="btn btn-outline-primary"  onClick={() => { props.setView('page1') }}>page1</a>
               <a  class="btn btn-outline-primary"  onClick={() => { props.setView('page2') }}>page2</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>the Greenhouses</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
               <a class="btn btn-outline-primary">page6</a>
             </div>
