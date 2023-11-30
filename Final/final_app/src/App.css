@@ -55,6 +55,7 @@
 .navbar {
   padding: 0.1rem 1rem;
   background-color: #343a40; /* Dark grey background color */
+  
 }
 
 .navbar .btn {
@@ -63,6 +64,7 @@
   border-color: transparent; /* Transparent button border */
   transition: background-color 0.3s; /* Smooth transition for background color */
   border-radius: 0; /* Remove rounded corners */
+  height: 30px;
   }
 
 .navbar .btn:hover {
@@ -120,7 +122,9 @@
  /* Red header styles */
  .red-header {
   background-color: #CC0001; /* Red background color */
-  padding: 1rem;
+  padding: 0.3rem 1rem;
+  width: "auto";
+  
   text-align: left;
   
 }
@@ -130,18 +134,19 @@
   height: auto;
 }
 .red-header p {
-  margin-left: 1.4rem;
+  margin-bottom: 0px;
   color: #ffffff;
 }
 
 #green-house-container {
-  width: 75%; /* Set the width of the container */
+  width: 66%; /* Set the width of the container */
   display: block;
   margin: 0 auto; /* Center the container horizontally */
 }
 
 #green-house-image {
   width: 100%; /* Set the width of the image to 100% of the container */
+  height: 500px;
   border-top-left-radius: 10px; /* Add border-radius to round the top-left corner */
   border-top-right-radius: 10px; /* Add border-radius to round the top-right corner */
 

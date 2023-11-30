@@ -1,0 +1,37 @@
+{
+"Projects":[
+  
+    {
+      "header": "Agronomy Greenhouse room 131",
+      "info": "With the evolution of greenhouse lighting technology there comes obsolescence. Current lighting technology is rumored to be on its way to obsolescence in the near future. Most LED lighting research has been conducted with plants that are much shorter than corn and soybeans at full maturity so a lighting trial is being conducted to see if those crops can be successful under standard toplighting or if additional methods need to be investigated before the current lighting technology is gone."
+    },
+    {
+      "header": "Horticulture Hall rooms 82 and 86",
+      "info": "The ISU Horticulture Club is producing a Poinsettia crop to be sold before the end of the semester."
+    },
+    {
+      "header": "Agronomy Hall Room 116 and ATRB room 6302",
+      "info": "The Iowa Monarch Conservation Consortium is raising milkweed plants to feed Monarch butterfly caterpillars in their colony."
+    },
+    {
+      "header": "Plant Pathology Greenhouse room 115",
+      "info": "An experiment on soil applied herbicides and their effect on weed seed germination."
+    },
+    {
+      "header": "Plant Pathology Greenhouse room 121",
+      "info": "A winter seed increase on soybeans for use in field trials for summer 2024."
+    },
+    {
+      "header": "Agronomy Greenhouse room 119",
+      "info": "Genetic research on Sorghum plants for food and biofuel uses."
+    },
+    {
+      "header": "Horticulture Hall room 46J",
+      "info": "Research on Mungbean to investigate its suitability as a staple crop in North America."
+    },
+    {
+      "header": "Agronomy Greenhouse and Agronomy Hall – multiple chambers",
+      "info": "Climate change research investigating soybean production under different climate parameters."
+    }
+  ]
+}
