@@ -29,17 +29,19 @@ const Header = (props) => {
         </div>
       </nav>
       
-      <div className="red-header left-aligned container-fluid">
-      <img  style={{marginLeft:"180px"}}  src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
-        <p  style={{marginLeft:"180px", marginTop:"5px"}} ><strong>Shared Plant Growth Facilities</strong></p>
+      <div className="red-header left-aligned">
+        {/* <img src="./images/logo.jpg" alt="Logo" /> */}
+        
+        <img   style={{marginLeft:"180px"}}src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
+        <p   style={{marginLeft:"180px"}}><strong>Shared Plant Growth Facilities</strong></p>
       </div>
 
       <nav class="navbar2 navbar-dark" >
         <div class="container-fluid">
           <div style={{marginLeft:"155px"}} class="row w-100 justify-content-between">
             <div class="col-auto text-left">
-              <a class="btn btn-outline-primary"  onClick={() => { props.setView('page1') }}>Home</a>
-              <a  class="btn btn-outline-primary"  onClick={() => { props.setView('page2') }}>page2</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
@@ -49,7 +51,7 @@ const Header = (props) => {
         </div>
       </nav>
     </div>
-  
+
   );
 };
 
@@ -62,12 +64,12 @@ const Footer = () => {
           <div className="col-auto" style={{ marginLeft: '200px' }}>
             <img src="./images/logo2.jpg" alt="Logo2" style={{ maxWidth: '250px' }} />
           </div>
-    
+
           {/* Right side with buttons (removed text-right class) */}
           <div className="col-auto d-flex flex-column text-left" style={{ marginRight: '200px', marginTop: '40px', marginBottom: '40px' }}>
-            <p> Copyright © 2023<br/>
-              Iowa State University<br/>
-              of Science and Technology<br/>
+            <p> Copyright © 2023<br />
+              Iowa State University<br />
+              of Science and Technology<br />
               All rights reserved.
             </p>
             <a href="https://www.policy.iastate.edu/policy/discrimination" className="btn btn-outline-primary mb-0 ">Non-discrimination Policy</a>
@@ -130,42 +132,70 @@ const Content = (props) => {
 
   let content;
   switch (props.page) {
-    case 'page1':
-      content = ( 
+    case 'Home':
+      content = (
         <div>
-          <body>
-          <div id="green-house-container">
-              <img style={{marginTop:"30px"}} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House Image"></img>
-              <div id="green-label">Horticulture Hall greenhouse</div>
-              <h2 style={{marginTop:"10px"}}>About the Facilities</h2>
-              <p style={{marginTop:"10px"}}>
-              The Shared Plant Growth Facilities encompasses 43,967 square feet of greenhouse space in the Advanced Teaching and Research Building (ATRB), Agronomy Greenhouse, Agronomy Hall, Horticulture Hall, and Plant Pathology Greenhouse with a total of 84 rooms to house instructional and research projects as well as 56 plant growth chambers in Agronomy Hall and Horticulture Hall that have a total growing space of over 985 square feet. The greenhouses range in construction dates from 1967 through 2018. The Agronomy Hall, Horticulture Hall, and ATRB greenhouses have computer control systems to ensure proper environmental conditions and to provide specific conditions for research and instructional projects. The growth chambers are able to simulate the climate of many locations from around the globe with lighting and temperature control in all changes and some chambers also have humidity and CO2 controls as well. 
-              <br/> <br/>
-              The majority of the insect pest control in the Shared Plant Growth Facilities is accomplished with the use of beneficial insects, predatory mites, and parasitic wasps to significantly decrease the use of chemical pesticides and the risks associated with them for all of our faculty, staff, and students. 
+          getMethod()
+          <pre id="showData"></pre>
+          <div id="goodmovies"></div>
+          <script>
+            function getMethod() {
+              fetch("http://localhost:8081/listSections")
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log(data);
+                  var container = document.getElementById("showData");
+                  container.innerHTML = JSON.stringify(data, undefined, 2);
+                  loadText(data);
+                });
+            }
+{/* 
+            function loadText(SectionText) {
+              var mainContainer = document.getElementById("goodmovies");
+                for (var i = 0; i < SectionText.length; i++) {
+                  let title = SectionText[i].title;
+                  let text = SectionText[i].text;
+                  let url = SectionText[i].url;
+                  let urlButton = SectionText[i].url;
+                  let div = document.createElement("div");
 
-              </p>
-          </div>
-          
-          </body>
+                if (url != null) {
+                  div.innerHTML = `
+                  <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
+                  <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
+                  <button onclick="${url}">${urlButton}</button>
+                  <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
+                }else {
+                div.innerHTML = `  
+                <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
+                <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
+                <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
+                }
+              mainContainer.appendChild(div);
+              console.log(div);
+              }
+            } */}
+          </script>
         </div>
+
       );
       break;
 
-      case 'page2':
-      content = ( 
-      <div>
+    case 'Managers':
+      content = (
+        <div>
           <p>
-          page 2
+            page 2 Managers
           </p>
         </div>
       );
       break;
 
-      case 'page3':
-      content = ( 
-      <div>
+    case 'page3':
+      content = (
+        <div>
           <p>
-          page 3
+            page 3
           </p>
         </div>
       );
@@ -226,5 +256,6 @@ const Content = (props) => {
 
   return <div>{content}</div>;
 };
-export { Header, Footer, Content};
+export { Header, Footer, Content };
+
 
