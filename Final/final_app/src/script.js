@@ -128,6 +128,32 @@ const Content = (props) => {
   }, []);
 
   let i = projects.length;
+
+  function loadText(SectionText) {
+    var mainContainer = document.getElementById("goodmovies");
+      for (var i = 0; i < SectionText.length; i++) {
+        let title = SectionText[i].title;
+        let text = SectionText[i].text;
+        let url = SectionText[i].url;
+        let urlButton = SectionText[i].url;
+        let div = document.createElement("div");
+
+      if (url != null) {
+        div.innerHTML = `
+        <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
+        <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
+        <button onclick="${url}">${urlButton}</button>
+        <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
+      }else {
+      div.innerHTML = `  
+      <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
+      <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
+      <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
+      }
+    mainContainer.appendChild(div);
+    console.log(div);
+    }
+  } 
   
 
   let content;
@@ -147,9 +173,10 @@ const Content = (props) => {
                   var container = document.getElementById("showData");
                   container.innerHTML = JSON.stringify(data, undefined, 2);
                   loadText(data);
-                });
-            }
-{/* 
+                })
+              }
+            
+{ 
             function loadText(SectionText) {
               var mainContainer = document.getElementById("goodmovies");
                 for (var i = 0; i < SectionText.length; i++) {
@@ -174,7 +201,7 @@ const Content = (props) => {
               mainContainer.appendChild(div);
               console.log(div);
               }
-            } */}
+            } }
           </script>
         </div>
 
