@@ -114,6 +114,43 @@ app.get("/api/home/getTextFromId/:id", (req, res) => {
 //MANAGER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Get Calls /////////////////////////////////////////////////////////////
 
+// Route to get all manager posts
+app.get("/api/manager/get", (req, res) => {
+    db.query("SELECT * FROM manager", (err, result) => {
+        if (err) {
+            console.log(err);
+        }
+        res.send(result);
+    });
+});
+
+// Route to get manager from Id
+app.get("/api/manager/getFromId/:id", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM manager WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+// Route to get manager from name
+app.get("/api/manager/getFromName/:name", (req, res) => {
+    const name = req.params.name;
+    db.query(
+        "SELECT * FROM manager WHERE name = ?", name,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
 //Post Calls /////////////////////////////////////////////////////////////
 //Delete Calls ///////////////////////////////////////////////////////////
 
