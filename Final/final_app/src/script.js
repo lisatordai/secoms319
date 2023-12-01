@@ -130,7 +130,7 @@ const Content = (props) => {
                   loadText(data);
                 });
             }
-{/* 
+
             function loadText(SectionText) {
               var mainContainer = document.getElementById("goodmovies");
                 for (var i = 0; i < SectionText.length; i++) {
@@ -155,7 +155,7 @@ const Content = (props) => {
               mainContainer.appendChild(div);
               console.log(div);
               }
-            } */}
+            }
           </script>
         </div>
 
