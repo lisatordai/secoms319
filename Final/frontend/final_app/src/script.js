@@ -8,80 +8,80 @@ import items from "./GreenHouse.json"
 
 
 
-const Header = (props) => {
+// const Header = (props) => {
 
-  return (
-    <div>
-      <nav class="navbar navbar-dark">
-        <div class="container-fluid">
-          <div class="row w-100 justify-content-between">
-            <div class="col-auto text-left">
-              <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
-              <a href="https://www.iastate.edu/index/A" class="btn btn-outline-primary">Index</a>
-            </div>
-            <div class="col-auto text-right">
-              <a href="https://info.iastate.edu/" class="btn btn-outline-primary">Directory</a>
-              <a href="https://www.fpm.iastate.edu/maps/" class="btn btn-outline-primary">Maps</a>
-              <a href="https://web.iastate.edu/safety/" class="btn btn-outline-primary">Safety</a>
-              <a href="https://iastate.okta.com/" class="btn btn-outline-primary">Sign Ons</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+//   return (
+//     <div>
+//       <nav class="navbar navbar-dark">
+//         <div class="container-fluid">
+//           <div class="row w-100 justify-content-between">
+//             <div class="col-auto text-left">
+//               <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
+//               <a href="https://www.iastate.edu/index/A" class="btn btn-outline-primary">Index</a>
+//             </div>
+//             <div class="col-auto text-right">
+//               <a href="https://info.iastate.edu/" class="btn btn-outline-primary">Directory</a>
+//               <a href="https://www.fpm.iastate.edu/maps/" class="btn btn-outline-primary">Maps</a>
+//               <a href="https://web.iastate.edu/safety/" class="btn btn-outline-primary">Safety</a>
+//               <a href="https://iastate.okta.com/" class="btn btn-outline-primary">Sign Ons</a>
+//             </div>
+//           </div>
+//         </div>
+//       </nav>
 
-      <div className="red-header left-aligned">
-        {/* <img src="./images/logo.jpg" alt="Logo" /> */}
+//       <div className="red-header left-aligned">
+//         {/* <img src="./images/logo.jpg" alt="Logo" /> */}
 
-        <img src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
-        <p><strong>Shared Plant Growth Facilities</strong></p>
-      </div>
+//         <img src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
+//         <p><strong>Shared Plant Growth Facilities</strong></p>
+//       </div>
 
-      <nav class="navbar2 navbar-dark">
-        <div class="container-fluid">
-          <div class="row w-100 justify-content-between">
-            <div class="col-auto text-left">
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
-              <a class="btn btn-outline-primary">page6</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+//       <nav class="navbar2 navbar-dark">
+//         <div class="container-fluid">
+//           <div class="row w-100 justify-content-between">
+//             <div class="col-auto text-left">
+//               <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
+//               <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
+//               <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
+//               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
+//               <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
+//               <a class="btn btn-outline-primary">page6</a>
+//             </div>
+//           </div>
+//         </div>
+//       </nav>
+//     </div>
 
-  );
-};
+//   );
+// };
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="container-fluid">
-        <div className="row w-100 justify-content-between align-items-center">
-          {/* Left side with logo */}
-          <div className="col-auto" style={{ marginLeft: '200px' }}>
-            <img src="./images/logo2.jpg" alt="Logo2" style={{ maxWidth: '250px' }} />
-          </div>
+// const Footer = () => {
+//   return (
+//     <footer className="footer">
+//       <div className="container-fluid">
+//         <div className="row w-100 justify-content-between align-items-center">
+//           {/* Left side with logo */}
+//           <div className="col-auto" style={{ marginLeft: '200px' }}>
+//             <img src="./images/logo2.jpg" alt="Logo2" style={{ maxWidth: '250px' }} />
+//           </div>
 
-          {/* Right side with buttons (removed text-right class) */}
-          <div className="col-auto d-flex flex-column text-left" style={{ marginRight: '200px', marginTop: '40px', marginBottom: '40px' }}>
-            <p> Copyright © 2023<br />
-              Iowa State University<br />
-              of Science and Technology<br />
-              All rights reserved.
-            </p>
-            <a href="https://www.policy.iastate.edu/policy/discrimination" className="btn btn-outline-primary mb-0 ">Non-discrimination Policy</a>
-            <a href="https://www.policy.iastate.edu/electronicprivacy" className="btn btn-outline-primary mb-0">Privacy Policy</a>
-            <a href="https://www.it.iastate.edu/teams/digital-accessibility" className="btn btn-outline-primary mb-0">Digital Access & Accessibility</a>
-            <a href="https://www.iastate.edu/consumer-information" className="btn btn-outline-primary mb-0">Consumer Information</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
+//           {/* Right side with buttons (removed text-right class) */}
+//           <div className="col-auto d-flex flex-column text-left" style={{ marginRight: '200px', marginTop: '40px', marginBottom: '40px' }}>
+//             <p> Copyright © 2023<br />
+//               Iowa State University<br />
+//               of Science and Technology<br />
+//               All rights reserved.
+//             </p>
+//             <a href="https://www.policy.iastate.edu/policy/discrimination" className="btn btn-outline-primary mb-0 ">Non-discrimination Policy</a>
+//             <a href="https://www.policy.iastate.edu/electronicprivacy" className="btn btn-outline-primary mb-0">Privacy Policy</a>
+//             <a href="https://www.it.iastate.edu/teams/digital-accessibility" className="btn btn-outline-primary mb-0">Digital Access & Accessibility</a>
+//             <a href="https://www.iastate.edu/consumer-information" className="btn btn-outline-primary mb-0">Consumer Information</a>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
 
 
 
