@@ -14,3 +14,15 @@ SELECT * FROM home WHERE title = "Visit Us";
 -- /api/home/getIdFromTitle/:title
 SELECT id FROM home WHERE title = "Visit Us";
 
+-- Route to get title from id
+-- /api/home/getTitleFromId/:id
+SELECT title FROM home WHERE id = 1;
+
+-- Route to get text from Id
+-- /api/home/getTextFromId/:id
+SELECT text FROM home WHERE id = 1;
+
+-- Route to get text from title
+-- /api/home/getTextFromTitle/:title
+SELECT text FROM home WHERE title = "Visit Us";
+
