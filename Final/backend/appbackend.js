@@ -7,10 +7,10 @@ app.use(express.static("public"));
 app.use("/images", express.static("images"));
 
 
-
+//HOME///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Route to get all posts
-app.get("/api/get", (req, res) => {
-    db.query("SELECT * FROM fakestore_catalog", (err, result) => {
+app.get("/api/home/get", (req, res) => {
+    db.query("SELECT * FROM home", (err, result) => {
         if (err) {
             console.log(err);
         }
@@ -18,11 +18,11 @@ app.get("/api/get", (req, res) => {
     });
 });
 
-// Route to get one post
-app.get("/api/getFromId/:id", (req, res) => {
+// Route to get one section for home from ID
+app.get("/api/home/getFromId/:id", (req, res) => {
     const id = req.params.id;
     db.query(
-        "SELECT * FROM fakestore_catalog WHERE id = ?", id,
+        "SELECT * FROM home WHERE id = ?", id,
         (err, result) => {
             if (err) {
                 console.log(err);
@@ -31,6 +31,35 @@ app.get("/api/getFromId/:id", (req, res) => {
         }
     );
 });
+
+// Route to get one section for home from title
+app.get("/api/home/getFromTitle/:title", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM home WHERE title = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+// Route to get id from title
+app.get("/api/home/getIdFromTitle/:title", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT id FROM home WHERE title = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
