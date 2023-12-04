@@ -158,19 +158,195 @@ app.get("/api/manager/getFromName/:name", (req, res) => {
 
 
 
-
-
-
-
 //GREENHOUSE////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Get Calls /////////////////////////////////////////////////////////////
-/*
- TODO
- */
+
+// Route to get all greenhouse posts
+app.get("/api/greenhouse/get", (req, res) => {
+    db.query("SELECT * FROM greenhouse", (err, result) => {
+        if (err) {
+            console.log(err);
+        }
+        res.send(result);
+    });
+});
+
+// Route to get greenhouse from Id
+app.get("/api/greenhouse/getFromId/:id", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM greenhouse WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+// Route to get greenhouse from name
+app.get("/api/greenhouse/getFromName/:name", (req, res) => {
+    const name = req.params.name;
+    db.query(
+        "SELECT * FROM greenhouse WHERE name = ?", name,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
 
 
-//Post Calls /////////////////////////////////////////////////////////////
-//Delete Calls ///////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+//CURRENT RESEARCH////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Get Calls /////////////////////////////////////////////////////////////
+
+// Route to get all current_research posts
+app.get("/api/research/get", (req, res) => {
+    db.query("SELECT * FROM current_research", (err, result) => {
+        if (err) {
+            console.log(err);
+        }
+        res.send(result);
+    });
+});
+
+// Route to get current_research from Id
+app.get("/api/research/getFromId/:id", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM current_research WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+// Route to get current_research from title
+app.get("/api/research/getFromTitle/:title", (req, res) => {
+    const title = req.params.title;
+    db.query(
+        "SELECT * FROM current_research WHERE title = ?", title,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+
+//GREENHOUSE SPACE RATES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Get Calls /////////////////////////////////////////////////////////////
+
+// Route to get all space posts
+app.get("/api/space/get", (req, res) => {
+    db.query("SELECT * FROM greenhouse_space_rates", (err, result) => {
+        if (err) {
+            console.log(err);
+        }
+        res.send(result);
+    });
+});
+
+// Route to get space from Id
+app.get("/api/space/getFromId/:id", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM greenhouse_space_rates WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+//GREENHOUSE CHAMBER RENTAL RATES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Get Calls /////////////////////////////////////////////////////////////
+
+// Route to get all chamber rental posts
+app.get("/api/chamber/get", (req, res) => {
+    db.query("SELECT * FROM growth_chamber_rental_rates", (err, result) => {
+        if (err) {
+            console.log(err);
+        }
+        res.send(result);
+    });
+});
+
+// Route to get chamber rental from Id
+app.get("/api/chamber/getFromId/:id", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM growth_chamber_rental_rates WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+// Route to get chamber rental from period (daily weekly)
+app.get("/api/chamber/getFromPeriod/:rental_period", (req, res) => {
+    const rental_period = req.params.rental_period;
+    db.query(
+        "SELECT * FROM growth_chamber_rental_rates WHERE rental_period = ?", rental_period,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+
+
+
+//MANAGER RESPONSIBLITIES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Get Calls /////////////////////////////////////////////////////////////
+
+// Route to get all responibilities section posts
+app.get("/api/responibilities/get", (req, res) => {
+    db.query("SELECT * FROM manager_responibilities", (err, result) => {
+        if (err) {
+            console.log(err);
+        }
+        res.send(result);
+    });
+});
+
+// Route to get responibilities section from Id
+app.get("/api/space/getFromId/:id", (req, res) => {
+    const id = req.params.id;
+    db.query(
+        "SELECT * FROM manager_responibilities WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
 
 
 
