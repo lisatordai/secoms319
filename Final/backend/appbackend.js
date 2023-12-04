@@ -304,6 +304,22 @@ app.get("/api/chamber/getFromId/:id", (req, res) => {
     );
 });
 
+// Route to get chamber rental from period (daily weekly)
+app.get("/api/chamber/getFromPeriod/:rental_period", (req, res) => {
+    const rental_period = req.params.rental_period;
+    db.query(
+        "SELECT * FROM growth_chamber_rental_rates WHERE rental_period = ?", rental_period,
+        (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            res.send(result);
+        }
+    );
+});
+
+
+
 
 //MANAGER RESPONSIBLITIES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Get Calls /////////////////////////////////////////////////////////////
