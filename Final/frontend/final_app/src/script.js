@@ -1,13 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
-
+import axios from 'axios';
 import items from "./GreenHouse.json"
 
 
 
 
 
-
+ 
 const Header = (props) => {
 
   return (
@@ -154,6 +154,21 @@ const Content = (props) => {
     console.log(div);
     }
   } 
+
+  //get server data
+  const [data, setData] = useState([]);
+
+   useEffect(() => {
+      // Fetch data from the server
+      axios.get('http://localhost:3000/api/home/get')
+         .then((response) => {
+            setData(response.data);
+            console.log(response.data)
+         })
+         .catch((error) => {
+            console.error('Error fetching data:', error);
+         });
+   }, []);
   
 
   let content;
@@ -161,51 +176,16 @@ const Content = (props) => {
     case 'Home':
       content = (
         <div>
-          getMethod()
-          <pre id="showData"></pre>
-          <div id="goodmovies"></div>
-          <script>
-            function getMethod() {
-              fetch("http://localhost:8081/listSections")
-                .then((response) => response.json())
-                .then((data) => {
-                  console.log(data);
-                  var container = document.getElementById("showData");
-                  container.innerHTML = JSON.stringify(data, undefined, 2);
-                  loadText(data);
-                })
-              }
-            
-{ 
-            function loadText(SectionText) {
-              var mainContainer = document.getElementById("goodmovies");
-                for (var i = 0; i < SectionText.length; i++) {
-                  let title = SectionText[i].title;
-                  let text = SectionText[i].text;
-                  let url = SectionText[i].url;
-                  let urlButton = SectionText[i].url;
-                  let div = document.createElement("div");
-
-                if (url != null) {
-                  div.innerHTML = `
-                  <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
-                  <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
-                  <button onclick="${url}">${urlButton}</button>
-                  <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
-                }else {
-                div.innerHTML = `  
-                <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
-                <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
-                <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
-                }
-              mainContainer.appendChild(div);
-              console.log(div);
-              }
-            } }
-          </script>
-        </div>
-
-      );
+        {data.map((item) => (
+          <div key={item.id}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+            {item.url && <a href={item.url}>{item.url_button || 'Visit Website'}</a>}
+            <hr />
+          </div>
+        ))}
+      </div>
+    );
       break;
 
     case 'Managers':
