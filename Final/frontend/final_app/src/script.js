@@ -158,7 +158,6 @@ const Content = (props) => {
 
   let content;
   switch (props.page) {
-    
     case 'Home':
       content = (
         <div>
