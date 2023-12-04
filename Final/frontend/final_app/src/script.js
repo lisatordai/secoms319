@@ -158,6 +158,7 @@ const Content = (props) => {
 
   let content;
   switch (props.page) {
+    
     case 'Home':
       content = (
         <div>
@@ -228,7 +229,7 @@ const Content = (props) => {
       );
       break;
 
-      case 'the Greenhouses':
+    case 'the Greenhouses':
       content = ( 
         <div id="green-house-container">
           <h1 style={{marginTop:"30px"}}>About the Greenhouses</h1>
@@ -253,7 +254,7 @@ const Content = (props) => {
       );
       break;
 
-      case 'page5':
+    case 'page5':
       content = ( 
        <div id="green-house-container">
         <h1>Current Research</h1>
