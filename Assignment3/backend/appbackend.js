@@ -1,6 +1,7 @@
 //run mongo on mac
 //mongod --config /usr/local/etc/mongod.conf --fork
 
+//nodemon appbackend.js
 var express = require("express");
 var cors = require("cors");
 var app = express();
@@ -18,11 +19,15 @@ const dbName = "reactdata";
 const client = new MongoClient(url);
 const db = client.db(dbName);
 
+// Post : Create - Add one product at a time.
+// Get : Read – Display all available products.
+// Put : Update – Modify at least one property of the product (e.g., price)
+// Delete : Delete – Remove a product given its id property.
+
 app.get("/listProducts", async (req, res) => {
     await client.connect();
     console.log("Node connected successfully to GET MongoDB");
-    reactdata
-    users_edu
+
     const query = {};
     const results = await db
         .collection("fake_store")
@@ -33,6 +38,20 @@ app.get("/listProducts", async (req, res) => {
     console.log(results);
     res.status(200);
     res.send(results);
+});
+
+app.get("/:id", async (req, res) => {
+    const robotid = Number(req.params.id);
+    console.log("Robot to find :", robotid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": robotid };
+    const results = await db
+        .collection("fake_store")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
 app.listen(port, () => {

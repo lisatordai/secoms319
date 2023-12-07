@@ -4,16 +4,10 @@ import React, { useState } from "react";
 import { Products } from "./Products"
 import { Categories } from "./Categories"
 
-// function App() {
-//   return (
-//     <div >
-//       {Products[0].description}
-//       <img src={Products[0].image} />
-//     </div>
-//   );
-// }
 
 const render_products = (ProductsCategory) => {
+
+
   return <div className='category-section fixed'>
     <h2 className="text-3xl font-extrabold tracking-tight text-amber-500 category-title">Products ({ProductsCategory.length})</h2>
     <div className="m-6 p-3 mt-10 ml-0 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-10" style={{ maxHeight: '800px', overflowY: 'scroll' }}>
@@ -57,6 +51,8 @@ const App = () => {
     console.log("Step 5 : ", Products.length, ProductsCategory.length);
   }
 
+
+
   return (
     <div className="flex fixed flex-row">
       <div className="h-screen bg-red-800 p-3 xl:basis-1/5" style={{ minWidth: '65%' }}>
@@ -86,3 +82,41 @@ const App = () => {
 
 
 export default App;
+
+// function App() {
+//   return (
+//     <div >
+//       {Products[0].description}
+//       <img src={Products[0].image} />
+//     </div>
+//   );
+// }
+// function getMethod() {
+//   fetch('http://localhost:8081/listProducts')
+//     .then(response => response.json())
+//     .then(data => {
+//       console.log(data);
+//       var container = document.getElementById("showData");
+//       container.innerHTML = JSON.stringify(data, undefined, 2);
+//       loadProducts(data);
+//     })
+// };
+
+// function loadProducts(product) {
+//   var mainContainer = document.getElementById("goodmovies");
+//   for (var i = 0; i < product.length; i++) {
+//     let name = product[i].name;
+//     let price = product[i].price;
+//     let description = product[i].description;
+//     let imageUrl = product[i].imageUrl;
+//     let div = document.createElement("div");
+//     div.innerHTML = `
+//   <h3>${name}</h3>
+//   ${price} <br>
+//   ${description} <br>
+//   <img src=${imageUrl} width="200"> <br> <br>
+//   `;
+//     mainContainer.appendChild(div);
+//     console.log(div);
+//   }
+// }
