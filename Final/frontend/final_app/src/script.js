@@ -41,11 +41,11 @@ const Header = (props) => {
           <div style={{marginLeft:"155px"}} class="row w-100 justify-content-between">
             <div class="col-auto text-left">
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a>
+              {/* <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a> */}
+              {/* <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a> */}
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
-              <a class="btn btn-outline-primary">page6</a>
+              {/* <a class="btn btn-outline-primary">page6</a> */}
             </div>
           </div>
         </div>
@@ -90,17 +90,19 @@ const Content = (props) => {
   const [GreenHouse, setPlants] = useState([]);
 
   useEffect(() => {
-    fetch('./GreenHouse.json')
-      .then(response => response.json())
-      .then(GreenHouseData => {
-        console.log(GreenHouseData); // Log the fetched data
-        if (Array.isArray(GreenHouseData.House)) {
-          setPlants(GreenHouseData);
+    axios.get('http://localhost:4000/api/greenhouse/get')
+      .then((GreenHouseData) => {
+        // Log the fetched array data
+        console.log(GreenHouseData.data);
+  
+        if (Array.isArray(GreenHouseData.data)) {
+          // Set the state with the array data
+          setPlants(GreenHouseData.data);
         } else {
-          console.error('Error: plantsData.Plant is not an array', GreenHouse);
+          console.error('Error: GreenHouseData.House is not an array', GreenHouseData);
         }
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error fetching data:', error);
       });
   }, []);
@@ -110,7 +112,7 @@ const Content = (props) => {
 
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./Projects.json')
+    fetch('http://localhost:4000/api/research/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -120,12 +122,16 @@ const Content = (props) => {
       .then(data => {
         console.log('Fetched data:', data);
         setProjects(data);
-        console.log('test 1', projects);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
   }, []);
+  
+  // Log the state after it has been updated
+  useEffect(() => {
+    console.log('Projects state after setting data:', projects);
+  }, [projects]);
 
   let i = projects.length;
 
@@ -160,7 +166,7 @@ const Content = (props) => {
 
    useEffect(() => {
       // Fetch data from the server
-      axios.get('http://localhost:3000/api/home/get')
+      axios.get('http://localhost:4000/api/home/get')
          .then((response) => {
             setData(response.data);
             console.log(response.data)
@@ -175,12 +181,30 @@ const Content = (props) => {
   switch (props.page) {
     case 'Home':
       content = (
-        <div>
+        <div id="green-house-container">
+          <img style={{marginTop:"30px"}} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House Image"></img>
+          <div style={{marginBottom:"30px"}} id="green-label">Horticulture Hall greenhouse</div>
         {data.map((item) => (
           <div key={item.id}>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
-            {item.url && <a href={item.url}>{item.url_button || 'Visit Website'}</a>}
+            {item.url && (
+              <button
+                onClick={() => window.location.href = item.url}
+                style={{
+                  backgroundColor: '#1c3d1c',
+                  color: 'white',
+                  padding: '2px 170px', // Adjust the width by changing the padding
+                  borderRadius: '8px',
+                  display: 'block',
+                  margin: '0 auto',
+                  cursor: 'pointer',
+                  border: 'none'
+                }}
+              >
+                {item.url_button || 'Visit Website'}
+              </button>
+            )}
             <hr />
           </div>
         ))}
@@ -211,48 +235,45 @@ const Content = (props) => {
     case 'the Greenhouses':
       content = ( 
         <div id="green-house-container">
-          <h1 style={{marginTop:"30px"}}>About the Greenhouses</h1>
-        
-          <div  className="row row-cols-1 row-cols-md-3 g-4">
-            {GreenHouse.House.map((GreenHouse, index) => (
-              <div key={index} className="col">
-                <div className="card h-100">
-                  <img src={GreenHouse.url} className="card-img-top" alt={GreenHouse.alt} />
-                  <div className="card-body">
-                    <h5 className="card-title">{GreenHouse.GreenHouse}</h5>
-                    <p className="card-text">{GreenHouse.bio}</p>
-                  </div>
+        <h1 style={{ marginTop: "30px" }}>About the Greenhouses</h1>
+       { console.log("AHHHHHHHHHH")}
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          { GreenHouse.map((GreenHouse, index) => (
+            <div key={index} className="col">
+              <div className="card h-100">
+                <img src={GreenHouse.url} className="card-img-top" alt={GreenHouse.alt} />
+                <div className="card-body">
+                  <h5 className="card-title">{GreenHouse.GreenHouse}</h5>
+                  <p className="card-text">{GreenHouse.bio}</p>
                 </div>
               </div>
-            ))}
-          
+            </div>
+          ))}
         </div>
+      </div>
       
-      
-    </div>
       );
       break;
 
     case 'page5':
       content = ( 
-       <div id="green-house-container">
+        <div id="green-house-container">
         <h1>Current Research</h1>
-                <p>Welcome to the Shared Plant Growth Facilities Current Research page. Our facilities support a range of projects across various disciplines, providing a platform for scientific curiosity and discovery. Here are a few activities within our shared spaces that we are currently working on.</p>
-                <hr style={{ marginTop: "20px", color: "#CC0001"}} />
-    
-        
-          {projects.Projects.length > 0 ? (
-            projects.Projects.map((item, index) => (
-              <div key={index}>
-                <h3>{item.header}</h3>
-                <p>{item.info}</p>
-                <hr style={{ marginTop: "20px"}} />
-              </div>
-            ))
-          ) : (
-            <p>Loading... {i}</p>
-          )}
-        </div>
+        <p>Welcome to the Shared Plant Growth Facilities Current Research page. Our facilities support a range of projects across various disciplines, providing a platform for scientific curiosity and discovery. Here are a few activities within our shared spaces that we are currently working on.</p>
+        <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+      
+        {projects && projects.Projects && projects.Projects.length > 0 ? (
+          projects.Projects.map((item, index) => (
+            <div key={index}>
+              <h3>{item.header}</h3>
+              <p>{item.info}</p>
+              <hr style={{ marginTop: "20px" }} />
+            </div>
+          ))
+        ) : (
+          <p>Loading... {i}</p>
+        )}
+      </div>
   
       );
       break;

@@ -7,8 +7,8 @@ CREATE TABLE greenhouse (
 );
 INSERT INTO greenhouse (name, bio, url, alt) VALUES
 ('Agronomy greenhouse', 'Agronomy greenhouse Stuff', './images/Agronomy.jpg', 'Agronomy greenhouse photo'),
-('Agronomy Hall greenhouse', 'Plant', './images/plant1.jpg', 'plant1'),
+('Agronomy Hall greenhouse', 'Plant', './images/hold.jpg', 'plant1'),
 ('Plant Pathology greenhouse', 'Plant Pathology greenhousestuff', './images/Pathology.jpg', 'Plant Pathology greenhouse photo'),
-('Forestry greenhouse', 'Forestry greenhouse stuff', './images/plant1.jpg', 'Forestry greenhouse photo'),
+('Forestry greenhouse', 'Forestry greenhouse stuff', './images/hold.jpg', 'Forestry greenhouse photo'),
 ('Horticulture Hall greenhouse', 'Horticulture Hall greenhouse stuff', './images/Horticulture.jpg', 'Horticulture Hall greenhouse photo'),
-('ATRB greenhouse', 'ATRB greenhouse stuff', './images/plant1.jpg', 'ATRB greenhouse photo');
+('ATRB greenhouse', 'ATRB greenhouse stuff', './images/ATRB.jpg', 'ATRB greenhouse photo');

@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.padding{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+.paddingSM{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+/* top nav bar */
+.navbar {
+  padding: 0.1rem 1rem;
+  background-color: #343a40; /* Dark grey background color */
+  
+}
+
+.navbar .btn {
+  
+  color: white; /* Button text color */
+  border-color: transparent; /* Transparent button border */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  border-radius: 0; /* Remove rounded corners */
+  height: 30px;
+  }
+
+.navbar .btn:hover {
+  background-color: #6a6767; /* Light grey background color on hover */
+}
+
+.navbar2 {
+  padding: 0.1rem 1rem;
+  background-color: #F3F3F3; /* Dark grey background color */
+}
+
+
+.navbar2 .btn {
+  
+  color: rgb(41, 41, 41); /* Button text color */
+  border-color: transparent; /* Transparent button border */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  border-radius: 0; /* Remove rounded corners */
+
+  }
+
+.navbar2 .btn:hover {
+  background-color: #a19e9e; /* Light grey background color on hover */
+}
+
+.footer {
+  padding: 0.1rem 1rem;
+  background-color: #F3F3F3; /* Dark grey background color */
+  width: 100%;
+  height: auto
+
+}
+
+
+.footer .btn {
+  
+  color: #CC0001; /* Button text color */
+  border-color: transparent; /* Transparent button border */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  border-radius: 0; /* Remove rounded corners */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  
+
+  }
+
+.footer .btn:hover {
+  background-color: #a19e9e; /* Light grey background color on hover */
+}
+/* Spacer between button 2 and 3 */
+.spacer {
+  margin-right: 10px;
+}
+ /* Red header styles */
+ .red-header {
+  background-color: #CC0001; /* Red background color */
+  padding: 0.3rem 1rem;
+  width: "auto";
+  
+  text-align: left;
+  
+}
+
+.red-header img {
+  max-width: 450px;
+  height: auto;
+}
+.red-header p {
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+#green-house-container {
+  width: 66%; /* Set the width of the container */
+  display: block;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+#green-house-image {
+  width: 100%; /* Set the width of the image to 100% of the container */
+  height: 500px;
+  border-top-left-radius: 10px; /* Add border-radius to round the top-left corner */
+  border-top-right-radius: 10px; /* Add border-radius to round the top-right corner */
+
+}
+
+#green-label {
+  background-color: #1c3d1c; /* Dark green background color */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  font-size: 20px;
+  padding: 10px; /* Add padding to the label for better visibility */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-bottom-left-radius: 10px; /* Add border-radius to round the top-left corner */
+  border-bottom-right-radius: 10px; /* Add border-radius to round the top-right corner */
+}
