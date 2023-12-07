@@ -1,57 +1,71 @@
 import "./App.css";
 import logo from "./logo.png";
-import React, { useState } from "react";
-import { Products } from "./Products"
-import { Categories } from "./Categories"
-
+import React, { useState, useEffect } from "react";
+import { Categories } from "./Categories";
 
 const render_products = (ProductsCategory) => {
-
-
-  return <div className='category-section fixed'>
-    <h2 className="text-3xl font-extrabold tracking-tight text-amber-500 category-title">Products ({ProductsCategory.length})</h2>
-    <div className="m-6 p-3 mt-10 ml-0 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-10" style={{ maxHeight: '800px', overflowY: 'scroll' }}>
-      {/* Loop Products */}
-      {ProductsCategory.map((product, index) => (
-        <div key={index} className="group relative shadow-lg">
-          <div className=" min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hoover:opacity-75 lg:h-60 lg:aspect-none">
-
-            <img
-              alt="Product Image"
-              src={product.image}
-              className="w-full h-full object-center object-cover lg:w-full lg:h-full"
-            />
+  return (
+    <div className='category-section fixed'>
+      <h2 className="text-3xl font-extrabold tracking-tight text-amber-500 category-title">
+        Products ({ProductsCategory.length})
+      </h2>
+      <div
+        className="m-6 p-3 mt-10 ml-0 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-10"
+        style={{ maxHeight: '800px', overflowY: 'scroll' }}
+      >
+        {/* Loop Products */}
+        {ProductsCategory.map((product, index) => (
+          <div key={index} className="group relative shadow-lg">
+            <div className=" min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hoover:opacity-75 lg:h-60 lg:aspect-none">
+              <img
+                alt="Product Image"
+                src={product.image}
+                className="w-full h-full object-center object-cover lg:w-full lg:h-full"
+              />
+            </div>
+            <div className="flex justify-between p-3">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <a href={product.href}>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    <span style={{ fontSize: '16px', fontWeight: '600' }}>{product.title}</span>
+                  </a>
+                  <p>Tag - {product.category}</p>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">Rating: {product.rating.rate}</p>
+              </div>
+              <p className="text-sm font-medium text-green-600">${product.price}</p>
+            </div>
           </div>
-          <div className="flex justify-between p-3">
-            <div>
-              <h3 className="text-sm text-gray-700">
-                <a href={product.href}>
-                  <span aria-hidden="true" className="absolute inset-0" />
-                  <span style={{ fontSize: '16px', fontWeight: '600' }}>{product.title}</span>
-                </a>
-                <p>Tag - {product.category}</p>
-              </h3>
-              <p className="mt-1 text-sm text-gray-500">Rating: {product.rating.rate}</p> </div>
-            <p className="text-sm font-medium text-green-600">${product.price}</p> </div>
-        </div>
-      ))} </div>
-  </div>
-}
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const App = () => {
-  console.log("Step 1 : load Products in a useState.");
-  const [ProductsCategory, setProductsCategory] = useState(Products);
+  console.log("Step 1: Fetch Products from API");
+  const [ProductsCategory, setProductsCategory] = useState([]);
+  
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:8081/listProducts");
+        const data = await response.json();
+        setProductsCategory(data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   function handleClick(tag) {
-    console.log("Step 4 : in handleClick", tag);
-    let filtered = Products.filter(cat => cat.category === tag);
-    // modify useState
+    console.log("Step 4: in handleClick", tag);
+    let filtered = ProductsCategory.filter((cat) => cat.category === tag);
     setProductsCategory(filtered);
-    // ProductsCategory = filtered;
-    console.log("Step 5 : ", Products.length, ProductsCategory.length);
+    console.log("Step 5:", ProductsCategory.length);
   }
-
-
 
   return (
     <div className="flex fixed flex-row">
@@ -59,29 +73,33 @@ const App = () => {
         <img className="w-full" src={logo} alt="Sunset in the mountains" />
         <div className="px-6 py-4">
           <h1 className="text-3xl mb-2 font-bold text-amber-500"> Assignment 3 <br></br>Product Catalog App </h1>
-          {/* <p className="text-gray-700 text-white">
-            by - <b style={{ color: 'orange' }}>Design Shubham, Development Team 16</b>
-          </p> */}
-
           <div className="py-10">
-            {(Categories) ? <p className='text-amber-500'>Views: </p> : ''} {
-              Categories.map(tag => <button key={tag} className="inline-block bg-amber-500 rounded-full px-3 py-1 
-    text-sm font-semibold text-white mr-2 mt-2"
-                onClick={() => { handleClick(tag) }}>{tag}</button>)
-            }
+            {Categories ? <p className='text-amber-500'>Views: </p> : ''} 
+            {Categories.map((tag) => (
+              <button
+                key={tag}
+                className="inline-block bg-amber-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mt-2"
+                onClick={() => {
+                  handleClick(tag);
+                }}
+              >
+                {tag}
+              </button>
+            ))}
           </div>
         </div>
       </div>
       <div className="ml-5 p-10 xl:basis-4/5">
-        {console.log("Before render :", Products.length, ProductsCategory.length)}
-        {render_products(ProductsCategory)} </div>
-    </div >
+        {console.log("Before render:", ProductsCategory.length)}
+        {render_products(ProductsCategory)}
+      </div>
+    </div>
   );
-}//end app
-
-
+};
 
 export default App;
+
+
 
 // function App() {
 //   return (
