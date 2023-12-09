@@ -1,0 +1,26 @@
+[
+	{
+		"id" : 1,
+		"text" : "Aaron Brand shall manage the day-to-day operations of the Agronomy Greenhouse, Plant Pathology\nGreenhouse, Agronomy Hall teaching greenhouse, and Agronomy Hall growth chamber facilities. Pete\nLawlor shall manage the day-to-day operations of the Horticulture Hall greenhouse, ATRB greenhouse,\nand Horticulture Hall growth chamber facilities."
+	},
+	{
+		"id" : 2,
+		"text" : "The greenhouse managers shall be responsible for approving reservations in the RedBud system for\nusers who are planning experiments in the Shared Plant Growth Facilities. Billing shall be completed for\nthese reservations at regular intervals, which may vary by location. If billing is desired more regularly or\nat the end of a grant it can be requested."
+	},
+	{
+		"id" : 3,
+		"text" : "The greenhouse managers shall be responsible for setting greenhouse and growth chamber climate\nconditions including temperature and lighting settings, along with any other settings that may be\navailable from growth chambers (humidification, dehumidification, CO2, etc.)"
+	},
+	{
+		"id" : 4,
+		"text" : "The greenhouse managers shall be responsible for maintaining or reporting any maintenance issues of\nthe facilities including lighting, heating and cooling systems, benches, and any other systems that may\nbe installed in the facilities."
+	},
+	{
+		"id" : 5,
+		"text" : "The greenhouse managers shall be responsible for maintaining an inventory of commercially available\nbagged potting media, pots, and other standard items. Sand and topsoil mixes shall be requested at\nleast a week in advance. Additional custom soil mixes, pots, and other items needed for research\nprojects that may be more easily sourced by the greenhouse managers can be requested and provided\nat cost to the project or provided by the research for the project. Items that may need to be purchased\nshall be requested at least one month in advance. Some items may not be available in this timeframe\ndue to seasonalilty or current supply chain challenges, which the greenhouse managers shall notify the\nuser of so that projects can be modified or rescheduled appropriately."
+	},
+	{
+		"id" : 6,
+		"text" : "The greenhouse managers shall be responsible for investigating upgrades to the facilities that would be beneficial to users of the facilities, would increase the safety of users, ore the efficiency of the systems within the facilities. This could include different pots, potting media, fertilizers, equipment, etc. "
+	}
+]
