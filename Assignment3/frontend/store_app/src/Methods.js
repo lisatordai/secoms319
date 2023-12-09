@@ -1,1 +1,0 @@
-export const Methods = ["All", "Add", "Update", "Delete"];
