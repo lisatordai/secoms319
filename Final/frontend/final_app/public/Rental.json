@@ -1,0 +1,69 @@
+{
+    "Rental":
+    [
+        
+        {
+          "bilding": "Hort",
+          "room": "5B",
+          "offibench_floor_room": "1",
+          "sq_ft": "120",
+          "price_per_ft_sq": ".10",
+          "weekly_rate": "8.00"
+          
+        },
+        {
+            "bilding": "Hort",
+            "room": "5B",
+            "offibench_floor_room": "1",
+            "sq_ft": "120",
+            "price_per_ft_sq": ".10",
+            "weekly_rate": "8.00"
+            
+          },
+          {
+            "bilding": "Hort",
+            "room": "5B",
+            "offibench_floor_room": "1",
+            "sq_ft": "120",
+            "price_per_ft_sq": ".10",
+            "weekly_rate": "8.00"
+            
+          },
+          {
+            "bilding": "Hort",
+            "room": "5B",
+            "offibench_floor_room": "1",
+            "sq_ft": "120",
+            "price_per_ft_sq": ".10",
+            "weekly_rate": "8.00"
+            
+          },
+          {
+            "bilding": "Hort",
+            "room": "5B",
+            "offibench_floor_room": "1",
+            "sq_ft": "120",
+            "price_per_ft_sq": ".10",
+            "weekly_rate": "8.00"
+            
+          },
+          {
+            "bilding": "Hort",
+            "room": "5B",
+            "offibench_floor_room": "1",
+            "sq_ft": "120",
+            "price_per_ft_sq": ".10",
+            "weekly_rate": "8.00"
+            
+          },
+          {
+            "bilding": "Hort",
+            "room": "5B",
+            "offibench_floor_room": "1",
+            "sq_ft": "120",
+            "price_per_ft_sq": ".10",
+            "weekly_rate": "8.00"
+            
+          }
+    ]
+}

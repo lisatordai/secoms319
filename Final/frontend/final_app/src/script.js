@@ -41,7 +41,7 @@ const Header = (props) => {
           <div style={{marginLeft:"155px"}} class="row w-100 justify-content-between">
             <div class="col-auto text-left">
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
-              {/* <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a> */}
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
               {/* <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a> */}
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
@@ -112,7 +112,7 @@ const Content = (props) => {
 
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('http://localhost:4000/api/research/get')
+    fetch('./Projects.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -122,6 +122,26 @@ const Content = (props) => {
       .then(data => {
         console.log('Fetched data:', data);
         setProjects(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
+  const [managersData, setMData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from Projects.json
+    fetch('./Managers.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Fetched data:', data);
+        setMData(data);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -214,11 +234,20 @@ const Content = (props) => {
 
     case 'Managers':
       content = (
-        <div>
-          <p>
-            page 2 Managers
-          </p>
+        <div id="green-house-container">
+      <h1>Managers</h1>
+      {managersData.Manager.map((manager, index) => (
+        <div key={index}>
+          <h2>{manager.name}</h2>
+          <p><strong>Description:</strong> {manager.description}</p>
+          <p><strong>Office:</strong> {manager.office}</p>
+          <p><strong>Address:</strong> {manager.address_line_1}, {manager.address_line_2}</p>
+          <p><strong>Phone:</strong> {manager.phone_number}</p>
+          <p><strong>Email:</strong> {manager.email}</p>
+          <hr />
         </div>
+      ))}
+    </div>
       );
       break;
 
