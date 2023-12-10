@@ -1,0 +1,22 @@
+{
+  "name": "final_backend",
+  "version": "1.0.0",
+  "description": "Backend for final project",
+  "main": "appbackend.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "nodemon application.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "express"
+  ],
+  "author": "Lisa Tordai",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  }
+}
