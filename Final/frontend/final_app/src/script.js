@@ -125,7 +125,7 @@ const Content = (props) => {
    //Greenhouse import
   const [GreenHouse, setPlants] = useState([]);
   useEffect(() => {
-    axios.get('./greenhouse.json')
+    axios.get('http://localhost:4000/api/greenhouse/get')
       .then((GreenHouseData) => {
         // Log the fetched array data
         console.log(GreenHouseData.data);
@@ -154,6 +154,7 @@ const Content = (props) => {
         return response.json();
       })
       .then(data => {
+        console.log("TESTINGGGGGGGGGGGG")
         console.log('Fetched data:', data);
         setProjects(data);
       })
@@ -166,7 +167,7 @@ const Content = (props) => {
   const [rentalSpaces, setRData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./greenhouse_chamber_rental_rates.json')
+    fetch('./greenhouse_space_rates.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -186,7 +187,7 @@ const Content = (props) => {
   const [EquipData, setEData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./greenhouse_space_rates.json')
+    fetch('./greenhouse_chamber_rental_rates.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -209,8 +210,8 @@ const Content = (props) => {
 
 
   //grouping spaces by building and room
-   const groupedRentals = rentalSpaces.Rental
-   ? rentalSpaces.Rental.reduce((acc, rental) => {
+   const groupedRentals = rentalSpaces
+   ? rentalSpaces.reduce((acc, rental) => {
        const buildingKey = rental.building;
        const roomKey = rental.room;
  
@@ -281,73 +282,7 @@ const Content = (props) => {
       );
       break;
 
-    case 'Available Equipment':
-      content = (
-        <div id="green-house-container">
-          <div id="rental-container">
-          <h1 style={{ marginTop: "30px" }}>Available Rentals</h1>
-          <hr style={{ marginTop: "20px", borderTop: "3px solid #CC0001" }} />
-
-            
-            <h3 style={{ marginTop: "30px" }}>Equipment Rates</h3>
-            <hr style={{ marginTop: "20px", color: "#CC0001" }} />
-            <div className="row row-cols-1 row-cols-md-3 g-4">
-              {EquipData.Rental.map((rental, index) => (
-                <div key={index} className="col">
-                  <div className="card h-100">
-                    <div className="card-body">
-                      <h5 className="card-title">{rental.description}</h5>
-                      <p className="card-text">
-                        <strong>Rate:</strong> ${rental.rate} per {rental.rental_period}<br />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-         
-
-          <h3 style={{ marginTop: "30px" }}>Greenhouse Space</h3>
-          <hr style={{ marginTop: "20px", color: "#CC0001" }} />
-          {Object.keys(groupedRentals).map((building, index) => (
-  <div key={index} className="mb-4">
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">{building}</h5>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          {Object.keys(groupedRentals[building]).map((room, subIndex) => (
-            <div key={subIndex} className="col">
-              <div className="card h-100">
-                <div className="card-body">
-                  <p className="card-text">
-                    <strong>Room:</strong> {room}<br />
-                    {groupedRentals[building][room].map((rental, rentalIndex) => (
-                      <React.Fragment key={rentalIndex}>
-                        <pn>Spot:</pn> {rental.bench_floor_room}<br />
-                        <pn>Square Feet:</pn> {rental.sq_ft}<br />
-                        <pn>Price per Square Foot:</pn> ${rental.price_per_ft_sq}<br />
-                        <pn>Weekly Rate:</pn> ${rental.weekly_rate}<br />
-                        <hr style={{ marginTop: "20px", color: "Grey" }} />
-                      </React.Fragment>
-                    ))}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-))}
-            
-
-          </div>
-        </div>
-      );
-      break;
-
-    case 'the Greenhouses':
+      case 'the Greenhouses':
       content = ( 
         <div id="green-house-container">
         <h1 style={{ marginTop: "30px" }}>About the Greenhouses</h1>
@@ -377,11 +312,11 @@ const Content = (props) => {
         <p>Welcome to the Shared Plant Growth Facilities Current Research page. Our facilities support a range of projects across various disciplines, providing a platform for scientific curiosity and discovery. Here are a few activities within our shared spaces that we are currently working on.</p>
         <hr style={{ marginTop: "20px", color: "#CC0001" }} />
       
-        {projects && projects && projects.length > 0 ? (
+        {projects.length > 0 ? (
           projects.map((item, index) => (
             <div key={index}>
-              <h3>{item.header}</h3>
-              <p>{item.info}</p>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
               <hr style={{ marginTop: "20px" }} />
             </div>
           ))
@@ -393,6 +328,71 @@ const Content = (props) => {
       );
       break;
 
+    case 'Available Equipment':
+        content = (
+          <div id="green-house-container">
+            <div id="rental-container">
+            <h1 style={{ marginTop: "30px" }}>Available Rentals</h1>
+            <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+              
+              <h3 style={{ marginTop: "30px" }}>Equipment Rates</h3>
+              <hr style={{ marginTop: "20px", color: "black" }} />
+              <div className="row row-cols-1 row-cols-md-3 g-4">
+                {EquipData.map((rental, index) => (
+                  <div key={index} className="col">
+                    <div className="card h-100">
+                      <div className="card-body">
+                        <h5 className="card-title">{rental.description}</h5>
+                        <p className="card-text">
+                          <strong>Rate:</strong> ${rental.rate} per {rental.rental_period}<br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+           
+  
+            <h3 style={{ marginTop: "30px" }}>Greenhouse Space</h3>
+            <hr style={{ marginTop: "20px", color: "black" }} />
+            {Object.keys(groupedRentals).map((building, index) => (
+              <div key={index} className="mb-4">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">{building}</h5>
+                    <div className="row row-cols-1 row-cols-md-3 g-4">
+                      {Object.keys(groupedRentals[building]).map((room, subIndex) => (
+                        <div key={subIndex} className="col">
+                          <div className="card h-100">
+                            <div className="card-body">
+                              <p className="card-text">
+                                <strong>Room:</strong> {room}<br />
+                                {groupedRentals[building][room].map((rental, rentalIndex) => (
+                                  <React.Fragment key={rentalIndex}>
+                                    <pn>Spot:</pn> {rental.bench_floor_room}<br />
+                                    <pn>Square Feet:</pn> {rental.sq_ft}<br />
+                                    <pn>Price per Square Foot:</pn> ${rental.price_per_ft_sq}<br />
+                                    <pn>Weekly Rate:</pn> ${rental.weekly_rate}<br />
+                                    <hr style={{ marginTop: "20px", color: "Grey" }} />
+                                  </React.Fragment>
+                                ))}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+                        
+  
+            </div>
+          </div>
+        );
+        break;
+    
     default:
       content = <div>Default Content</div>;
   }

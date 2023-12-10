@@ -1,6 +1,6 @@
 [
 	{
-		"id" : 2,
+		"id" : 1,
 		"name" : "Aaron Brand",
 		"description" : "Oversees the daily operations of Agronomy Hall greenhouses and growth chambers, Agronomy Greenhouse, and Plant Pathology greenhouses",
 		"office" : "2104H Agronomy Hall",
@@ -10,7 +10,7 @@
 		"email" : "abrand@iastate.edu"
 	},
 	{
-		"id" : 1,
+		"id" : 2,
 		"name" : "Pete Lawlor",
 		"description" : "Oversees the daily operations of the Horticulture Hall greenhouses and growth chambers and ATRB greenhouses",
 		"office" : "64 Horticulture Hall",

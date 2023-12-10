@@ -142,6 +142,7 @@
   width: 66%; /* Set the width of the container */
   display: block;
   margin: 0 auto; /* Center the container horizontally */
+  margin-bottom: 30px;
 }
 
 #green-house-image {

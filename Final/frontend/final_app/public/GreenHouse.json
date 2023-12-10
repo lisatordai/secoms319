@@ -10,7 +10,7 @@
 		"id" : 2,
 		"name" : "Agronomy Hall greenhouse",
 		"bio" : "Plant",
-		"url" : "./images/plant1.jpg",
+		"url" : "./images/hold.jpg",
 		"alt" : "plant1"
 	},
 	{
@@ -24,7 +24,7 @@
 		"id" : 4,
 		"name" : "Forestry greenhouse",
 		"bio" : "Forestry greenhouse stuff",
-		"url" : "./images/plant1.jpg",
+		"url" : "./images/hold.jpg",
 		"alt" : "Forestry greenhouse photo"
 	},
 	{
@@ -38,7 +38,7 @@
 		"id" : 6,
 		"name" : "ATRB greenhouse",
 		"bio" : "ATRB greenhouse stuff",
-		"url" : "./images/plant1.jpg",
+		"url" : "./images/ATRB.jpg",
 		"alt" : "ATRB greenhouse photo"
 	}
 ]

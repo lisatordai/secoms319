@@ -1,16 +1,6 @@
 [
 	{
 		"id" : 1,
-		"name" : "Pete Lawlor",
-		"description" : "Oversees the daily operations of the Horticulture Hall greenhouses and growth chambers and ATRB greenhouses",
-		"office" : "64 Horticulture Hall",
-		"address_line_1" : "2206 Osborn Drive",
-		"address_line_2" : "Ames, IA 50011",
-		"phone_number" : "515-294-2100",
-		"email" : "palawlor@iastate.edu"
-	},
-	{
-		"id" : 2,
 		"name" : "Aaron Brand",
 		"description" : "Oversees the daily operations of Agronomy Hall greenhouses and growth chambers, Agronomy Greenhouse, and Plant Pathology greenhouses",
 		"office" : "2104H Agronomy Hall",
@@ -18,5 +8,16 @@
 		"address_line_2" : "Ames, IA 50011",
 		"phone_number" : "515-294-6904",
 		"email" : "abrand@iastate.edu"
+	},
+	{
+		"id" : 2,
+		"name" : "Pete Lawlor",
+		"description" : "Oversees the daily operations of the Horticulture Hall greenhouses and growth chambers and ATRB greenhouses",
+		"office" : "64 Horticulture Hall",
+		"address_line_1" : "2206 Osborn Drive",
+		"address_line_2" : "Ames, IA 50011",
+		"phone_number" : "515-294-2100",
+		"email" : "palawlor@iastate.edu"
 	}
+	
 ]
