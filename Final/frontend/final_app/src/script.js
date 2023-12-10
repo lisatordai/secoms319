@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import items from "./GreenHouse.json"
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -42,9 +45,10 @@ const Header = (props) => {
             <div class="col-auto text-left">
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
-              {/* <a class="btn btn-outline-primary" onClick={() => { props.setView('page3') }}>page3</a> */}
+             
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('page5') }}>Current Research</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
+               <a class="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a> 
               {/* <a class="btn btn-outline-primary">page6</a> */}
             </div>
           </div>
@@ -147,6 +151,46 @@ const Content = (props) => {
         console.error('Error fetching data:', error);
       });
   }, []);
+
+  const [rentalSpaces, setRData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from Projects.json
+    fetch('./GrowthRental.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Fetched data:', data);
+        setRData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
+  const [EquipData, setEData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from Projects.json
+    fetch('./Rental.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Fetched data:', data);
+        setEData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
   
   // Log the state after it has been updated
   useEffect(() => {
@@ -154,32 +198,6 @@ const Content = (props) => {
   }, [projects]);
 
   let i = projects.length;
-
-  function loadText(SectionText) {
-    var mainContainer = document.getElementById("goodmovies");
-      for (var i = 0; i < SectionText.length; i++) {
-        let title = SectionText[i].title;
-        let text = SectionText[i].text;
-        let url = SectionText[i].url;
-        let urlButton = SectionText[i].url;
-        let div = document.createElement("div");
-
-      if (url != null) {
-        div.innerHTML = `
-        <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
-        <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
-        <button onclick="${url}">${urlButton}</button>
-        <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
-      }else {
-      div.innerHTML = `  
-      <h4 style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}>${title}</h4>
-      <p style={{marginTop:"10px", marginLeft: "100px" , marginRight: "100px"}}> ${text}</p>
-      <hr style={{ marginTop: "20px", marginLeft: "100px", marginRight: "100px" }} />`
-      }
-    mainContainer.appendChild(div);
-    console.log(div);
-    }
-  } 
 
   //get server data
   const [data, setData] = useState([]);
@@ -195,7 +213,23 @@ const Content = (props) => {
             console.error('Error fetching data:', error);
          });
    }, []);
-  
+   const groupedRentals = rentalSpaces.Rental
+   ? rentalSpaces.Rental.reduce((acc, rental) => {
+       const buildingKey = rental.building;
+       const roomKey = rental.room;
+ 
+       if (!acc[buildingKey]) {
+         acc[buildingKey] = {};
+       }
+ 
+       if (!acc[buildingKey][roomKey]) {
+         acc[buildingKey][roomKey] = [];
+       }
+ 
+       acc[buildingKey][roomKey].push(rental);
+       return acc;
+     }, {})
+   : {};
 
   let content;
   switch (props.page) {
@@ -236,6 +270,7 @@ const Content = (props) => {
       content = (
         <div id="green-house-container">
       <h1>Managers</h1>
+      <hr style={{ marginTop: "20px", color: "#CC0001" }} />
       {managersData.Manager.map((manager, index) => (
         <div key={index}>
           <h2>{manager.name}</h2>
@@ -251,12 +286,68 @@ const Content = (props) => {
       );
       break;
 
-    case 'page3':
+    case 'Available Equipment':
       content = (
-        <div>
-          <p>
-            page 3
-          </p>
+        <div id="green-house-container">
+          <div id="rental-container">
+          <h1 style={{ marginTop: "30px" }}>Available Rentals</h1>
+          <hr style={{ marginTop: "20px", borderTop: "3px solid #CC0001" }} />
+
+            
+            <h3 style={{ marginTop: "30px" }}>Equipment Rates</h3>
+            <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+              {EquipData.Rental.map((rental, index) => (
+                <div key={index} className="col">
+                  <div className="card h-100">
+                    <div className="card-body">
+                      <h5 className="card-title">{rental.description}</h5>
+                      <p className="card-text">
+                        <strong>Rate:</strong> ${rental.rate} per {rental.rental_period}<br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+         
+
+          <h3 style={{ marginTop: "30px" }}>Greenhouse Space</h3>
+          <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+          {Object.keys(groupedRentals).map((building, index) => (
+  <div key={index} className="mb-4">
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title">{building}</h5>
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          {Object.keys(groupedRentals[building]).map((room, subIndex) => (
+            <div key={subIndex} className="col">
+              <div className="card h-100">
+                <div className="card-body">
+                  <p className="card-text">
+                    <strong>Room:</strong> {room}<br />
+                    {groupedRentals[building][room].map((rental, rentalIndex) => (
+                      <React.Fragment key={rentalIndex}>
+                        <pn>Spot:</pn> {rental.bench_floor_room}<br />
+                        <pn>Square Feet:</pn> {rental.sq_ft}<br />
+                        <pn>Price per Square Foot:</pn> ${rental.price_per_ft_sq}<br />
+                        <pn>Weekly Rate:</pn> ${rental.weekly_rate}<br />
+                        <hr style={{ marginTop: "20px", color: "Grey" }} />
+                      </React.Fragment>
+                    ))}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+))}
+            
+
+          </div>
         </div>
       );
       break;
@@ -265,7 +356,7 @@ const Content = (props) => {
       content = ( 
         <div id="green-house-container">
         <h1 style={{ marginTop: "30px" }}>About the Greenhouses</h1>
-       { console.log("AHHHHHHHHHH")}
+        <hr style={{ marginTop: "20px", color: "#CC0001" }} />
         <div className="row row-cols-1 row-cols-md-3 g-4">
           { GreenHouse.map((GreenHouse, index) => (
             <div key={index} className="col">
@@ -284,7 +375,7 @@ const Content = (props) => {
       );
       break;
 
-    case 'page5':
+    case 'Current Research':
       content = ( 
         <div id="green-house-container">
         <h1>Current Research</h1>

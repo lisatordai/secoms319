@@ -2,68 +2,77 @@
     "Rental":
     [
         
-        {
-          "bilding": "Hort",
-          "room": "5B",
-          "offibench_floor_room": "1",
-          "sq_ft": "120",
-          "price_per_ft_sq": ".10",
-          "weekly_rate": "8.00"
-          
-        },
-        {
-            "bilding": "Hort",
-            "room": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "bilding": "Hort",
-            "room": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "bilding": "Hort",
-            "room": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "bilding": "Hort",
-            "room": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "bilding": "Hort",
-            "room": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "bilding": "Hort",
-            "room": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          }
+      {
+        "Id" : 1,
+        "description" : "Conviron PGW40",
+        "rate" : 6.55,
+        "rental_period" : "Daily"
+      },
+      {
+        "Id" : 2,
+        "description" : "Conviron PGC Flex LED (per tier)",
+        "rate" : 5.95,
+        "rental_period" : "Daily"
+      },
+      {
+        "Id" : 3,
+        "description" : "Conviron PGC Flex Fluorescent (per tier)",
+        "rate" : 4.05,
+        "rental_period" : "Daily"
+      },
+      {
+        "Id" : 4,
+        "description" : "Conviron PGR15",
+        "rate" : 4.10,
+        "rental_period" : "Daily"
+      },
+      {
+        "Id" : 5,
+        "description" : "Conviron GEN1000",
+        "rate" : 3.45,
+        "rental_period" : "Daily"
+      },
+      {
+        "Id" : 6,
+        "description" : "Percival Scientific PGC-10",
+        "rate" : 3.50,
+        "rental_period" : "Weekly"
+      },
+      {
+        "Id" : 7,
+        "description" : "Percival Scientific E41 Tissue Culture",
+        "rate" : 3.50,
+        "rental_period" : "Weekly"
+      },
+      {
+        "Id" : 8,
+        "description" : "Percival Scientific E41L2",
+        "rate" : 3.50,
+        "rental_period" : "Weekly"
+      },
+      {
+        "Id" : 9,
+        "description" : "Percival Scientific E41L1 Low Temp",
+        "rate" : 3.50,
+        "rental_period" : "Weekly"
+      },
+      {
+        "Id" : 10,
+        "description" : "Percival Scientific E41L1 High Light",
+        "rate" : 3.50,
+        "rental_period" : "Weekly"
+      },
+      {
+        "Id" : 11,
+        "description" : "Percival Scientific PGC10x",
+        "rate" : 5.00,
+        "rental_period" : "Weekly"
+      },
+      {
+        "Id" : 12,
+        "description" : "Percival Scientific Large Low Temp",
+        "rate" : 5.00,
+        "rental_period" : "Weekly"
+      }
     ]
 }

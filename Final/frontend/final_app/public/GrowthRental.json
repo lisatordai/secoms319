@@ -2,41 +2,2183 @@
     "Rental":
     [
         
-        {
-          "description": "Hort",
-          "rate": "5B",
-          "offibench_floor_room": "1",
-          "sq_ft": "120",
-          "price_per_ft_sq": ".10",
-          "weekly_rate": "8.00"
-          
-        },
-        {
-            "description": "Hort",
-            "rate": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "description": "Hort",
-            "rate": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          },
-          {
-            "description": "Hort",
-            "rate": "5B",
-            "offibench_floor_room": "1",
-            "sq_ft": "120",
-            "price_per_ft_sq": ".10",
-            "weekly_rate": "8.00"
-            
-          }
+      {
+        "id" : 1,
+        "building" : "Hort",
+        "room" : "46A",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 2,
+        "building" : "Hort",
+        "room" : "46A",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 3,
+        "building" : "Hort",
+        "room" : "46A",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 4,
+        "building" : "Hort",
+        "room" : "46A",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 5,
+        "building" : "Hort",
+        "room" : "46B",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 300,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.00
+      },
+      {
+        "id" : 6,
+        "building" : "Hort",
+        "room" : "46C",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 7,
+        "building" : "Hort",
+        "room" : "46C",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 8,
+        "building" : "Hort",
+        "room" : "46C",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 9,
+        "building" : "Hort",
+        "room" : "46C",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 10,
+        "building" : "Hort",
+        "room" : "46D",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 11,
+        "building" : "Hort",
+        "room" : "46D",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 12,
+        "building" : "Hort",
+        "room" : "46D",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 13,
+        "building" : "Hort",
+        "room" : "46D",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 14,
+        "building" : "Hort",
+        "room" : "46E",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 15,
+        "building" : "Hort",
+        "room" : "46E",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 16,
+        "building" : "Hort",
+        "room" : "46E",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 17,
+        "building" : "Hort",
+        "room" : "46E",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 18,
+        "building" : "Hort",
+        "room" : "46F",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 19,
+        "building" : "Hort",
+        "room" : "46F",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 20,
+        "building" : "Hort",
+        "room" : "46F",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 21,
+        "building" : "Hort",
+        "room" : "46F",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 22,
+        "building" : "Hort",
+        "room" : "46G",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 23,
+        "building" : "Hort",
+        "room" : "46G",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 24,
+        "building" : "Hort",
+        "room" : "46G",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 25,
+        "building" : "Hort",
+        "room" : "46G",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 26,
+        "building" : "Hort",
+        "room" : "46H",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 27,
+        "building" : "Hort",
+        "room" : "46H",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 28,
+        "building" : "Hort",
+        "room" : "46H",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 29,
+        "building" : "Hort",
+        "room" : "46H",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 30,
+        "building" : "Hort",
+        "room" : "46J",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 476,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 47.60
+      },
+      {
+        "id" : 31,
+        "building" : "Hort",
+        "room" : "46K",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 476,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 47.60
+      },
+      {
+        "id" : 32,
+        "building" : "Hort",
+        "room" : "81",
+        "bench_floor_room" : "1",
+        "sq_ft" : 60,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.00
+      },
+      {
+        "id" : 33,
+        "building" : "Hort",
+        "room" : "81",
+        "bench_floor_room" : "2",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 34,
+        "building" : "Hort",
+        "room" : "81",
+        "bench_floor_room" : "3",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 35,
+        "building" : "Hort",
+        "room" : "81",
+        "bench_floor_room" : "4",
+        "sq_ft" : 80,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.00
+      },
+      {
+        "id" : 36,
+        "building" : "Hort",
+        "room" : "82",
+        "bench_floor_room" : "1",
+        "sq_ft" : 125,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 12.50
+      },
+      {
+        "id" : 37,
+        "building" : "Hort",
+        "room" : "82",
+        "bench_floor_room" : "2",
+        "sq_ft" : 125,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 12.50
+      },
+      {
+        "id" : 38,
+        "building" : "Hort",
+        "room" : "82",
+        "bench_floor_room" : "3",
+        "sq_ft" : 125,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 12.50
+      },
+      {
+        "id" : 39,
+        "building" : "Hort",
+        "room" : "82",
+        "bench_floor_room" : "4",
+        "sq_ft" : 125,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 12.50
+      },
+      {
+        "id" : 40,
+        "building" : "Hort",
+        "room" : "82",
+        "bench_floor_room" : "5",
+        "sq_ft" : 125,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 12.50
+      },
+      {
+        "id" : 41,
+        "building" : "Hort",
+        "room" : "83",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 800,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 80.00
+      },
+      {
+        "id" : 42,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "1",
+        "sq_ft" : 72,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 7.20
+      },
+      {
+        "id" : 43,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "2",
+        "sq_ft" : 94,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.40
+      },
+      {
+        "id" : 44,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "3",
+        "sq_ft" : 94,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.40
+      },
+      {
+        "id" : 45,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "4",
+        "sq_ft" : 94,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.40
+      },
+      {
+        "id" : 46,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "5",
+        "sq_ft" : 94,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.40
+      },
+      {
+        "id" : 47,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "6",
+        "sq_ft" : 94,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.40
+      },
+      {
+        "id" : 48,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "7",
+        "sq_ft" : 94,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.40
+      },
+      {
+        "id" : 49,
+        "building" : "Hort",
+        "room" : "86",
+        "bench_floor_room" : "8",
+        "sq_ft" : 72,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 7.20
+      },
+      {
+        "id" : 50,
+        "building" : "Hort",
+        "room" : "91",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 476,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 47.60
+      },
+      {
+        "id" : 51,
+        "building" : "Hort",
+        "room" : "92",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 604,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 60.40
+      },
+      {
+        "id" : 52,
+        "building" : "Plant Pathology",
+        "room" : "B110",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 559,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 55.90
+      },
+      {
+        "id" : 53,
+        "building" : "Plant Pathology",
+        "room" : "B111",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 281,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 28.10
+      },
+      {
+        "id" : 54,
+        "building" : "Plant Pathology",
+        "room" : "B112",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 281,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 28.10
+      },
+      {
+        "id" : 55,
+        "building" : "Plant Pathology",
+        "room" : "B113",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 281,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 28.10
+      },
+      {
+        "id" : 56,
+        "building" : "Plant Pathology",
+        "room" : "B114",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 566,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 56.60
+      },
+      {
+        "id" : 57,
+        "building" : "Plant Pathology",
+        "room" : "B115",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 338,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 33.80
+      },
+      {
+        "id" : 58,
+        "building" : "Plant Pathology",
+        "room" : "B116",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 566,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 56.60
+      },
+      {
+        "id" : 59,
+        "building" : "Plant Pathology",
+        "room" : "B117",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 281,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 28.10
+      },
+      {
+        "id" : 60,
+        "building" : "Plant Pathology",
+        "room" : "B118",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 281,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 28.10
+      },
+      {
+        "id" : 61,
+        "building" : "Plant Pathology",
+        "room" : "B119",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 281,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 28.10
+      },
+      {
+        "id" : 62,
+        "building" : "Plant Pathology",
+        "room" : "B120",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 560,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 56.00
+      },
+      {
+        "id" : 63,
+        "building" : "Plant Pathology",
+        "room" : "B121",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 554,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 55.40
+      },
+      {
+        "id" : 64,
+        "building" : "Plant Pathology",
+        "room" : "B122",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 65,
+        "building" : "Plant Pathology",
+        "room" : "B123",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 66,
+        "building" : "Plant Pathology",
+        "room" : "B124",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 67,
+        "building" : "Plant Pathology",
+        "room" : "B125",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 448,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 44.80
+      },
+      {
+        "id" : 68,
+        "building" : "Plant Pathology",
+        "room" : "B126",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 69,
+        "building" : "Plant Pathology",
+        "room" : "B127",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 70,
+        "building" : "Plant Pathology",
+        "room" : "B128",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 448,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 44.80
+      },
+      {
+        "id" : 71,
+        "building" : "Plant Pathology",
+        "room" : "B129",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 72,
+        "building" : "Plant Pathology",
+        "room" : "B130",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 73,
+        "building" : "Plant Pathology",
+        "room" : "B131",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 222,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 22.20
+      },
+      {
+        "id" : 74,
+        "building" : "Plant Pathology",
+        "room" : "B132",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 553,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 55.30
+      },
+      {
+        "id" : 75,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 4.38
+      },
+      {
+        "id" : 76,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 77,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 78,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 79,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 80,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 81,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 82,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 83,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 84,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.47
+      },
+      {
+        "id" : 85,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 86,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 87,
+        "building" : "ATRB",
+        "room" : "6110",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 88,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 89,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 90,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 91,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 92,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 93,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 94,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 95,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 96,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 97,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 98,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 99,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 100,
+        "building" : "ATRB",
+        "room" : "6120",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 101,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 102,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 103,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 104,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 105,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 106,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 107,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 108,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 109,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 110,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 111,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 112,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 113,
+        "building" : "ATRB",
+        "room" : "6302",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 114,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 115,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 116,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 117,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 118,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 119,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 120,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 121,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 122,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 123,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 124,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 125,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 126,
+        "building" : "ATRB",
+        "room" : "3606",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 127,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 128,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 129,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 130,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 131,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 132,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 133,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 134,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 135,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 136,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 137,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 138,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 139,
+        "building" : "ATRB",
+        "room" : "6310",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 140,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 141,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 142,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 143,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 144,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 145,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 146,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 147,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 148,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 149,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 150,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 151,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 152,
+        "building" : "ATRB",
+        "room" : "6314",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 153,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 154,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 155,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 156,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 157,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 158,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 159,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 160,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 161,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 162,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 163,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 164,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 165,
+        "building" : "ATRB",
+        "room" : "6318",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 166,
+        "building" : "ATRB",
+        "room" : "6322",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 167,
+        "building" : "ATRB",
+        "room" : "6322",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 168,
+        "building" : "ATRB",
+        "room" : "6322",
+        "bench_floor_room" : "Floor",
+        "sq_ft" : 455,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 113.75
+      },
+      {
+        "id" : 169,
+        "building" : "ATRB",
+        "room" : "6322",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 170,
+        "building" : "ATRB",
+        "room" : "6322",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 171,
+        "building" : "ATRB",
+        "room" : "6322",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 172,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "1a",
+        "sq_ft" : 32,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 8.02
+      },
+      {
+        "id" : 173,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "1b",
+        "sq_ft" : 44,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 10.99
+      },
+      {
+        "id" : 174,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "2a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 175,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "2b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 176,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "3a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 177,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "3b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 178,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "4a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 179,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "4b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 180,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "5a",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 181,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "5b",
+        "sq_ft" : 38,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 9.46
+      },
+      {
+        "id" : 182,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "6a",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 183,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "6b",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 184,
+        "building" : "ATRB",
+        "room" : "6326",
+        "bench_floor_room" : "6c",
+        "sq_ft" : 15,
+        "price_per_ft_sq" : 0.25,
+        "weekly_rate" : 3.67
+      },
+      {
+        "id" : 185,
+        "building" : "Agronomy Greenhouse",
+        "room" : "116",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 772,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 77.20
+      },
+      {
+        "id" : 186,
+        "building" : "Agronomy Greenhouse",
+        "room" : "117",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 788,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 78.80
+      },
+      {
+        "id" : 187,
+        "building" : "Agronomy Greenhouse",
+        "room" : "118",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 788,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 78.80
+      },
+      {
+        "id" : 188,
+        "building" : "Agronomy Greenhouse",
+        "room" : "119",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 788,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 78.80
+      },
+      {
+        "id" : 189,
+        "building" : "Agronomy Greenhouse",
+        "room" : "120",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 788,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 78.80
+      },
+      {
+        "id" : 190,
+        "building" : "Agronomy Greenhouse",
+        "room" : "121",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 520,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 52.00
+      },
+      {
+        "id" : 191,
+        "building" : "Agronomy Greenhouse",
+        "room" : "122",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 520,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 52.00
+      },
+      {
+        "id" : 192,
+        "building" : "Agronomy Greenhouse",
+        "room" : "123",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 520,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 52.00
+      },
+      {
+        "id" : 193,
+        "building" : "Agronomy Greenhouse",
+        "room" : "124",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 307,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.70
+      },
+      {
+        "id" : 194,
+        "building" : "Agronomy Greenhouse",
+        "room" : "125",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 307,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.70
+      },
+      {
+        "id" : 195,
+        "building" : "Agronomy Greenhouse",
+        "room" : "126",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 307,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.70
+      },
+      {
+        "id" : 196,
+        "building" : "Agronomy Greenhouse",
+        "room" : "127",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 307,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.70
+      },
+      {
+        "id" : 197,
+        "building" : "Agronomy Greenhouse",
+        "room" : "128",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 307,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.70
+      },
+      {
+        "id" : 198,
+        "building" : "Agronomy Greenhouse",
+        "room" : "129",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 307,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 30.70
+      },
+      {
+        "id" : 199,
+        "building" : "Agronomy Greenhouse",
+        "room" : "130",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 736,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 73.56
+      },
+      {
+        "id" : 200,
+        "building" : "Agronomy Greenhouse",
+        "room" : "131",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 674,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 67.43
+      },
+      {
+        "id" : 201,
+        "building" : "Agronomy Greenhouse",
+        "room" : "150",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 1400,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 140.00
+      },
+      {
+        "id" : 202,
+        "building" : "Agronomy Greenhouse",
+        "room" : "150A",
+        "bench_floor_room" : "Room",
+        "sq_ft" : 1400,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 140.00
+      },
+      {
+        "id" : 203,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 1",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 204,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 2",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 205,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 3",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 206,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 4",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 207,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Ground Bed",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 208,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 5",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 209,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 6",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 210,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 7",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 211,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 8",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 212,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Ground Bed",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 213,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 9",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 214,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 10",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 215,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 11",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 216,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G525A",
+        "bench_floor_room" : "Bench 12",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 217,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 1",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 218,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 2",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 219,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 3",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 220,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 4",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 221,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 5",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 222,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Ground Bed",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 223,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 6",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 224,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 7",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 225,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 8",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 226,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 9",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 227,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 10",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 228,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 11",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 229,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 12",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 230,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 13",
+        "sq_ft" : 36,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 3.60
+      },
+      {
+        "id" : 231,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 14",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 232,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 15",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 233,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 16",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 234,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 17",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 235,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G533A",
+        "bench_floor_room" : "Bench 18",
+        "sq_ft" : 18,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 1.80
+      },
+      {
+        "id" : 236,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541B",
+        "bench_floor_room" : "Ground Bed",
+        "sq_ft" : 68,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.75
+      },
+      {
+        "id" : 237,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541B",
+        "bench_floor_room" : "Ground Bed",
+        "sq_ft" : 150,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 15.00
+      },
+      {
+        "id" : 238,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541B",
+        "bench_floor_room" : "Ground Bed",
+        "sq_ft" : 68,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.75
+      },
+      {
+        "id" : 239,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541A",
+        "bench_floor_room" : "Bench 1",
+        "sq_ft" : 90,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 9.00
+      },
+      {
+        "id" : 240,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541A",
+        "bench_floor_room" : "Bench 2",
+        "sq_ft" : 68,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.75
+      },
+      {
+        "id" : 241,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541A",
+        "bench_floor_room" : "Bench 3",
+        "sq_ft" : 68,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 6.75
+      },
+      {
+        "id" : 242,
+        "building" : "Agronomy Hall Teaching",
+        "room" : "G541A",
+        "bench_floor_room" : "Bench 4",
+        "sq_ft" : 83,
+        "price_per_ft_sq" : 0.10,
+        "weekly_rate" : 8.25
+      }
     ]
 }
