@@ -1,7 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import items from "./GreenHouse.json"
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -88,44 +91,10 @@ const Footer = () => {
 
 const Content = (props) => {
 
-  //home import
-  const [data, setData] = useState([]);
-   useEffect(() => {
-      // Fetch data from the server
-      axios.get('./home.json')
-         .then((response) => {
-            setData(response.data);
-            console.log(response.data)
-         })
-         .catch((error) => {
-            console.error('Error fetching data:', error);
-         });
-   }, []);
-
-       //managers import
-  const [managersData, setMData] = useState([]);
-  useEffect(() => {
-    // Fetch data from Projects.json
-    fetch('./manager.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log('Fetched data:', data);
-        setMData(data);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
-
-   //Greenhouse import
   const [GreenHouse, setPlants] = useState([]);
+
   useEffect(() => {
-    axios.get('./greenhouse.json')
+    axios.get('http://localhost:4000/api/greenhouse/get')
       .then((GreenHouseData) => {
         // Log the fetched array data
         console.log(GreenHouseData.data);
@@ -142,11 +111,12 @@ const Content = (props) => {
       });
   }, []);
 
-  // current research iport
+
   const [projects, setProjects] = useState([]);
+
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./current_research.json')
+    fetch('./Projects.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -162,11 +132,31 @@ const Content = (props) => {
       });
   }, []);
 
-  //rental space rates import
-  const [rentalSpaces, setRData] = useState([]);
+  const [managersData, setMData] = useState([]);
+
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./greenhouse_chamber_rental_rates.json')
+    fetch('./Managers.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Fetched data:', data);
+        setMData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
+  const [rentalSpaces, setRData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from Projects.json
+    fetch('./GrowthRental.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -182,11 +172,11 @@ const Content = (props) => {
       });
   }, []);
 
-  //equipment rental rates
   const [EquipData, setEData] = useState([]);
+
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./greenhouse_space_rates.json')
+    fetch('./Rental.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -207,8 +197,22 @@ const Content = (props) => {
     console.log('Projects state after setting data:', projects);
   }, [projects]);
 
+  let i = projects.length;
 
-  //grouping spaces by building and room
+  //get server data
+  const [data, setData] = useState([]);
+
+   useEffect(() => {
+      // Fetch data from the server
+      axios.get('./home.json')
+         .then((response) => {
+            setData(response.data);
+            console.log(response.data)
+         })
+         .catch((error) => {
+            console.error('Error fetching data:', error);
+         });
+   }, []);
    const groupedRentals = rentalSpaces.Rental
    ? rentalSpaces.Rental.reduce((acc, rental) => {
        const buildingKey = rental.building;
@@ -224,7 +228,8 @@ const Content = (props) => {
  
        acc[buildingKey][roomKey].push(rental);
        return acc;
-     }, {}): {};
+     }, {})
+   : {};
 
   let content;
   switch (props.page) {
@@ -266,14 +271,14 @@ const Content = (props) => {
         <div id="green-house-container">
       <h1>Managers</h1>
       <hr style={{ marginTop: "20px", color: "#CC0001" }} />
-      {managersData.map((item, index) => (
+      {managersData.Manager.map((manager, index) => (
         <div key={index}>
-          <h2>{item.name}</h2>
-          <p><strong>Description:</strong> {item.description}</p>
-          <p><strong>Office:</strong> {item.office}</p>
-          <p><strong>Address:</strong> {item.address_line_1}, {item.address_line_2}</p>
-          <p><strong>Phone:</strong> {item.phone_number}</p>
-          <p><strong>Email:</strong> {item.email}</p>
+          <h2>{manager.name}</h2>
+          <p><strong>Description:</strong> {manager.description}</p>
+          <p><strong>Office:</strong> {manager.office}</p>
+          <p><strong>Address:</strong> {manager.address_line_1}, {manager.address_line_2}</p>
+          <p><strong>Phone:</strong> {manager.phone_number}</p>
+          <p><strong>Email:</strong> {manager.email}</p>
           <hr />
         </div>
       ))}
@@ -377,8 +382,8 @@ const Content = (props) => {
         <p>Welcome to the Shared Plant Growth Facilities Current Research page. Our facilities support a range of projects across various disciplines, providing a platform for scientific curiosity and discovery. Here are a few activities within our shared spaces that we are currently working on.</p>
         <hr style={{ marginTop: "20px", color: "#CC0001" }} />
       
-        {projects && projects && projects.length > 0 ? (
-          projects.map((item, index) => (
+        {projects && projects.Projects && projects.Projects.length > 0 ? (
+          projects.Projects.map((item, index) => (
             <div key={index}>
               <h3>{item.header}</h3>
               <p>{item.info}</p>
@@ -386,7 +391,7 @@ const Content = (props) => {
             </div>
           ))
         ) : (
-          <p>Loading...</p>
+          <p>Loading... {i}</p>
         )}
       </div>
   

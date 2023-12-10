@@ -1,41 +1,44 @@
-{
-    "House": [
-        {
-            "GreenHouse": "Agronomy greenhouse",
-            "bio": " Agronomy greenhouse Stuff",
-            "url": "./images/Agronomy.jpg",
-            "alt": "Agronomy greenhouse photo"
-        },
-        {
-            "GreenHouse": "Agronomy Hall greenhouse",
-            "bio": " Plant",
-            "url": "./images/hold.jpg",
-            "alt": "plant1"
-        },
-        {
-            "GreenHouse": "Plant Pathology greenhouse",
-            "bio": " Plant Pathology greenhousestuff",
-            "url": "./images/Pathologh.jpg",
-            "alt": "Plant Pathology greenhouse photo"
-        },
-        {
-            "GreenHouse": "Forestry greenhouse",
-            "bio": " Forestry greenhouse stuff",
-            "url": "./images/hold.jpg",
-            "alt": "Forestry greenhouse photo"
-        },
-        {
-            "GreenHouse": "Horticulture Hall greenhouse",
-            "bio": " Horticulture Hall greenhouse stuff",
-            "url": "./images/Horticulture.jpg",
-            "alt": "Horticulture Hall greenhouse photo"
-        },
-        {
-            "GreenHouse": "ATRB greenhouse",
-            "bio": " ATRB greenhouse stuff",
-            "url": "./images/ATRB.jpg",
-            "alt": "ATRB greenhouse photo"
-        }
-        
-    ]
-}
+[
+	{
+		"id" : 1,
+		"name" : "Agronomy greenhouse",
+		"bio" : "Agronomy greenhouse Stuff",
+		"url" : "./images/Agronomy.jpg",
+		"alt" : "Agronomy greenhouse photo"
+	},
+	{
+		"id" : 2,
+		"name" : "Agronomy Hall greenhouse",
+		"bio" : "Plant",
+		"url" : "./images/plant1.jpg",
+		"alt" : "plant1"
+	},
+	{
+		"id" : 3,
+		"name" : "Plant Pathology greenhouse",
+		"bio" : "Plant Pathology greenhousestuff",
+		"url" : "./images/Pathology.jpg",
+		"alt" : "Plant Pathology greenhouse photo"
+	},
+	{
+		"id" : 4,
+		"name" : "Forestry greenhouse",
+		"bio" : "Forestry greenhouse stuff",
+		"url" : "./images/plant1.jpg",
+		"alt" : "Forestry greenhouse photo"
+	},
+	{
+		"id" : 5,
+		"name" : "Horticulture Hall greenhouse",
+		"bio" : "Horticulture Hall greenhouse stuff",
+		"url" : "./images/Horticulture.jpg",
+		"alt" : "Horticulture Hall greenhouse photo"
+	},
+	{
+		"id" : 6,
+		"name" : "ATRB greenhouse",
+		"bio" : "ATRB greenhouse stuff",
+		"url" : "./images/plant1.jpg",
+		"alt" : "ATRB greenhouse photo"
+	}
+]
