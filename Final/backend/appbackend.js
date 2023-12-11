@@ -75,6 +75,28 @@ app.get("/api/research/getFromId/:id", async (req, res) => {
 });
 
 //ADD, UPDATE, DELETE 
+//Add new research section
+app.post("/api/research/add", async (req, res) => {
+    try {
+        await client.connect();
+        console.log("Node connected successfully to MongoDB");
+
+        const newProduct = req.body;
+
+        // Insert the new section into the "current_research" collection
+        const result = await db.collection("current_research").insertOne(newProduct);
+
+        console.log("Inserted new section with ID:", result.insertedId);
+
+        res.status(201).json({ message: 'Research section added successfully' });
+    } catch (error) {
+        console.error('Error adding section:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        await client.close();
+    }
+});
+
 //Update research description text
 app.put("/api/research/update", async (req, res) => {
     try {
