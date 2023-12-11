@@ -151,40 +151,39 @@ app.get("/api/greenhouse/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
-// CURRENT RESEARCH
+// CURRENT RESEARCH ///////////////////////////////////////////////////////////////////////////////
 // Get all current_research posts
-app.get("/api/research/get", (req, res) => {
-    const collection = database.collection("current_research");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/research/get
+app.get("/api/research/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("current_research")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
 });
 
 // Get current_research from Id
-app.get("/api/research/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("current_research");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
-});
-
-// Get current_research from title
-app.get("/api/research/getFromTitle/:title", (req, res) => {
-    const title = req.params.title;
-    const collection = database.collection("current_research");
-    collection.findOne({ title: title }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/research/getFromId/1
+app.get("/api/research/getFromId/:id", async (req, res) => {
+    const researchid = Number(req.params.id);
+    console.log("Manager to find :", researchid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": researchid };
+    const results = await db
+        .collection("manager")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
 // GREENHOUSE SPACE RATES
