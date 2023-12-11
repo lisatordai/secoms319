@@ -355,6 +355,24 @@ app.get("/api/responsibilities/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
+// DATA ////////////////////////////////////////////////////////////////////////////////////////
+// Get all data posts from database, Raspberry Pi sends the data to database
+//http://localhost:8081/api/data/get
+app.get("/api/data/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("data")
+        .find(query)
+        .limit(300)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
+});
 
 
 
