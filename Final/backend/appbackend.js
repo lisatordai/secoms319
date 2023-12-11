@@ -366,7 +366,6 @@ app.get("/api/data/get", async (req, res) => {
     const results = await db
         .collection("data")
         .find(query)
-        .limit(300)
         .toArray();
 
     console.log(results);
