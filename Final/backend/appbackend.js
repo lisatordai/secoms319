@@ -45,8 +45,9 @@ client.connect(err => {
     }
 });
 
-// HOME
+// HOME //////////////////////////////////////////////////////////////////////////////////////////
 // Get all posts
+//http://localhost:8081/api/home/get
 app.get("/api/home/get", async (req, res) => {
     await client.connect();
     console.log("Node connected successfully to GET MongoDB");
@@ -64,6 +65,7 @@ app.get("/api/home/get", async (req, res) => {
 });
 
 // Get one section for home from ID
+//http://localhost:8081/api/home/getFromId/1
 app.get("/api/home/getFromId/:id", async (req, res) => {
     const sectionid = Number(req.params.id);
     console.log("Home section to find :", sectionid);
@@ -78,56 +80,40 @@ app.get("/api/home/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
-// Get one section for home from title
-app.get("/api/home/getFromTitle/:title", async (req, res) => {
-    const robotid = Number(req.params.id);
-    console.log("Robot to find :", robotid);
+
+// MANAGER ////////////////////////////////////////////////////////////////////////////////////////
+// Get all manager posts
+//http://localhost:8081/api/manager/get
+app.get("/api/manager/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("manager")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
+});
+
+// Get manager from Id
+//http://localhost:8081/api/manager/getFromId/1
+app.get("/api/manager/getFromId/:id", async (req, res) => {
+    const managerid = Number(req.params.id);
+    console.log("Manager to find :", managerid);
     await client.connect();
     console.log("Node connected successfully to GET-id MongoDB");
-    const query = { "id": robotid };
+    const query = { "id": managerid };
     const results = await db
-        .collection("fake_store")
+        .collection("manager")
         .findOne(query)
     console.log("Results :", results);
     if (!results) res.send("Not Found").status(404);
     else res.send(results).status(200);
-});
-
-
-// MANAGER
-// Get all manager posts
-app.get("/api/manager/get", (req, res) => {
-    const collection = database.collection("manager");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
-});
-
-// Get manager from Id
-app.get("/api/manager/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("manager");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
-});
-
-// Get manager from name
-app.get("/api/manager/getFromName/:name", (req, res) => {
-    const name = req.params.name;
-    const collection = database.collection("manager");
-    collection.findOne({ name: name }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
 });
 
 // GREENHOUSE
