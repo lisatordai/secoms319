@@ -223,6 +223,7 @@ app.get("/api/space/getFromId/:id", async (req, res) => {
 
 // GREENHOUSE CHAMBER RENTAL RATES ////////////////////////////////////////////////////////////////
 // Get all chamber rental posts
+//Id is capital in db
 //http://localhost:8081/api/chamber/get
 app.get("/api/chamber/get", async (req, res) => {
     await client.connect();
@@ -256,29 +257,51 @@ app.get("/api/chamber/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
-// MANAGER RESPONSIBILITIES ///////////////////////////////////////////////////////
+// MANAGER RESPONSIBILITIES //////////////////////////////////////////////////////////////////////
 // Get all responsibilities section posts
-app.get("/api/responsibilities/get", (req, res) => {
-    const collection = database.collection("manager_responsibilities");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/responsibilities/get
+app.get("/api/responsibilities/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("manager_responsibilities")
+        .find(query)
+        .limit(300)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
 });
 
 // Get responsibilities section from Id
-app.get("/api/responsibilities/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("manager_responsibilities");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+app.get("/api/responsibilities/getFromId/:id", async (req, res) => {
+    const myid = Number(req.params.id);
+    console.log("Chamber to find :", myid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": myid };
+    const results = await db
+        .collection("manager_responsibilities")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(port, () => {
     console.log("App listening at http://%s:%s", host, port);
