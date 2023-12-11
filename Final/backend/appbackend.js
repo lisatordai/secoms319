@@ -39,6 +39,12 @@ client.connect(err => {
 });
 
 
+
+
+
+
+
+
 // CURRENT RESEARCH ///////////////////////////////////////////////////////////////////////////////
 // Get all current_research posts
 //http://localhost:8081/api/research/get
@@ -180,6 +186,8 @@ app.get("/api/home/getFromId/:id", async (req, res) => {
 });
 
 
+
+
 // MANAGER ////////////////////////////////////////////////////////////////////////////////////////
 // Get all manager posts
 //http://localhost:8081/api/manager/get
@@ -214,6 +222,9 @@ app.get("/api/manager/getFromId/:id", async (req, res) => {
     if (!results) res.send("Not Found").status(404);
     else res.send(results).status(200);
 });
+
+
+
 
 // GREENHOUSE ////////////////////////////////////////////////////////////////////////////////////
 // Get all greenhouse posts
@@ -250,6 +261,9 @@ app.get("/api/greenhouse/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
+
+
+
 // GREENHOUSE SPACE RATES ////////////////////////////////////////////////////////////////////////
 // Get all space posts
 //http://localhost:8081/api/space/get
@@ -284,6 +298,9 @@ app.get("/api/space/getFromId/:id", async (req, res) => {
     if (!results) res.send("Not Found").status(404);
     else res.send(results).status(200);
 });
+
+
+
 
 // GREENHOUSE CHAMBER RENTAL RATES ////////////////////////////////////////////////////////////////
 // Get all chamber rental posts
@@ -321,6 +338,9 @@ app.get("/api/chamber/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
+
+
+
 // MANAGER RESPONSIBILITIES //////////////////////////////////////////////////////////////////////
 // Get all responsibilities section posts
 //http://localhost:8081/api/responsibilities/get
@@ -339,6 +359,9 @@ app.get("/api/responsibilities/get", async (req, res) => {
     res.status(200);
     res.send(results);
 });
+
+
+
 
 // Get responsibilities section from Id
 app.get("/api/responsibilities/getFromId/:id", async (req, res) => {
@@ -372,6 +395,12 @@ app.get("/api/data/get", async (req, res) => {
     res.status(200);
     res.send(results);
 });
+
+
+
+
+
+
 
 
 
