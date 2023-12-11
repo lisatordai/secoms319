@@ -64,27 +64,33 @@ app.get("/api/home/get", async (req, res) => {
 });
 
 // Get one section for home from ID
-app.get("/api/home/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("home");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+app.get("/api/home/getFromId/:id", async (req, res) => {
+    const sectionid = Number(req.params.id);
+    console.log("Home section to find :", sectionid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": sectionid };
+    const results = await db
+        .collection("home")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
 // Get one section for home from title
-app.get("/api/home/getFromTitle/:title", (req, res) => {
-    const title = req.params.title;
-    const collection = database.collection("home");
-    collection.findOne({ title: title }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+app.get("/api/home/getFromTitle/:title", async (req, res) => {
+    const robotid = Number(req.params.id);
+    console.log("Robot to find :", robotid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": robotid };
+    const results = await db
+        .collection("fake_store")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
 
