@@ -76,14 +76,14 @@ app.get("/api/research/getFromId/:id", async (req, res) => {
 
 //ADD, UPDATE, DELETE 
 //Update research description text
-app.put("/update", async (req, res) => {
+app.put("/api/research/update", async (req, res) => {
     try {
         const { researchId, newText } = req.body;
 
         await client.connect();
         console.log("Node connected successfully to MongoDB");
 
-        const result = await db.collection("fake_store").updateOne(
+        const result = await db.collection("current_research").updateOne(
             { "id": Number(researchId) },
             { $set: { "text": newText } }
         );
@@ -100,6 +100,28 @@ app.put("/update", async (req, res) => {
         await client.close();
     }
 });
+
+app.delete("/api/research/delete", async (req, res) => {
+    await client.connect();
+    // const keys = Object.keys(req.body);
+    const values = Object.values(req.body);
+    const id = values[0]; // id
+    console.log("Product to delete :", id);
+    const query = { id: id };
+    const results = await db.collection("current_research").deleteOne(query);
+    res.status(200);
+    res.send(results);
+});
+
+
+
+
+
+
+
+
+
+
 // HOME //////////////////////////////////////////////////////////////////////////////////////////
 // Get all posts
 //http://localhost:8081/api/home/get
