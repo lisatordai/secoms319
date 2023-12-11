@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, textarea, button {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  /* border */
+  border: 1px solid #161111; 
+  border-radius: 4px;    
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffc107; /* Amber color */
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.student {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ffc107; /* Amber color */
+  border-radius: 10px;
+}
+
+.student-name {
+  color: #ffc107; /* Amber color */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.student-email {
+  font-size: 16px;
+  margin-top: 10px;
+}
