@@ -12,14 +12,21 @@
 //Run
 //nodemon appbackend.js
 
-const express = require("express");
-const MongoClient = require("mongodb").MongoClient;
-const cors = require("cors");
-const app = express();
-const PORT = 4000;
+var express = require("express");
+var cors = require("cors");
+var app = express();
+var fs = require("fs");
+var bodyParser = require("body-parser"); app.use(cors());
+app.use(bodyParser.json());
+const port = "8081";
+const host = "localhost";
 
-const uri = "mongodb+srv://ltordai:IxbzvnbKkDEhmMcf@cluster0.8grfzis.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const { MongoClient } = require("mongodb") 
+
+const url = "mongodb+srv://ltordai:IxbzvnbKkDEhmMcf@cluster0.8grfzis.mongodb.net/test?retryWrites=true&w=majority";
+const dbName = "final";
+const client = new MongoClient(url);
+const db = client.db(dbName);
 
 
 app.use(cors());
@@ -40,14 +47,20 @@ client.connect(err => {
 
 // HOME
 // Get all posts
-app.get("/api/home/get", (req, res) => {
-    const collection = database.collection("home");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+app.get("/api/home/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("home")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
 });
 
 // Get one section for home from ID
@@ -267,6 +280,6 @@ app.get("/api/responsibilities/getFromId/:id", (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on ${PORT}`);
+app.listen(port, () => {
+    console.log("App listening at http://%s:%s", host, port);
 });
