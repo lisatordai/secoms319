@@ -116,40 +116,39 @@ app.get("/api/manager/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
-// GREENHOUSE
+// GREENHOUSE ////////////////////////////////////////////////////////////////////////////////////
 // Get all greenhouse posts
-app.get("/api/greenhouse/get", (req, res) => {
-    const collection = database.collection("greenhouse");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/greenhouse/get
+app.get("/api/greenhouse/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("greenhouse")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
 });
 
 // Get greenhouse from Id
-app.get("/api/greenhouse/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("greenhouse");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
-});
-
-// Get greenhouse from name
-app.get("/api/greenhouse/getFromName/:name", (req, res) => {
-    const name = req.params.name;
-    const collection = database.collection("greenhouse");
-    collection.findOne({ name: name }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/greenhouse/getFromId/1
+app.get("/api/greenhouse/getFromId/:id", async (req, res) => {
+    const greenhouseid = Number(req.params.id);
+    console.log("Manager to find :", greenhouseid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": greenhouseid };
+    const results = await db
+        .collection("manager")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
 // CURRENT RESEARCH
