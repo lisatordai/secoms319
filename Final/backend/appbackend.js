@@ -223,15 +223,16 @@ app.get("/api/space/getFromId/:id", async (req, res) => {
 
 // GREENHOUSE CHAMBER RENTAL RATES ////////////////////////////////////////////////////////////////
 // Get all chamber rental posts
+//http://localhost:8081/api/chamber/get
 app.get("/api/chamber/get", async (req, res) => {
     await client.connect();
     console.log("Node connected successfully to GET MongoDB");
 
     const query = {};
     const results = await db
-        .collection("growth_chamber_rental_rates")
+        .collection("greenhouse_chamber_rental_rates")
         .find(query)
-        .limit(100)
+        .limit(300)
         .toArray();
 
     console.log(results);
@@ -240,33 +241,22 @@ app.get("/api/chamber/get", async (req, res) => {
 });
 
 // Get chamber rental from Id
+//http://localhost:8081/api/chamber/getFromId/1
 app.get("/api/chamber/getFromId/:id", async (req, res) => {
     const chamberid = Number(req.params.id);
     console.log("Manager to find :", chamberid);
     await client.connect();
     console.log("Node connected successfully to GET-id MongoDB");
-    const query = { "id": chamberid };
+    const query = { "Id": chamberid };
     const results = await db
-        .collection("greenhouse_space_rates")
+        .collection("greenhouse_chamber_rental_rates")
         .findOne(query)
     console.log("Results :", results);
     if (!results) res.send("Not Found").status(404);
     else res.send(results).status(200);
 });
 
-// Get chamber rental from period (daily weekly)
-app.get("/api/chamber/getFromPeriod/:rental_period", (req, res) => {
-    const rental_period = req.params.rental_period;
-    const collection = database.collection("growth_chamber_rental_rates");
-    collection.find({ rental_period: rental_period }).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
-});
-
-// MANAGER RESPONSIBILITIES
+// MANAGER RESPONSIBILITIES //////////////////
 // Get all responsibilities section posts
 app.get("/api/responsibilities/get", (req, res) => {
     const collection = database.collection("manager_responsibilities");
