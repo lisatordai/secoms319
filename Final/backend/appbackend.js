@@ -38,6 +38,68 @@ client.connect(err => {
     }
 });
 
+
+// CURRENT RESEARCH ///////////////////////////////////////////////////////////////////////////////
+// Get all current_research posts
+//http://localhost:8081/api/research/get
+app.get("/api/research/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("current_research")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
+});
+
+// Get current_research from Id
+//http://localhost:8081/api/research/getFromId/1
+app.get("/api/research/getFromId/:id", async (req, res) => {
+    const researchid = Number(req.params.id);
+    console.log("Research to find :", researchid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": researchid };
+    const results = await db
+        .collection("current_research")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
+});
+
+//ADD, UPDATE, DELETE 
+//Update research description text
+app.put("/update", async (req, res) => {
+    try {
+        const { researchId, newText } = req.body;
+
+        await client.connect();
+        console.log("Node connected successfully to MongoDB");
+
+        const result = await db.collection("fake_store").updateOne(
+            { "id": Number(researchId) },
+            { $set: { "text": newText } }
+        );
+
+        if (result.modifiedCount === 1) {
+            res.status(200).json({ message: 'Research text updated successfully' });
+        } else {
+            res.status(404).json({ error: 'Research not found or text not updated' });
+        }
+    } catch (error) {
+        console.error('Error updating research text:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        await client.close();
+    }
+});
 // HOME //////////////////////////////////////////////////////////////////////////////////////////
 // Get all posts
 //http://localhost:8081/api/home/get
@@ -138,41 +200,6 @@ app.get("/api/greenhouse/getFromId/:id", async (req, res) => {
     const query = { "id": greenhouseid };
     const results = await db
         .collection("greenhouse")
-        .findOne(query)
-    console.log("Results :", results);
-    if (!results) res.send("Not Found").status(404);
-    else res.send(results).status(200);
-});
-
-// CURRENT RESEARCH ///////////////////////////////////////////////////////////////////////////////
-// Get all current_research posts
-//http://localhost:8081/api/research/get
-app.get("/api/research/get", async (req, res) => {
-    await client.connect();
-    console.log("Node connected successfully to GET MongoDB");
-
-    const query = {};
-    const results = await db
-        .collection("current_research")
-        .find(query)
-        .limit(100)
-        .toArray();
-
-    console.log(results);
-    res.status(200);
-    res.send(results);
-});
-
-// Get current_research from Id
-//http://localhost:8081/api/research/getFromId/1
-app.get("/api/research/getFromId/:id", async (req, res) => {
-    const researchid = Number(req.params.id);
-    console.log("Research to find :", researchid);
-    await client.connect();
-    console.log("Node connected successfully to GET-id MongoDB");
-    const query = { "id": researchid };
-    const results = await db
-        .collection("current_research")
         .findOne(query)
     console.log("Results :", results);
     if (!results) res.send("Not Found").status(404);
