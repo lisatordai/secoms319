@@ -1,4 +1,4 @@
-//To start up
+//TO START PC SETUP
 // npm init
 // npm install express
 // npm install cors
@@ -9,9 +9,10 @@
 //FOR MAC
 //mongod --config /usr/local/etc/mongod.conf --fork
 
-//Run
+//RUN
 //nodemon appbackend.js
 
+//SETUP ///////////////////////////////////////////////////////////////////////////////////////////
 var express = require("express");
 var cors = require("cors");
 var app = express();
@@ -27,14 +28,6 @@ const url = "mongodb+srv://ltordai:IxbzvnbKkDEhmMcf@cluster0.8grfzis.mongodb.net
 const dbName = "final";
 const client = new MongoClient(url);
 const db = client.db(dbName);
-
-
-app.use(cors());
-app.use(express.json());
-app.use(express.static("public"));
-app.use("/images", express.static("images"));
-
-let database;
 
 client.connect(err => {
     if (err) {
