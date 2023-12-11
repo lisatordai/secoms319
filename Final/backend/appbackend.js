@@ -186,52 +186,72 @@ app.get("/api/research/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
-// GREENHOUSE SPACE RATES
+// GREENHOUSE SPACE RATES ////////////////////////////////////////////////////////////////////////
 // Get all space posts
-app.get("/api/space/get", (req, res) => {
-    const collection = database.collection("greenhouse_space_rates");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/space/get
+app.get("/api/space/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("greenhouse_space_rates")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
 });
 
 // Get space from Id
-app.get("/api/space/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("greenhouse_space_rates");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+//http://localhost:8081/api/space/getFromId/1
+app.get("/api/space/getFromId/:id", async (req, res) => {
+    const spaceid = Number(req.params.id);
+    console.log("Manager to find :", spaceid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": spaceid };
+    const results = await db
+        .collection("greenhouse_space_rates")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
-// GREENHOUSE CHAMBER RENTAL RATES
+// GREENHOUSE CHAMBER RENTAL RATES ////////////////////////////////////////////////////////////////
 // Get all chamber rental posts
-app.get("/api/chamber/get", (req, res) => {
-    const collection = database.collection("growth_chamber_rental_rates");
-    collection.find({}).toArray((err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+app.get("/api/chamber/get", async (req, res) => {
+    await client.connect();
+    console.log("Node connected successfully to GET MongoDB");
+
+    const query = {};
+    const results = await db
+        .collection("growth_chamber_rental_rates")
+        .find(query)
+        .limit(100)
+        .toArray();
+
+    console.log(results);
+    res.status(200);
+    res.send(results);
 });
 
 // Get chamber rental from Id
-app.get("/api/chamber/getFromId/:id", (req, res) => {
-    const id = req.params.id;
-    const collection = database.collection("growth_chamber_rental_rates");
-    collection.findOne({ id: parseInt(id) }, (err, result) => {
-        if (err) {
-            console.log(err);
-        }
-        res.send(result);
-    });
+app.get("/api/chamber/getFromId/:id", async (req, res) => {
+    const chamberid = Number(req.params.id);
+    console.log("Manager to find :", chamberid);
+    await client.connect();
+    console.log("Node connected successfully to GET-id MongoDB");
+    const query = { "id": chamberid };
+    const results = await db
+        .collection("greenhouse_space_rates")
+        .findOne(query)
+    console.log("Results :", results);
+    if (!results) res.send("Not Found").status(404);
+    else res.send(results).status(200);
 });
 
 // Get chamber rental from period (daily weekly)
