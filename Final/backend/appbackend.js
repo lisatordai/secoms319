@@ -139,12 +139,12 @@ app.get("/api/greenhouse/get", async (req, res) => {
 //http://localhost:8081/api/greenhouse/getFromId/1
 app.get("/api/greenhouse/getFromId/:id", async (req, res) => {
     const greenhouseid = Number(req.params.id);
-    console.log("Manager to find :", greenhouseid);
+    console.log("Greenhouse to find :", greenhouseid);
     await client.connect();
     console.log("Node connected successfully to GET-id MongoDB");
     const query = { "id": greenhouseid };
     const results = await db
-        .collection("manager")
+        .collection("greenhouse")
         .findOne(query)
     console.log("Results :", results);
     if (!results) res.send("Not Found").status(404);
@@ -174,12 +174,12 @@ app.get("/api/research/get", async (req, res) => {
 //http://localhost:8081/api/research/getFromId/1
 app.get("/api/research/getFromId/:id", async (req, res) => {
     const researchid = Number(req.params.id);
-    console.log("Manager to find :", researchid);
+    console.log("Research to find :", researchid);
     await client.connect();
     console.log("Node connected successfully to GET-id MongoDB");
     const query = { "id": researchid };
     const results = await db
-        .collection("manager")
+        .collection("current_research")
         .findOne(query)
     console.log("Results :", results);
     if (!results) res.send("Not Found").status(404);
@@ -209,7 +209,7 @@ app.get("/api/space/get", async (req, res) => {
 //http://localhost:8081/api/space/getFromId/1
 app.get("/api/space/getFromId/:id", async (req, res) => {
     const spaceid = Number(req.params.id);
-    console.log("Manager to find :", spaceid);
+    console.log("Space to find :", spaceid);
     await client.connect();
     console.log("Node connected successfully to GET-id MongoDB");
     const query = { "id": spaceid };
@@ -244,7 +244,7 @@ app.get("/api/chamber/get", async (req, res) => {
 //http://localhost:8081/api/chamber/getFromId/1
 app.get("/api/chamber/getFromId/:id", async (req, res) => {
     const chamberid = Number(req.params.id);
-    console.log("Manager to find :", chamberid);
+    console.log("Chamber to find :", chamberid);
     await client.connect();
     console.log("Node connected successfully to GET-id MongoDB");
     const query = { "Id": chamberid };
@@ -256,7 +256,7 @@ app.get("/api/chamber/getFromId/:id", async (req, res) => {
     else res.send(results).status(200);
 });
 
-// MANAGER RESPONSIBILITIES //////////////////
+// MANAGER RESPONSIBILITIES ///////////////////////////////////////////////////////
 // Get all responsibilities section posts
 app.get("/api/responsibilities/get", (req, res) => {
     const collection = database.collection("manager_responsibilities");
