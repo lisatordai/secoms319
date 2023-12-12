@@ -1,11 +1,8 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } 
+from 'react';import Chart from 'chart.js/auto';
+import 'chartjs-adapter-date-fns';
 import axios from 'axios';
-
-
-
-
-
 
  
 const Header = (props) => {
@@ -42,10 +39,10 @@ const Header = (props) => {
             <div class="col-auto text-left">
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
-             
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
-               <a class="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a> 
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Green House Data') }}>Green House Data</a> 
               {/* <a class="btn btn-outline-primary">page6</a> */}
             </div>
           </div>
@@ -92,7 +89,7 @@ const Content = (props) => {
   const [data, setData] = useState([]);
    useEffect(() => {
       // Fetch data from the server
-      axios.get('./home.json')
+      axios.get('http://localhost:4000/api/home/get')
          .then((response) => {
             setData(response.data);
             console.log(response.data)
@@ -106,7 +103,7 @@ const Content = (props) => {
   const [managersData, setMData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./manager.json')
+    fetch('http://localhost:4000/api/manager/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -146,7 +143,7 @@ const Content = (props) => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./current_research.json')
+    fetch('http://localhost:4000/api/current_research/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -154,7 +151,7 @@ const Content = (props) => {
         return response.json();
       })
       .then(data => {
-        console.log("TESTINGGGGGGGGGGGG")
+        //console.log("TESTINGGGGGGGGGGGG")
         console.log('Fetched data:', data);
         setProjects(data);
       })
@@ -167,7 +164,7 @@ const Content = (props) => {
   const [rentalSpaces, setRData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./greenhouse_space_rates.json')
+    fetch('http://localhost:4000/api/greenhouse_space_rates/put')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -187,7 +184,7 @@ const Content = (props) => {
   const [EquipData, setEData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('./greenhouse_chamber_rental_rates.json')
+    fetch('http://localhost:4000/api/greenhouse_chamber_rental_rates/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -202,6 +199,26 @@ const Content = (props) => {
         console.error('Error fetching data:', error);
       });
   }, []);
+
+    //PiData
+    const [PiData, setPiData] = useState([]);
+    useEffect(() => {
+      // Fetch data from Projects.json
+      fetch('http://localhost:4000/api/final.data/get')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log('Fetched data:', data);
+          setPiData(data);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+    }, []);
   
   // Log the state after it has been updated
   useEffect(() => {
@@ -226,6 +243,12 @@ const Content = (props) => {
        acc[buildingKey][roomKey].push(rental);
        return acc;
      }, {}): {};
+
+
+// for data page
+     var left = 0;
+
+
 
   let content;
   switch (props.page) {
@@ -282,7 +305,7 @@ const Content = (props) => {
       );
       break;
 
-      case 'the Greenhouses':
+    case 'the Greenhouses':
       content = ( 
         <div id="green-house-container">
         <h1 style={{ marginTop: "30px" }}>About the Greenhouses</h1>
@@ -393,6 +416,90 @@ const Content = (props) => {
         );
         break;
     
+    case 'Green House Data':
+     
+      content = (
+
+        
+        <div id="green-house-container">
+          <h1 style={{ marginTop: "30px" }}>Green House Data</h1>
+            <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+              
+          {PiData.slice(0, 570).map((Pi, index) => {
+        const temperatures = PiData.slice(0, 570).map((Pi) => Pi.temperature_fahrenheit);
+        const averageTemperature = temperatures.reduce((acc, temp) => acc + temp, 0) / temperatures.length;
+        const maxTemperature = Math.max(...temperatures);
+        const minTemperature = Math.min(...temperatures);
+        if(index == 1){
+        
+            return(
+             < div>
+              <h3 style={{ marginTop: "30px" }}>Data Summary</h3>
+            <hr style={{ marginTop: "20px", color: "grey" }} />
+              
+              <div className="card-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div className="card">
+                  <h4>Average Temperature</h4>
+                  <p>{`${averageTemperature.toFixed(2)}°F`}</p>
+                </div>
+                <div className="card">
+                  <h4>Max Temperature</h4>
+                  <p>{`${maxTemperature.toFixed(2)}°F`}</p>
+                </div>
+                <div className="card">
+                  <h4>Min Temperature</h4>
+                  <p>{`${minTemperature.toFixed(2)}°F`}</p>
+                </div>
+              </div>
+              </div>
+              )}
+
+            })}
+          <h1 style={{ marginTop: "30px" , textAlign: 'center'}}>Green House Data (fahrenheit)</h1>
+          
+          <div className="graph-container">
+            
+            {PiData.slice(0, 570).map((Pi, index) => {
+              // Ensure Pi.time.$date is defined before attempting to split
+              const timeString = Pi.time ? Pi.time.$date.split('T')[1].split('.')[0].slice(0, 5) : '';
+      
+              // Other code remains the same
+              var height = Pi.temperature_fahrenheit;
+              var lHeight = height + 5;
+              var left = 3;
+      
+              // Calculate the step size to show 19 points in the first 570 data points
+              const stepSize = Math.floor(570 / 18);
+              
+      
+              // Show every 30th data point
+              if (index % stepSize === 0) {
+                  left = 5 + (index/Math.floor(570 / 18))* 5;
+              
+                
+                return (
+                  <div key={index}>
+                    {/* Use the height and left variables in the style attribute */}
+                    <div className="data-point" style={{ left: `${left}%`, bottom: `${height}%` }}></div>
+                    <div className="day-label" style={{ left: `${left}%`, bottom: `${lHeight}%`, fontSize: '12px' }}>{`${height}`}</div>
+                    <div className="day-label" style={{ left: `${left}%`, fontSize: '12px' }}>{`${timeString}`}</div>
+                  </div>
+                );
+
+              } else {
+                return null; // If not the 30th or last data point, return null (don't render)
+              }
+            })}
+          </div>
+    
+
+         
+          </div>
+        
+      
+      );
+      break
+   
     default:
       content = <div>Default Content</div>;
   }

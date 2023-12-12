@@ -1,0 +1,6941 @@
+[{
+  "_id": {
+    "$oid": "6573fa70da011f8b44bbf9f4"
+  },
+  "time": {
+    "$date": "2023-12-09T05:26:08.127Z"
+  },
+  "temperature_celsius": 22,
+  "temperature_fahrenheit": 71.6,
+  "humidity": 44
+},
+{
+  "_id": {
+    "$oid": "6573faacda011f8b44bbf9f5"
+  },
+  "time": {
+    "$date": "2023-12-09T05:27:08.822Z"
+  },
+  "temperature_celsius": 22,
+  "temperature_fahrenheit": 71.6,
+  "humidity": 44
+},
+{
+  "_id": {
+    "$oid": "6573fae9da011f8b44bbf9f6"
+  },
+  "time": {
+    "$date": "2023-12-09T05:28:09.195Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573fb25da011f8b44bbf9f7"
+  },
+  "time": {
+    "$date": "2023-12-09T05:29:09.603Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573fb61da011f8b44bbf9f8"
+  },
+  "time": {
+    "$date": "2023-12-09T05:30:09.972Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fb9eda011f8b44bbf9f9"
+  },
+  "time": {
+    "$date": "2023-12-09T05:31:10.361Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fbdada011f8b44bbf9fa"
+  },
+  "time": {
+    "$date": "2023-12-09T05:32:10.737Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fc17da011f8b44bbf9fb"
+  },
+  "time": {
+    "$date": "2023-12-09T05:33:11.062Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fc53da011f8b44bbf9fc"
+  },
+  "time": {
+    "$date": "2023-12-09T05:34:11.452Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fc8fda011f8b44bbf9fd"
+  },
+  "time": {
+    "$date": "2023-12-09T05:35:11.823Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6573fcccda011f8b44bbf9fe"
+  },
+  "time": {
+    "$date": "2023-12-09T05:36:12.201Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fd08da011f8b44bbf9ff"
+  },
+  "time": {
+    "$date": "2023-12-09T05:37:12.584Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fd44da011f8b44bbfa00"
+  },
+  "time": {
+    "$date": "2023-12-09T05:38:12.959Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6573fd81da011f8b44bbfa01"
+  },
+  "time": {
+    "$date": "2023-12-09T05:39:13.299Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573fdbdda011f8b44bbfa02"
+  },
+  "time": {
+    "$date": "2023-12-09T05:40:13.700Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573fdfada011f8b44bbfa03"
+  },
+  "time": {
+    "$date": "2023-12-09T05:41:14.053Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573fe36da011f8b44bbfa04"
+  },
+  "time": {
+    "$date": "2023-12-09T05:42:14.403Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573fe72da011f8b44bbfa05"
+  },
+  "time": {
+    "$date": "2023-12-09T05:43:14.744Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573feafda011f8b44bbfa06"
+  },
+  "time": {
+    "$date": "2023-12-09T05:44:15.114Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573feebda011f8b44bbfa07"
+  },
+  "time": {
+    "$date": "2023-12-09T05:45:15.494Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573ff27da011f8b44bbfa08"
+  },
+  "time": {
+    "$date": "2023-12-09T05:46:15.814Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573ff64da011f8b44bbfa09"
+  },
+  "time": {
+    "$date": "2023-12-09T05:47:16.195Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573ffa0da011f8b44bbfa0a"
+  },
+  "time": {
+    "$date": "2023-12-09T05:48:16.534Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6573ffdcda011f8b44bbfa0b"
+  },
+  "time": {
+    "$date": "2023-12-09T05:49:16.931Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740019da011f8b44bbfa0c"
+  },
+  "time": {
+    "$date": "2023-12-09T05:50:17.324Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740055da011f8b44bbfa0d"
+  },
+  "time": {
+    "$date": "2023-12-09T05:51:17.703Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740092da011f8b44bbfa0e"
+  },
+  "time": {
+    "$date": "2023-12-09T05:52:18.047Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657400ceda011f8b44bbfa0f"
+  },
+  "time": {
+    "$date": "2023-12-09T05:53:18.417Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574010ada011f8b44bbfa10"
+  },
+  "time": {
+    "$date": "2023-12-09T05:54:18.774Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740147da011f8b44bbfa11"
+  },
+  "time": {
+    "$date": "2023-12-09T05:55:19.174Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740183da011f8b44bbfa12"
+  },
+  "time": {
+    "$date": "2023-12-09T05:56:19.550Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657401bfda011f8b44bbfa13"
+  },
+  "time": {
+    "$date": "2023-12-09T05:57:19.904Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657401fcda011f8b44bbfa14"
+  },
+  "time": {
+    "$date": "2023-12-09T05:58:20.269Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740238da011f8b44bbfa15"
+  },
+  "time": {
+    "$date": "2023-12-09T05:59:20.607Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740274da011f8b44bbfa16"
+  },
+  "time": {
+    "$date": "2023-12-09T06:00:20.982Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657402b1da011f8b44bbfa17"
+  },
+  "time": {
+    "$date": "2023-12-09T06:01:21.354Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657402edda011f8b44bbfa18"
+  },
+  "time": {
+    "$date": "2023-12-09T06:02:21.736Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6574032ada011f8b44bbfa19"
+  },
+  "time": {
+    "$date": "2023-12-09T06:03:22.103Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740366da011f8b44bbfa1a"
+  },
+  "time": {
+    "$date": "2023-12-09T06:04:22.477Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657403a2da011f8b44bbfa1b"
+  },
+  "time": {
+    "$date": "2023-12-09T06:05:22.853Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657403dfda011f8b44bbfa1c"
+  },
+  "time": {
+    "$date": "2023-12-09T06:06:23.246Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6574041bda011f8b44bbfa1d"
+  },
+  "time": {
+    "$date": "2023-12-09T06:07:23.634Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740458da011f8b44bbfa1e"
+  },
+  "time": {
+    "$date": "2023-12-09T06:08:24.032Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740494da011f8b44bbfa1f"
+  },
+  "time": {
+    "$date": "2023-12-09T06:09:24.416Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657404d0da011f8b44bbfa20"
+  },
+  "time": {
+    "$date": "2023-12-09T06:10:24.790Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6574050dda011f8b44bbfa21"
+  },
+  "time": {
+    "$date": "2023-12-09T06:11:25.193Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65740549da011f8b44bbfa22"
+  },
+  "time": {
+    "$date": "2023-12-09T06:12:25.562Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740585da011f8b44bbfa23"
+  },
+  "time": {
+    "$date": "2023-12-09T06:13:25.943Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657405c2da011f8b44bbfa24"
+  },
+  "time": {
+    "$date": "2023-12-09T06:14:26.596Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657405feda011f8b44bbfa25"
+  },
+  "time": {
+    "$date": "2023-12-09T06:15:26.943Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740643da011f8b44bbfa26"
+  },
+  "time": {
+    "$date": "2023-12-09T06:16:35.878Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740680da011f8b44bbfa27"
+  },
+  "time": {
+    "$date": "2023-12-09T06:17:36.266Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657406bcda011f8b44bbfa28"
+  },
+  "time": {
+    "$date": "2023-12-09T06:18:36.659Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657406f9da011f8b44bbfa29"
+  },
+  "time": {
+    "$date": "2023-12-09T06:19:37.044Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740735da011f8b44bbfa2a"
+  },
+  "time": {
+    "$date": "2023-12-09T06:20:37.365Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740771da011f8b44bbfa2b"
+  },
+  "time": {
+    "$date": "2023-12-09T06:21:37.725Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657407aeda011f8b44bbfa2c"
+  },
+  "time": {
+    "$date": "2023-12-09T06:22:38.101Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657407eada011f8b44bbfa2d"
+  },
+  "time": {
+    "$date": "2023-12-09T06:23:38.482Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740826da011f8b44bbfa2e"
+  },
+  "time": {
+    "$date": "2023-12-09T06:24:38.855Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740863da011f8b44bbfa2f"
+  },
+  "time": {
+    "$date": "2023-12-09T06:25:39.235Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574089fda011f8b44bbfa30"
+  },
+  "time": {
+    "$date": "2023-12-09T06:26:39.573Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657408dbda011f8b44bbfa31"
+  },
+  "time": {
+    "$date": "2023-12-09T06:27:39.977Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740918da011f8b44bbfa32"
+  },
+  "time": {
+    "$date": "2023-12-09T06:28:40.353Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740954da011f8b44bbfa33"
+  },
+  "time": {
+    "$date": "2023-12-09T06:29:40.731Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740991da011f8b44bbfa34"
+  },
+  "time": {
+    "$date": "2023-12-09T06:30:41.098Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657409cdda011f8b44bbfa35"
+  },
+  "time": {
+    "$date": "2023-12-09T06:31:41.484Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740a09da011f8b44bbfa36"
+  },
+  "time": {
+    "$date": "2023-12-09T06:32:41.852Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740a46da011f8b44bbfa37"
+  },
+  "time": {
+    "$date": "2023-12-09T06:33:42.239Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740a82da011f8b44bbfa38"
+  },
+  "time": {
+    "$date": "2023-12-09T06:34:42.616Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740abeda011f8b44bbfa39"
+  },
+  "time": {
+    "$date": "2023-12-09T06:35:42.957Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740afbda011f8b44bbfa3a"
+  },
+  "time": {
+    "$date": "2023-12-09T06:36:43.324Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740b37da011f8b44bbfa3b"
+  },
+  "time": {
+    "$date": "2023-12-09T06:37:43.704Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740b74da011f8b44bbfa3c"
+  },
+  "time": {
+    "$date": "2023-12-09T06:38:44.035Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740bb0da011f8b44bbfa3d"
+  },
+  "time": {
+    "$date": "2023-12-09T06:39:44.447Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740becda011f8b44bbfa3e"
+  },
+  "time": {
+    "$date": "2023-12-09T06:40:44.822Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740c29da011f8b44bbfa3f"
+  },
+  "time": {
+    "$date": "2023-12-09T06:41:45.204Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740c65da011f8b44bbfa40"
+  },
+  "time": {
+    "$date": "2023-12-09T06:42:45.577Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740ca1da011f8b44bbfa41"
+  },
+  "time": {
+    "$date": "2023-12-09T06:43:45.954Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740cdeda011f8b44bbfa42"
+  },
+  "time": {
+    "$date": "2023-12-09T06:44:46.333Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740d1ada011f8b44bbfa43"
+  },
+  "time": {
+    "$date": "2023-12-09T06:45:46.664Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740d57da011f8b44bbfa44"
+  },
+  "time": {
+    "$date": "2023-12-09T06:46:47.023Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740d93da011f8b44bbfa45"
+  },
+  "time": {
+    "$date": "2023-12-09T06:47:47.397Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740dcfda011f8b44bbfa46"
+  },
+  "time": {
+    "$date": "2023-12-09T06:48:47.808Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740e0cda011f8b44bbfa47"
+  },
+  "time": {
+    "$date": "2023-12-09T06:49:48.138Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740e48da011f8b44bbfa48"
+  },
+  "time": {
+    "$date": "2023-12-09T06:50:48.521Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740e84da011f8b44bbfa49"
+  },
+  "time": {
+    "$date": "2023-12-09T06:51:48.854Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740ec1da011f8b44bbfa4a"
+  },
+  "time": {
+    "$date": "2023-12-09T06:52:49.173Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740efdda011f8b44bbfa4b"
+  },
+  "time": {
+    "$date": "2023-12-09T06:53:49.563Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740f39da011f8b44bbfa4c"
+  },
+  "time": {
+    "$date": "2023-12-09T06:54:49.937Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740f76da011f8b44bbfa4d"
+  },
+  "time": {
+    "$date": "2023-12-09T06:55:50.325Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740fb2da011f8b44bbfa4e"
+  },
+  "time": {
+    "$date": "2023-12-09T06:56:50.675Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65740fefda011f8b44bbfa4f"
+  },
+  "time": {
+    "$date": "2023-12-09T06:57:51.062Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574102bda011f8b44bbfa50"
+  },
+  "time": {
+    "$date": "2023-12-09T06:58:51.441Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741067da011f8b44bbfa51"
+  },
+  "time": {
+    "$date": "2023-12-09T06:59:51.830Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657410a4da011f8b44bbfa52"
+  },
+  "time": {
+    "$date": "2023-12-09T07:00:52.205Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657410e0da011f8b44bbfa53"
+  },
+  "time": {
+    "$date": "2023-12-09T07:01:52.547Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574111cda011f8b44bbfa54"
+  },
+  "time": {
+    "$date": "2023-12-09T07:02:52.882Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741159da011f8b44bbfa55"
+  },
+  "time": {
+    "$date": "2023-12-09T07:03:53.285Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741195da011f8b44bbfa56"
+  },
+  "time": {
+    "$date": "2023-12-09T07:04:53.603Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657411d1da011f8b44bbfa57"
+  },
+  "time": {
+    "$date": "2023-12-09T07:05:53.996Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574120eda011f8b44bbfa58"
+  },
+  "time": {
+    "$date": "2023-12-09T07:06:54.354Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574124ada011f8b44bbfa59"
+  },
+  "time": {
+    "$date": "2023-12-09T07:07:54.688Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741287da011f8b44bbfa5a"
+  },
+  "time": {
+    "$date": "2023-12-09T07:08:55.065Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657412c3da011f8b44bbfa5b"
+  },
+  "time": {
+    "$date": "2023-12-09T07:09:55.451Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657412ffda011f8b44bbfa5c"
+  },
+  "time": {
+    "$date": "2023-12-09T07:10:55.776Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574133cda011f8b44bbfa5d"
+  },
+  "time": {
+    "$date": "2023-12-09T07:11:56.158Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741378da011f8b44bbfa5e"
+  },
+  "time": {
+    "$date": "2023-12-09T07:12:56.476Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657413b4da011f8b44bbfa5f"
+  },
+  "time": {
+    "$date": "2023-12-09T07:13:56.863Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657413f1da011f8b44bbfa60"
+  },
+  "time": {
+    "$date": "2023-12-09T07:14:57.242Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574142dda011f8b44bbfa61"
+  },
+  "time": {
+    "$date": "2023-12-09T07:15:57.622Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741469da011f8b44bbfa62"
+  },
+  "time": {
+    "$date": "2023-12-09T07:16:57.998Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657414a6da011f8b44bbfa63"
+  },
+  "time": {
+    "$date": "2023-12-09T07:17:58.386Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657414e2da011f8b44bbfa64"
+  },
+  "time": {
+    "$date": "2023-12-09T07:18:58.768Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574151fda011f8b44bbfa65"
+  },
+  "time": {
+    "$date": "2023-12-09T07:19:59.150Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574155bda011f8b44bbfa66"
+  },
+  "time": {
+    "$date": "2023-12-09T07:20:59.488Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741597da011f8b44bbfa67"
+  },
+  "time": {
+    "$date": "2023-12-09T07:21:59.872Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657415d4da011f8b44bbfa68"
+  },
+  "time": {
+    "$date": "2023-12-09T07:23:00.249Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741610da011f8b44bbfa69"
+  },
+  "time": {
+    "$date": "2023-12-09T07:24:00.730Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574164dda011f8b44bbfa6a"
+  },
+  "time": {
+    "$date": "2023-12-09T07:25:01.105Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741689da011f8b44bbfa6b"
+  },
+  "time": {
+    "$date": "2023-12-09T07:26:01.491Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657416c6da011f8b44bbfa6c"
+  },
+  "time": {
+    "$date": "2023-12-09T07:27:02.017Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741702da011f8b44bbfa6d"
+  },
+  "time": {
+    "$date": "2023-12-09T07:28:02.453Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574173eda011f8b44bbfa6e"
+  },
+  "time": {
+    "$date": "2023-12-09T07:29:02.774Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574177bda011f8b44bbfa6f"
+  },
+  "time": {
+    "$date": "2023-12-09T07:30:03.123Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657417b7da011f8b44bbfa70"
+  },
+  "time": {
+    "$date": "2023-12-09T07:31:03.467Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657417f3da011f8b44bbfa71"
+  },
+  "time": {
+    "$date": "2023-12-09T07:32:03.867Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741830da011f8b44bbfa72"
+  },
+  "time": {
+    "$date": "2023-12-09T07:33:04.236Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574186cda011f8b44bbfa73"
+  },
+  "time": {
+    "$date": "2023-12-09T07:34:04.628Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657418a9da011f8b44bbfa74"
+  },
+  "time": {
+    "$date": "2023-12-09T07:35:05.005Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657418e5da011f8b44bbfa75"
+  },
+  "time": {
+    "$date": "2023-12-09T07:36:05.390Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741921da011f8b44bbfa76"
+  },
+  "time": {
+    "$date": "2023-12-09T07:37:05.706Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574195eda011f8b44bbfa77"
+  },
+  "time": {
+    "$date": "2023-12-09T07:38:06.091Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574199ada011f8b44bbfa78"
+  },
+  "time": {
+    "$date": "2023-12-09T07:39:06.462Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657419d6da011f8b44bbfa79"
+  },
+  "time": {
+    "$date": "2023-12-09T07:40:06.853Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741a13da011f8b44bbfa7a"
+  },
+  "time": {
+    "$date": "2023-12-09T07:41:07.230Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741a4fda011f8b44bbfa7b"
+  },
+  "time": {
+    "$date": "2023-12-09T07:42:07.600Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741a8bda011f8b44bbfa7c"
+  },
+  "time": {
+    "$date": "2023-12-09T07:43:07.930Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741ac8da011f8b44bbfa7d"
+  },
+  "time": {
+    "$date": "2023-12-09T07:44:08.314Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741b04da011f8b44bbfa7e"
+  },
+  "time": {
+    "$date": "2023-12-09T07:45:08.693Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741b41da011f8b44bbfa7f"
+  },
+  "time": {
+    "$date": "2023-12-09T07:46:09.075Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741b7dda011f8b44bbfa80"
+  },
+  "time": {
+    "$date": "2023-12-09T07:47:09.449Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741bb9da011f8b44bbfa81"
+  },
+  "time": {
+    "$date": "2023-12-09T07:48:09.814Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741bf6da011f8b44bbfa82"
+  },
+  "time": {
+    "$date": "2023-12-09T07:49:10.214Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741c32da011f8b44bbfa83"
+  },
+  "time": {
+    "$date": "2023-12-09T07:50:10.572Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741c6eda011f8b44bbfa84"
+  },
+  "time": {
+    "$date": "2023-12-09T07:51:10.947Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741cabda011f8b44bbfa85"
+  },
+  "time": {
+    "$date": "2023-12-09T07:52:11.337Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741ce7da011f8b44bbfa86"
+  },
+  "time": {
+    "$date": "2023-12-09T07:53:11.679Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741d24da011f8b44bbfa87"
+  },
+  "time": {
+    "$date": "2023-12-09T07:54:12.056Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741d60da011f8b44bbfa88"
+  },
+  "time": {
+    "$date": "2023-12-09T07:55:12.429Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741d9cda011f8b44bbfa89"
+  },
+  "time": {
+    "$date": "2023-12-09T07:56:12.779Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741dd9da011f8b44bbfa8a"
+  },
+  "time": {
+    "$date": "2023-12-09T07:57:13.159Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741e15da011f8b44bbfa8b"
+  },
+  "time": {
+    "$date": "2023-12-09T07:58:13.545Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741e51da011f8b44bbfa8c"
+  },
+  "time": {
+    "$date": "2023-12-09T07:59:13.922Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741e8eda011f8b44bbfa8d"
+  },
+  "time": {
+    "$date": "2023-12-09T08:00:14.313Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741ecada011f8b44bbfa8e"
+  },
+  "time": {
+    "$date": "2023-12-09T08:01:14.689Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741f07da011f8b44bbfa8f"
+  },
+  "time": {
+    "$date": "2023-12-09T08:02:15.076Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741f43da011f8b44bbfa90"
+  },
+  "time": {
+    "$date": "2023-12-09T08:03:15.502Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741f7fda011f8b44bbfa91"
+  },
+  "time": {
+    "$date": "2023-12-09T08:04:15.873Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65741fbcda011f8b44bbfa92"
+  },
+  "time": {
+    "$date": "2023-12-09T08:05:16.265Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65741ff8da011f8b44bbfa93"
+  },
+  "time": {
+    "$date": "2023-12-09T08:06:16.614Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65742034da011f8b44bbfa94"
+  },
+  "time": {
+    "$date": "2023-12-09T08:07:16.959Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742071da011f8b44bbfa95"
+  },
+  "time": {
+    "$date": "2023-12-09T08:08:17.334Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657420adda011f8b44bbfa96"
+  },
+  "time": {
+    "$date": "2023-12-09T08:09:17.654Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657420e9da011f8b44bbfa97"
+  },
+  "time": {
+    "$date": "2023-12-09T08:10:17.997Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742126da011f8b44bbfa98"
+  },
+  "time": {
+    "$date": "2023-12-09T08:11:18.380Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742162da011f8b44bbfa99"
+  },
+  "time": {
+    "$date": "2023-12-09T08:12:18.744Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574219fda011f8b44bbfa9a"
+  },
+  "time": {
+    "$date": "2023-12-09T08:13:19.118Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657421dbda011f8b44bbfa9b"
+  },
+  "time": {
+    "$date": "2023-12-09T08:14:19.502Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742217da011f8b44bbfa9c"
+  },
+  "time": {
+    "$date": "2023-12-09T08:15:19.834Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742254da011f8b44bbfa9d"
+  },
+  "time": {
+    "$date": "2023-12-09T08:16:20.214Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742290da011f8b44bbfa9e"
+  },
+  "time": {
+    "$date": "2023-12-09T08:17:20.539Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657422ccda011f8b44bbfa9f"
+  },
+  "time": {
+    "$date": "2023-12-09T08:18:20.947Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742309da011f8b44bbfaa0"
+  },
+  "time": {
+    "$date": "2023-12-09T08:19:21.326Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742345da011f8b44bbfaa1"
+  },
+  "time": {
+    "$date": "2023-12-09T08:20:21.657Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742382da011f8b44bbfaa2"
+  },
+  "time": {
+    "$date": "2023-12-09T08:21:22.032Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657423beda011f8b44bbfaa3"
+  },
+  "time": {
+    "$date": "2023-12-09T08:22:22.417Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657423fada011f8b44bbfaa4"
+  },
+  "time": {
+    "$date": "2023-12-09T08:23:22.763Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742437da011f8b44bbfaa5"
+  },
+  "time": {
+    "$date": "2023-12-09T08:24:23.179Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742473da011f8b44bbfaa6"
+  },
+  "time": {
+    "$date": "2023-12-09T08:25:23.563Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657424afda011f8b44bbfaa7"
+  },
+  "time": {
+    "$date": "2023-12-09T08:26:23.933Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657424ecda011f8b44bbfaa8"
+  },
+  "time": {
+    "$date": "2023-12-09T08:27:24.308Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742528da011f8b44bbfaa9"
+  },
+  "time": {
+    "$date": "2023-12-09T08:28:24.639Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742565da011f8b44bbfaaa"
+  },
+  "time": {
+    "$date": "2023-12-09T08:29:25.013Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657425a1da011f8b44bbfaab"
+  },
+  "time": {
+    "$date": "2023-12-09T08:30:25.347Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657425ddda011f8b44bbfaac"
+  },
+  "time": {
+    "$date": "2023-12-09T08:31:25.723Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574261ada011f8b44bbfaad"
+  },
+  "time": {
+    "$date": "2023-12-09T08:32:26.054Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742656da011f8b44bbfaae"
+  },
+  "time": {
+    "$date": "2023-12-09T08:33:26.404Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742692da011f8b44bbfaaf"
+  },
+  "time": {
+    "$date": "2023-12-09T08:34:26.792Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657426cfda011f8b44bbfab0"
+  },
+  "time": {
+    "$date": "2023-12-09T08:35:27.169Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574270bda011f8b44bbfab1"
+  },
+  "time": {
+    "$date": "2023-12-09T08:36:27.554Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742747da011f8b44bbfab2"
+  },
+  "time": {
+    "$date": "2023-12-09T08:37:27.890Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742784da011f8b44bbfab3"
+  },
+  "time": {
+    "$date": "2023-12-09T08:38:28.278Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657427c0da011f8b44bbfab4"
+  },
+  "time": {
+    "$date": "2023-12-09T08:39:28.597Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657427fcda011f8b44bbfab5"
+  },
+  "time": {
+    "$date": "2023-12-09T08:40:28.945Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742839da011f8b44bbfab6"
+  },
+  "time": {
+    "$date": "2023-12-09T08:41:29.288Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742875da011f8b44bbfab7"
+  },
+  "time": {
+    "$date": "2023-12-09T08:42:29.672Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657428b2da011f8b44bbfab8"
+  },
+  "time": {
+    "$date": "2023-12-09T08:43:30.046Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657428eeda011f8b44bbfab9"
+  },
+  "time": {
+    "$date": "2023-12-09T08:44:30.413Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574292ada011f8b44bbfaba"
+  },
+  "time": {
+    "$date": "2023-12-09T08:45:30.739Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742967da011f8b44bbfabb"
+  },
+  "time": {
+    "$date": "2023-12-09T08:46:31.125Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657429a3da011f8b44bbfabc"
+  },
+  "time": {
+    "$date": "2023-12-09T08:47:31.500Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657429dfda011f8b44bbfabd"
+  },
+  "time": {
+    "$date": "2023-12-09T08:48:31.898Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742a1cda011f8b44bbfabe"
+  },
+  "time": {
+    "$date": "2023-12-09T08:49:32.274Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742a58da011f8b44bbfabf"
+  },
+  "time": {
+    "$date": "2023-12-09T08:50:32.687Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742a95da011f8b44bbfac0"
+  },
+  "time": {
+    "$date": "2023-12-09T08:51:33.045Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742ad1da011f8b44bbfac1"
+  },
+  "time": {
+    "$date": "2023-12-09T08:52:33.428Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742b0dda011f8b44bbfac2"
+  },
+  "time": {
+    "$date": "2023-12-09T08:53:33.802Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742b4bda011f8b44bbfac3"
+  },
+  "time": {
+    "$date": "2023-12-09T08:54:35.236Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742b87da011f8b44bbfac4"
+  },
+  "time": {
+    "$date": "2023-12-09T08:55:35.607Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742bc3da011f8b44bbfac5"
+  },
+  "time": {
+    "$date": "2023-12-09T08:56:35.987Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742c00da011f8b44bbfac6"
+  },
+  "time": {
+    "$date": "2023-12-09T08:57:36.401Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742c3cda011f8b44bbfac7"
+  },
+  "time": {
+    "$date": "2023-12-09T08:58:36.738Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742c79da011f8b44bbfac8"
+  },
+  "time": {
+    "$date": "2023-12-09T08:59:37.089Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742cb5da011f8b44bbfac9"
+  },
+  "time": {
+    "$date": "2023-12-09T09:00:37.473Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742cf1da011f8b44bbfaca"
+  },
+  "time": {
+    "$date": "2023-12-09T09:01:37.849Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742d2eda011f8b44bbfacb"
+  },
+  "time": {
+    "$date": "2023-12-09T09:02:38.233Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742d6ada011f8b44bbfacc"
+  },
+  "time": {
+    "$date": "2023-12-09T09:03:38.608Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742da6da011f8b44bbfacd"
+  },
+  "time": {
+    "$date": "2023-12-09T09:04:38.989Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742de3da011f8b44bbface"
+  },
+  "time": {
+    "$date": "2023-12-09T09:05:39.363Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742e1fda011f8b44bbfacf"
+  },
+  "time": {
+    "$date": "2023-12-09T09:06:39.748Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742e5cda011f8b44bbfad0"
+  },
+  "time": {
+    "$date": "2023-12-09T09:07:40.083Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742e98da011f8b44bbfad1"
+  },
+  "time": {
+    "$date": "2023-12-09T09:08:40.416Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742ed4da011f8b44bbfad2"
+  },
+  "time": {
+    "$date": "2023-12-09T09:09:40.790Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742f11da011f8b44bbfad3"
+  },
+  "time": {
+    "$date": "2023-12-09T09:10:41.119Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742f4dda011f8b44bbfad4"
+  },
+  "time": {
+    "$date": "2023-12-09T09:11:41.496Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742f89da011f8b44bbfad5"
+  },
+  "time": {
+    "$date": "2023-12-09T09:12:41.880Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65742fc6da011f8b44bbfad6"
+  },
+  "time": {
+    "$date": "2023-12-09T09:13:42.230Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743002da011f8b44bbfad7"
+  },
+  "time": {
+    "$date": "2023-12-09T09:14:42.613Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574303eda011f8b44bbfad8"
+  },
+  "time": {
+    "$date": "2023-12-09T09:15:42.935Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574307bda011f8b44bbfad9"
+  },
+  "time": {
+    "$date": "2023-12-09T09:16:43.339Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657430b7da011f8b44bbfada"
+  },
+  "time": {
+    "$date": "2023-12-09T09:17:43.661Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657430f3da011f8b44bbfadb"
+  },
+  "time": {
+    "$date": "2023-12-09T09:18:43.986Z"
+  },
+  "temperature_celsius": 21,
+  "temperature_fahrenheit": 69.8,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65743130da011f8b44bbfadc"
+  },
+  "time": {
+    "$date": "2023-12-09T09:19:44.357Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574316cda011f8b44bbfadd"
+  },
+  "time": {
+    "$date": "2023-12-09T09:20:44.698Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657431a9da011f8b44bbfade"
+  },
+  "time": {
+    "$date": "2023-12-09T09:21:45.039Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657431e5da011f8b44bbfadf"
+  },
+  "time": {
+    "$date": "2023-12-09T09:22:45.447Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743221da011f8b44bbfae0"
+  },
+  "time": {
+    "$date": "2023-12-09T09:23:45.768Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574325eda011f8b44bbfae1"
+  },
+  "time": {
+    "$date": "2023-12-09T09:24:46.156Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574329ada011f8b44bbfae2"
+  },
+  "time": {
+    "$date": "2023-12-09T09:25:46.537Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657432d6da011f8b44bbfae3"
+  },
+  "time": {
+    "$date": "2023-12-09T09:26:46.921Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743313da011f8b44bbfae4"
+  },
+  "time": {
+    "$date": "2023-12-09T09:27:47.299Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574334fda011f8b44bbfae5"
+  },
+  "time": {
+    "$date": "2023-12-09T09:28:47.688Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574338cda011f8b44bbfae6"
+  },
+  "time": {
+    "$date": "2023-12-09T09:29:48.063Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657433c8da011f8b44bbfae7"
+  },
+  "time": {
+    "$date": "2023-12-09T09:30:48.474Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743404da011f8b44bbfae8"
+  },
+  "time": {
+    "$date": "2023-12-09T09:31:48.893Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743441da011f8b44bbfae9"
+  },
+  "time": {
+    "$date": "2023-12-09T09:32:49.290Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574347dda011f8b44bbfaea"
+  },
+  "time": {
+    "$date": "2023-12-09T09:33:49.663Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657434bada011f8b44bbfaeb"
+  },
+  "time": {
+    "$date": "2023-12-09T09:34:50.053Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657434f6da011f8b44bbfaec"
+  },
+  "time": {
+    "$date": "2023-12-09T09:35:50.398Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743532da011f8b44bbfaed"
+  },
+  "time": {
+    "$date": "2023-12-09T09:36:50.734Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574356fda011f8b44bbfaee"
+  },
+  "time": {
+    "$date": "2023-12-09T09:37:51.052Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657435abda011f8b44bbfaef"
+  },
+  "time": {
+    "$date": "2023-12-09T09:38:51.386Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657435e7da011f8b44bbfaf0"
+  },
+  "time": {
+    "$date": "2023-12-09T09:39:51.739Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743624da011f8b44bbfaf1"
+  },
+  "time": {
+    "$date": "2023-12-09T09:40:52.126Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743660da011f8b44bbfaf2"
+  },
+  "time": {
+    "$date": "2023-12-09T09:41:52.483Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574369cda011f8b44bbfaf3"
+  },
+  "time": {
+    "$date": "2023-12-09T09:42:52.808Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657436d9da011f8b44bbfaf4"
+  },
+  "time": {
+    "$date": "2023-12-09T09:43:53.159Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743715da011f8b44bbfaf5"
+  },
+  "time": {
+    "$date": "2023-12-09T09:44:53.537Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743751da011f8b44bbfaf6"
+  },
+  "time": {
+    "$date": "2023-12-09T09:45:53.912Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574378eda011f8b44bbfaf7"
+  },
+  "time": {
+    "$date": "2023-12-09T09:46:54.296Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657437cada011f8b44bbfaf8"
+  },
+  "time": {
+    "$date": "2023-12-09T09:47:54.678Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743807da011f8b44bbfaf9"
+  },
+  "time": {
+    "$date": "2023-12-09T09:48:55.088Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743843da011f8b44bbfafa"
+  },
+  "time": {
+    "$date": "2023-12-09T09:49:55.411Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574387fda011f8b44bbfafb"
+  },
+  "time": {
+    "$date": "2023-12-09T09:50:55.793Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657438bcda011f8b44bbfafc"
+  },
+  "time": {
+    "$date": "2023-12-09T09:51:56.173Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657438f8da011f8b44bbfafd"
+  },
+  "time": {
+    "$date": "2023-12-09T09:52:56.567Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743934da011f8b44bbfafe"
+  },
+  "time": {
+    "$date": "2023-12-09T09:53:56.952Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743971da011f8b44bbfaff"
+  },
+  "time": {
+    "$date": "2023-12-09T09:54:57.337Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657439adda011f8b44bbfb00"
+  },
+  "time": {
+    "$date": "2023-12-09T09:55:57.657Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657439eada011f8b44bbfb01"
+  },
+  "time": {
+    "$date": "2023-12-09T09:56:58.053Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743a26da011f8b44bbfb02"
+  },
+  "time": {
+    "$date": "2023-12-09T09:57:58.435Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743a62da011f8b44bbfb03"
+  },
+  "time": {
+    "$date": "2023-12-09T09:58:58.837Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743a9fda011f8b44bbfb04"
+  },
+  "time": {
+    "$date": "2023-12-09T09:59:59.213Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743adbda011f8b44bbfb05"
+  },
+  "time": {
+    "$date": "2023-12-09T10:00:59.562Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743b17da011f8b44bbfb06"
+  },
+  "time": {
+    "$date": "2023-12-09T10:01:59.947Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743b54da011f8b44bbfb07"
+  },
+  "time": {
+    "$date": "2023-12-09T10:03:00.303Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743b90da011f8b44bbfb08"
+  },
+  "time": {
+    "$date": "2023-12-09T10:04:00.678Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743bcdda011f8b44bbfb09"
+  },
+  "time": {
+    "$date": "2023-12-09T10:05:01.045Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743c09da011f8b44bbfb0a"
+  },
+  "time": {
+    "$date": "2023-12-09T10:06:01.421Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743c45da011f8b44bbfb0b"
+  },
+  "time": {
+    "$date": "2023-12-09T10:07:01.806Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743c82da011f8b44bbfb0c"
+  },
+  "time": {
+    "$date": "2023-12-09T10:08:02.188Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743cbeda011f8b44bbfb0d"
+  },
+  "time": {
+    "$date": "2023-12-09T10:09:02.585Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743cfada011f8b44bbfb0e"
+  },
+  "time": {
+    "$date": "2023-12-09T10:10:02.964Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743d37da011f8b44bbfb0f"
+  },
+  "time": {
+    "$date": "2023-12-09T10:11:03.344Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743d73da011f8b44bbfb10"
+  },
+  "time": {
+    "$date": "2023-12-09T10:12:03.723Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743db0da011f8b44bbfb11"
+  },
+  "time": {
+    "$date": "2023-12-09T10:13:04.075Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743decda011f8b44bbfb12"
+  },
+  "time": {
+    "$date": "2023-12-09T10:14:04.457Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743e28da011f8b44bbfb13"
+  },
+  "time": {
+    "$date": "2023-12-09T10:15:04.797Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743e65da011f8b44bbfb14"
+  },
+  "time": {
+    "$date": "2023-12-09T10:16:05.212Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743ea1da011f8b44bbfb15"
+  },
+  "time": {
+    "$date": "2023-12-09T10:17:05.549Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743eddda011f8b44bbfb16"
+  },
+  "time": {
+    "$date": "2023-12-09T10:18:05.883Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743f1ada011f8b44bbfb17"
+  },
+  "time": {
+    "$date": "2023-12-09T10:19:06.274Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743f56da011f8b44bbfb18"
+  },
+  "time": {
+    "$date": "2023-12-09T10:20:06.649Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743f92da011f8b44bbfb19"
+  },
+  "time": {
+    "$date": "2023-12-09T10:21:06.989Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65743fcfda011f8b44bbfb1a"
+  },
+  "time": {
+    "$date": "2023-12-09T10:22:07.368Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574400bda011f8b44bbfb1b"
+  },
+  "time": {
+    "$date": "2023-12-09T10:23:07.707Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744048da011f8b44bbfb1c"
+  },
+  "time": {
+    "$date": "2023-12-09T10:24:08.075Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744084da011f8b44bbfb1d"
+  },
+  "time": {
+    "$date": "2023-12-09T10:25:08.460Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657440c0da011f8b44bbfb1e"
+  },
+  "time": {
+    "$date": "2023-12-09T10:26:08.842Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657440fdda011f8b44bbfb1f"
+  },
+  "time": {
+    "$date": "2023-12-09T10:27:09.222Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744139da011f8b44bbfb20"
+  },
+  "time": {
+    "$date": "2023-12-09T10:28:09.598Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744175da011f8b44bbfb21"
+  },
+  "time": {
+    "$date": "2023-12-09T10:29:09.972Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657441b2da011f8b44bbfb22"
+  },
+  "time": {
+    "$date": "2023-12-09T10:30:10.343Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657441eeda011f8b44bbfb23"
+  },
+  "time": {
+    "$date": "2023-12-09T10:31:10.729Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574422bda011f8b44bbfb24"
+  },
+  "time": {
+    "$date": "2023-12-09T10:32:11.104Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744267da011f8b44bbfb25"
+  },
+  "time": {
+    "$date": "2023-12-09T10:33:11.483Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657442a3da011f8b44bbfb26"
+  },
+  "time": {
+    "$date": "2023-12-09T10:34:11.864Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657442e0da011f8b44bbfb27"
+  },
+  "time": {
+    "$date": "2023-12-09T10:35:12.244Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574431cda011f8b44bbfb28"
+  },
+  "time": {
+    "$date": "2023-12-09T10:36:12.613Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744359da011f8b44bbfb29"
+  },
+  "time": {
+    "$date": "2023-12-09T10:37:13.006Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744395da011f8b44bbfb2a"
+  },
+  "time": {
+    "$date": "2023-12-09T10:38:13.335Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657443d1da011f8b44bbfb2b"
+  },
+  "time": {
+    "$date": "2023-12-09T10:39:13.708Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574440eda011f8b44bbfb2c"
+  },
+  "time": {
+    "$date": "2023-12-09T10:40:14.089Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574444ada011f8b44bbfb2d"
+  },
+  "time": {
+    "$date": "2023-12-09T10:41:14.474Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744486da011f8b44bbfb2e"
+  },
+  "time": {
+    "$date": "2023-12-09T10:42:14.846Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657444c3da011f8b44bbfb2f"
+  },
+  "time": {
+    "$date": "2023-12-09T10:43:15.227Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657444ffda011f8b44bbfb30"
+  },
+  "time": {
+    "$date": "2023-12-09T10:44:15.603Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574453bda011f8b44bbfb31"
+  },
+  "time": {
+    "$date": "2023-12-09T10:45:15.984Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744578da011f8b44bbfb32"
+  },
+  "time": {
+    "$date": "2023-12-09T10:46:16.397Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657445b4da011f8b44bbfb33"
+  },
+  "time": {
+    "$date": "2023-12-09T10:47:16.780Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657445f1da011f8b44bbfb34"
+  },
+  "time": {
+    "$date": "2023-12-09T10:48:17.104Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574462dda011f8b44bbfb35"
+  },
+  "time": {
+    "$date": "2023-12-09T10:49:17.488Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744669da011f8b44bbfb36"
+  },
+  "time": {
+    "$date": "2023-12-09T10:50:17.853Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657446a6da011f8b44bbfb37"
+  },
+  "time": {
+    "$date": "2023-12-09T10:51:18.189Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657446e2da011f8b44bbfb38"
+  },
+  "time": {
+    "$date": "2023-12-09T10:52:18.525Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574471eda011f8b44bbfb39"
+  },
+  "time": {
+    "$date": "2023-12-09T10:53:18.881Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574475bda011f8b44bbfb3a"
+  },
+  "time": {
+    "$date": "2023-12-09T10:54:19.193Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744797da011f8b44bbfb3b"
+  },
+  "time": {
+    "$date": "2023-12-09T10:55:19.528Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657447d3da011f8b44bbfb3c"
+  },
+  "time": {
+    "$date": "2023-12-09T10:56:19.862Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744810da011f8b44bbfb3d"
+  },
+  "time": {
+    "$date": "2023-12-09T10:57:20.269Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574484cda011f8b44bbfb3e"
+  },
+  "time": {
+    "$date": "2023-12-09T10:58:20.603Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744888da011f8b44bbfb3f"
+  },
+  "time": {
+    "$date": "2023-12-09T10:59:20.991Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657448c5da011f8b44bbfb40"
+  },
+  "time": {
+    "$date": "2023-12-09T11:00:21.354Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744901da011f8b44bbfb41"
+  },
+  "time": {
+    "$date": "2023-12-09T11:01:21.869Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574493eda011f8b44bbfb42"
+  },
+  "time": {
+    "$date": "2023-12-09T11:02:22.203Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574497ada011f8b44bbfb43"
+  },
+  "time": {
+    "$date": "2023-12-09T11:03:22.592Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657449b6da011f8b44bbfb44"
+  },
+  "time": {
+    "$date": "2023-12-09T11:04:22.964Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657449f3da011f8b44bbfb45"
+  },
+  "time": {
+    "$date": "2023-12-09T11:05:23.348Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65744a2fda011f8b44bbfb46"
+  },
+  "time": {
+    "$date": "2023-12-09T11:06:23.725Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744a6cda011f8b44bbfb47"
+  },
+  "time": {
+    "$date": "2023-12-09T11:07:24.122Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744aa8da011f8b44bbfb48"
+  },
+  "time": {
+    "$date": "2023-12-09T11:08:24.496Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744ae4da011f8b44bbfb49"
+  },
+  "time": {
+    "$date": "2023-12-09T11:09:24.828Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744b21da011f8b44bbfb4a"
+  },
+  "time": {
+    "$date": "2023-12-09T11:10:25.203Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744b5dda011f8b44bbfb4b"
+  },
+  "time": {
+    "$date": "2023-12-09T11:11:25.590Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744b99da011f8b44bbfb4c"
+  },
+  "time": {
+    "$date": "2023-12-09T11:12:25.957Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744bd6da011f8b44bbfb4d"
+  },
+  "time": {
+    "$date": "2023-12-09T11:13:26.341Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744c12da011f8b44bbfb4e"
+  },
+  "time": {
+    "$date": "2023-12-09T11:14:26.700Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744c4fda011f8b44bbfb4f"
+  },
+  "time": {
+    "$date": "2023-12-09T11:15:27.080Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744c8bda011f8b44bbfb50"
+  },
+  "time": {
+    "$date": "2023-12-09T11:16:27.456Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744cc7da011f8b44bbfb51"
+  },
+  "time": {
+    "$date": "2023-12-09T11:17:27.841Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744d04da011f8b44bbfb52"
+  },
+  "time": {
+    "$date": "2023-12-09T11:18:28.163Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744d40da011f8b44bbfb53"
+  },
+  "time": {
+    "$date": "2023-12-09T11:19:28.511Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65744d7cda011f8b44bbfb54"
+  },
+  "time": {
+    "$date": "2023-12-09T11:20:28.891Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744db9da011f8b44bbfb55"
+  },
+  "time": {
+    "$date": "2023-12-09T11:21:29.272Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744df5da011f8b44bbfb56"
+  },
+  "time": {
+    "$date": "2023-12-09T11:22:29.647Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744e31da011f8b44bbfb57"
+  },
+  "time": {
+    "$date": "2023-12-09T11:23:29.995Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744e6eda011f8b44bbfb58"
+  },
+  "time": {
+    "$date": "2023-12-09T11:24:30.374Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744eaada011f8b44bbfb59"
+  },
+  "time": {
+    "$date": "2023-12-09T11:25:30.758Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744ee7da011f8b44bbfb5a"
+  },
+  "time": {
+    "$date": "2023-12-09T11:26:31.141Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744f23da011f8b44bbfb5b"
+  },
+  "time": {
+    "$date": "2023-12-09T11:27:31.501Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744f5fda011f8b44bbfb5c"
+  },
+  "time": {
+    "$date": "2023-12-09T11:28:31.818Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744f9cda011f8b44bbfb5d"
+  },
+  "time": {
+    "$date": "2023-12-09T11:29:32.192Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65744fd8da011f8b44bbfb5e"
+  },
+  "time": {
+    "$date": "2023-12-09T11:30:32.561Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745014da011f8b44bbfb5f"
+  },
+  "time": {
+    "$date": "2023-12-09T11:31:32.934Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745051da011f8b44bbfb60"
+  },
+  "time": {
+    "$date": "2023-12-09T11:32:33.307Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574508dda011f8b44bbfb61"
+  },
+  "time": {
+    "$date": "2023-12-09T11:33:33.673Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657450cada011f8b44bbfb62"
+  },
+  "time": {
+    "$date": "2023-12-09T11:34:34.061Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745106da011f8b44bbfb63"
+  },
+  "time": {
+    "$date": "2023-12-09T11:35:34.760Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745143da011f8b44bbfb64"
+  },
+  "time": {
+    "$date": "2023-12-09T11:36:35.094Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574517fda011f8b44bbfb65"
+  },
+  "time": {
+    "$date": "2023-12-09T11:37:35.476Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657451bbda011f8b44bbfb66"
+  },
+  "time": {
+    "$date": "2023-12-09T11:38:35.797Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657451f8da011f8b44bbfb67"
+  },
+  "time": {
+    "$date": "2023-12-09T11:39:36.165Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745234da011f8b44bbfb68"
+  },
+  "time": {
+    "$date": "2023-12-09T11:40:36.547Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745270da011f8b44bbfb69"
+  },
+  "time": {
+    "$date": "2023-12-09T11:41:36.947Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657452adda011f8b44bbfb6a"
+  },
+  "time": {
+    "$date": "2023-12-09T11:42:37.359Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657452e9da011f8b44bbfb6b"
+  },
+  "time": {
+    "$date": "2023-12-09T11:43:37.749Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745326da011f8b44bbfb6c"
+  },
+  "time": {
+    "$date": "2023-12-09T11:44:38.071Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745362da011f8b44bbfb6d"
+  },
+  "time": {
+    "$date": "2023-12-09T11:45:38.457Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574539eda011f8b44bbfb6e"
+  },
+  "time": {
+    "$date": "2023-12-09T11:46:38.789Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657453dbda011f8b44bbfb6f"
+  },
+  "time": {
+    "$date": "2023-12-09T11:47:39.132Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745417da011f8b44bbfb70"
+  },
+  "time": {
+    "$date": "2023-12-09T11:48:39.508Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745453da011f8b44bbfb71"
+  },
+  "time": {
+    "$date": "2023-12-09T11:49:39.905Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745490da011f8b44bbfb72"
+  },
+  "time": {
+    "$date": "2023-12-09T11:50:40.228Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657454ccda011f8b44bbfb73"
+  },
+  "time": {
+    "$date": "2023-12-09T11:51:40.561Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745509da011f8b44bbfb74"
+  },
+  "time": {
+    "$date": "2023-12-09T11:52:41.000Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745545da011f8b44bbfb75"
+  },
+  "time": {
+    "$date": "2023-12-09T11:53:41.379Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745581da011f8b44bbfb76"
+  },
+  "time": {
+    "$date": "2023-12-09T11:54:41.758Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657455beda011f8b44bbfb77"
+  },
+  "time": {
+    "$date": "2023-12-09T11:55:42.155Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657455fada011f8b44bbfb78"
+  },
+  "time": {
+    "$date": "2023-12-09T11:56:42.485Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745636da011f8b44bbfb79"
+  },
+  "time": {
+    "$date": "2023-12-09T11:57:42.820Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745673da011f8b44bbfb7a"
+  },
+  "time": {
+    "$date": "2023-12-09T11:58:43.198Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657456afda011f8b44bbfb7b"
+  },
+  "time": {
+    "$date": "2023-12-09T11:59:43.591Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657456ebda011f8b44bbfb7c"
+  },
+  "time": {
+    "$date": "2023-12-09T12:00:43.986Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745728da011f8b44bbfb7d"
+  },
+  "time": {
+    "$date": "2023-12-09T12:01:44.378Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65745764da011f8b44bbfb7e"
+  },
+  "time": {
+    "$date": "2023-12-09T12:02:44.732Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657457a1da011f8b44bbfb7f"
+  },
+  "time": {
+    "$date": "2023-12-09T12:03:45.116Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657457ddda011f8b44bbfb80"
+  },
+  "time": {
+    "$date": "2023-12-09T12:04:45.492Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745819da011f8b44bbfb81"
+  },
+  "time": {
+    "$date": "2023-12-09T12:05:45.869Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745856da011f8b44bbfb82"
+  },
+  "time": {
+    "$date": "2023-12-09T12:06:46.250Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745892da011f8b44bbfb83"
+  },
+  "time": {
+    "$date": "2023-12-09T12:07:46.655Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657458cfda011f8b44bbfb84"
+  },
+  "time": {
+    "$date": "2023-12-09T12:08:47.077Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574590bda011f8b44bbfb85"
+  },
+  "time": {
+    "$date": "2023-12-09T12:09:47.449Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745947da011f8b44bbfb86"
+  },
+  "time": {
+    "$date": "2023-12-09T12:10:47.823Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745984da011f8b44bbfb87"
+  },
+  "time": {
+    "$date": "2023-12-09T12:11:48.206Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657459c0da011f8b44bbfb88"
+  },
+  "time": {
+    "$date": "2023-12-09T12:12:48.529Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657459fcda011f8b44bbfb89"
+  },
+  "time": {
+    "$date": "2023-12-09T12:13:48.856Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745a39da011f8b44bbfb8a"
+  },
+  "time": {
+    "$date": "2023-12-09T12:14:49.191Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745a75da011f8b44bbfb8b"
+  },
+  "time": {
+    "$date": "2023-12-09T12:15:49.568Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745ab1da011f8b44bbfb8c"
+  },
+  "time": {
+    "$date": "2023-12-09T12:16:49.993Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745aeeda011f8b44bbfb8d"
+  },
+  "time": {
+    "$date": "2023-12-09T12:17:50.377Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745b2ada011f8b44bbfb8e"
+  },
+  "time": {
+    "$date": "2023-12-09T12:18:50.752Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745b67da011f8b44bbfb8f"
+  },
+  "time": {
+    "$date": "2023-12-09T12:19:51.136Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745ba3da011f8b44bbfb90"
+  },
+  "time": {
+    "$date": "2023-12-09T12:20:51.513Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745bdfda011f8b44bbfb91"
+  },
+  "time": {
+    "$date": "2023-12-09T12:21:51.854Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745c1cda011f8b44bbfb92"
+  },
+  "time": {
+    "$date": "2023-12-09T12:22:52.235Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745c58da011f8b44bbfb93"
+  },
+  "time": {
+    "$date": "2023-12-09T12:23:52.678Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745c95da011f8b44bbfb94"
+  },
+  "time": {
+    "$date": "2023-12-09T12:24:53.019Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745cd1da011f8b44bbfb95"
+  },
+  "time": {
+    "$date": "2023-12-09T12:25:53.383Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745d0dda011f8b44bbfb96"
+  },
+  "time": {
+    "$date": "2023-12-09T12:26:53.774Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745d4ada011f8b44bbfb97"
+  },
+  "time": {
+    "$date": "2023-12-09T12:27:54.159Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745d86da011f8b44bbfb98"
+  },
+  "time": {
+    "$date": "2023-12-09T12:28:54.529Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745dc2da011f8b44bbfb99"
+  },
+  "time": {
+    "$date": "2023-12-09T12:29:54.858Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745dffda011f8b44bbfb9a"
+  },
+  "time": {
+    "$date": "2023-12-09T12:30:55.176Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745e3bda011f8b44bbfb9b"
+  },
+  "time": {
+    "$date": "2023-12-09T12:31:55.565Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745e77da011f8b44bbfb9c"
+  },
+  "time": {
+    "$date": "2023-12-09T12:32:55.895Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745eb4da011f8b44bbfb9d"
+  },
+  "time": {
+    "$date": "2023-12-09T12:33:56.276Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745ef0da011f8b44bbfb9e"
+  },
+  "time": {
+    "$date": "2023-12-09T12:34:56.617Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745f2dda011f8b44bbfb9f"
+  },
+  "time": {
+    "$date": "2023-12-09T12:35:57.001Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745f69da011f8b44bbfba0"
+  },
+  "time": {
+    "$date": "2023-12-09T12:36:57.380Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745fa5da011f8b44bbfba1"
+  },
+  "time": {
+    "$date": "2023-12-09T12:37:57.767Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65745fe2da011f8b44bbfba2"
+  },
+  "time": {
+    "$date": "2023-12-09T12:38:58.139Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574601eda011f8b44bbfba3"
+  },
+  "time": {
+    "$date": "2023-12-09T12:39:58.527Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574605ada011f8b44bbfba4"
+  },
+  "time": {
+    "$date": "2023-12-09T12:40:58.912Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746097da011f8b44bbfba5"
+  },
+  "time": {
+    "$date": "2023-12-09T12:41:59.296Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657460d3da011f8b44bbfba6"
+  },
+  "time": {
+    "$date": "2023-12-09T12:42:59.677Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746110da011f8b44bbfba7"
+  },
+  "time": {
+    "$date": "2023-12-09T12:44:00.062Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574614cda011f8b44bbfba8"
+  },
+  "time": {
+    "$date": "2023-12-09T12:45:00.410Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746188da011f8b44bbfba9"
+  },
+  "time": {
+    "$date": "2023-12-09T12:46:00.797Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657461c5da011f8b44bbfbaa"
+  },
+  "time": {
+    "$date": "2023-12-09T12:47:01.137Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746201da011f8b44bbfbab"
+  },
+  "time": {
+    "$date": "2023-12-09T12:48:01.534Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574623dda011f8b44bbfbac"
+  },
+  "time": {
+    "$date": "2023-12-09T12:49:01.917Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574627ada011f8b44bbfbad"
+  },
+  "time": {
+    "$date": "2023-12-09T12:50:02.283Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657462b6da011f8b44bbfbae"
+  },
+  "time": {
+    "$date": "2023-12-09T12:51:02.672Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657462f3da011f8b44bbfbaf"
+  },
+  "time": {
+    "$date": "2023-12-09T12:52:03.061Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574632fda011f8b44bbfbb0"
+  },
+  "time": {
+    "$date": "2023-12-09T12:53:03.428Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574636bda011f8b44bbfbb1"
+  },
+  "time": {
+    "$date": "2023-12-09T12:54:03.812Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657463a8da011f8b44bbfbb2"
+  },
+  "time": {
+    "$date": "2023-12-09T12:55:04.134Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657463e4da011f8b44bbfbb3"
+  },
+  "time": {
+    "$date": "2023-12-09T12:56:04.517Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746420da011f8b44bbfbb4"
+  },
+  "time": {
+    "$date": "2023-12-09T12:57:04.897Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574645dda011f8b44bbfbb5"
+  },
+  "time": {
+    "$date": "2023-12-09T12:58:05.299Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746499da011f8b44bbfbb6"
+  },
+  "time": {
+    "$date": "2023-12-09T12:59:05.649Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657464d6da011f8b44bbfbb7"
+  },
+  "time": {
+    "$date": "2023-12-09T13:00:06.033Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746512da011f8b44bbfbb8"
+  },
+  "time": {
+    "$date": "2023-12-09T13:01:06.407Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574654eda011f8b44bbfbb9"
+  },
+  "time": {
+    "$date": "2023-12-09T13:02:06.789Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574658bda011f8b44bbfbba"
+  },
+  "time": {
+    "$date": "2023-12-09T13:03:07.172Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657465c7da011f8b44bbfbbb"
+  },
+  "time": {
+    "$date": "2023-12-09T13:04:07.555Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746603da011f8b44bbfbbc"
+  },
+  "time": {
+    "$date": "2023-12-09T13:05:07.931Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746640da011f8b44bbfbbd"
+  },
+  "time": {
+    "$date": "2023-12-09T13:06:08.326Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574667cda011f8b44bbfbbe"
+  },
+  "time": {
+    "$date": "2023-12-09T13:07:08.702Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657466b9da011f8b44bbfbbf"
+  },
+  "time": {
+    "$date": "2023-12-09T13:08:09.031Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657466f5da011f8b44bbfbc0"
+  },
+  "time": {
+    "$date": "2023-12-09T13:09:09.392Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746731da011f8b44bbfbc1"
+  },
+  "time": {
+    "$date": "2023-12-09T13:10:09.777Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574676eda011f8b44bbfbc2"
+  },
+  "time": {
+    "$date": "2023-12-09T13:11:10.153Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657467aada011f8b44bbfbc3"
+  },
+  "time": {
+    "$date": "2023-12-09T13:12:10.534Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657467e6da011f8b44bbfbc4"
+  },
+  "time": {
+    "$date": "2023-12-09T13:13:10.909Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746823da011f8b44bbfbc5"
+  },
+  "time": {
+    "$date": "2023-12-09T13:14:11.245Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574685fda011f8b44bbfbc6"
+  },
+  "time": {
+    "$date": "2023-12-09T13:15:11.562Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574689bda011f8b44bbfbc7"
+  },
+  "time": {
+    "$date": "2023-12-09T13:16:11.941Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "657468d8da011f8b44bbfbc8"
+  },
+  "time": {
+    "$date": "2023-12-09T13:17:12.317Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746914da011f8b44bbfbc9"
+  },
+  "time": {
+    "$date": "2023-12-09T13:18:12.649Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65746951da011f8b44bbfbca"
+  },
+  "time": {
+    "$date": "2023-12-09T13:19:13.024Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "6574698dda011f8b44bbfbcb"
+  },
+  "time": {
+    "$date": "2023-12-09T13:20:13.409Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657469c9da011f8b44bbfbcc"
+  },
+  "time": {
+    "$date": "2023-12-09T13:21:13.790Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746a06da011f8b44bbfbcd"
+  },
+  "time": {
+    "$date": "2023-12-09T13:22:14.138Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746a42da011f8b44bbfbce"
+  },
+  "time": {
+    "$date": "2023-12-09T13:23:14.506Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746a7eda011f8b44bbfbcf"
+  },
+  "time": {
+    "$date": "2023-12-09T13:24:14.890Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746abbda011f8b44bbfbd0"
+  },
+  "time": {
+    "$date": "2023-12-09T13:25:15.264Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746af7da011f8b44bbfbd1"
+  },
+  "time": {
+    "$date": "2023-12-09T13:26:15.645Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746b34da011f8b44bbfbd2"
+  },
+  "time": {
+    "$date": "2023-12-09T13:27:16.021Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746b70da011f8b44bbfbd3"
+  },
+  "time": {
+    "$date": "2023-12-09T13:28:16.404Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746bacda011f8b44bbfbd4"
+  },
+  "time": {
+    "$date": "2023-12-09T13:29:16.779Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746be9da011f8b44bbfbd5"
+  },
+  "time": {
+    "$date": "2023-12-09T13:30:17.161Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746c25da011f8b44bbfbd6"
+  },
+  "time": {
+    "$date": "2023-12-09T13:31:17.539Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746c61da011f8b44bbfbd7"
+  },
+  "time": {
+    "$date": "2023-12-09T13:32:17.922Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746c9eda011f8b44bbfbd8"
+  },
+  "time": {
+    "$date": "2023-12-09T13:33:18.293Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746cdada011f8b44bbfbd9"
+  },
+  "time": {
+    "$date": "2023-12-09T13:34:18.613Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746d16da011f8b44bbfbda"
+  },
+  "time": {
+    "$date": "2023-12-09T13:35:18.934Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746d53da011f8b44bbfbdb"
+  },
+  "time": {
+    "$date": "2023-12-09T13:36:19.318Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746d8fda011f8b44bbfbdc"
+  },
+  "time": {
+    "$date": "2023-12-09T13:37:19.654Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746dccda011f8b44bbfbdd"
+  },
+  "time": {
+    "$date": "2023-12-09T13:38:20.037Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746e08da011f8b44bbfbde"
+  },
+  "time": {
+    "$date": "2023-12-09T13:39:20.383Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746e44da011f8b44bbfbdf"
+  },
+  "time": {
+    "$date": "2023-12-09T13:40:20.773Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746e81da011f8b44bbfbe0"
+  },
+  "time": {
+    "$date": "2023-12-09T13:41:21.148Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746ebdda011f8b44bbfbe1"
+  },
+  "time": {
+    "$date": "2023-12-09T13:42:21.534Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746ef9da011f8b44bbfbe2"
+  },
+  "time": {
+    "$date": "2023-12-09T13:43:21.906Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746f36da011f8b44bbfbe3"
+  },
+  "time": {
+    "$date": "2023-12-09T13:44:22.289Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746f72da011f8b44bbfbe4"
+  },
+  "time": {
+    "$date": "2023-12-09T13:45:22.680Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746fafda011f8b44bbfbe5"
+  },
+  "time": {
+    "$date": "2023-12-09T13:46:23.043Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65746febda011f8b44bbfbe6"
+  },
+  "time": {
+    "$date": "2023-12-09T13:47:23.419Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747027da011f8b44bbfbe7"
+  },
+  "time": {
+    "$date": "2023-12-09T13:48:23.808Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747064da011f8b44bbfbe8"
+  },
+  "time": {
+    "$date": "2023-12-09T13:49:24.188Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657470a0da011f8b44bbfbe9"
+  },
+  "time": {
+    "$date": "2023-12-09T13:50:24.572Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657470dcda011f8b44bbfbea"
+  },
+  "time": {
+    "$date": "2023-12-09T13:51:24.947Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747119da011f8b44bbfbeb"
+  },
+  "time": {
+    "$date": "2023-12-09T13:52:25.332Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747155da011f8b44bbfbec"
+  },
+  "time": {
+    "$date": "2023-12-09T13:53:25.718Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747192da011f8b44bbfbed"
+  },
+  "time": {
+    "$date": "2023-12-09T13:54:26.060Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657471ceda011f8b44bbfbee"
+  },
+  "time": {
+    "$date": "2023-12-09T13:55:26.384Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574720ada011f8b44bbfbef"
+  },
+  "time": {
+    "$date": "2023-12-09T13:56:26.763Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747247da011f8b44bbfbf0"
+  },
+  "time": {
+    "$date": "2023-12-09T13:57:27.114Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747283da011f8b44bbfbf1"
+  },
+  "time": {
+    "$date": "2023-12-09T13:58:27.448Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657472bfda011f8b44bbfbf2"
+  },
+  "time": {
+    "$date": "2023-12-09T13:59:27.771Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657472fcda011f8b44bbfbf3"
+  },
+  "time": {
+    "$date": "2023-12-09T14:00:28.117Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747338da011f8b44bbfbf4"
+  },
+  "time": {
+    "$date": "2023-12-09T14:01:28.434Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747374da011f8b44bbfbf5"
+  },
+  "time": {
+    "$date": "2023-12-09T14:02:28.819Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657473b1da011f8b44bbfbf6"
+  },
+  "time": {
+    "$date": "2023-12-09T14:03:29.151Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657473edda011f8b44bbfbf7"
+  },
+  "time": {
+    "$date": "2023-12-09T14:04:29.502Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747429da011f8b44bbfbf8"
+  },
+  "time": {
+    "$date": "2023-12-09T14:05:29.854Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747466da011f8b44bbfbf9"
+  },
+  "time": {
+    "$date": "2023-12-09T14:06:30.185Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657474a2da011f8b44bbfbfa"
+  },
+  "time": {
+    "$date": "2023-12-09T14:07:30.525Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657474deda011f8b44bbfbfb"
+  },
+  "time": {
+    "$date": "2023-12-09T14:08:30.910Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574751bda011f8b44bbfbfc"
+  },
+  "time": {
+    "$date": "2023-12-09T14:09:31.244Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747557da011f8b44bbfbfd"
+  },
+  "time": {
+    "$date": "2023-12-09T14:10:31.574Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747593da011f8b44bbfbfe"
+  },
+  "time": {
+    "$date": "2023-12-09T14:11:31.951Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657475d0da011f8b44bbfbff"
+  },
+  "time": {
+    "$date": "2023-12-09T14:12:32.334Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574760cda011f8b44bbfc00"
+  },
+  "time": {
+    "$date": "2023-12-09T14:13:32.710Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747649da011f8b44bbfc01"
+  },
+  "time": {
+    "$date": "2023-12-09T14:14:33.093Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747685da011f8b44bbfc02"
+  },
+  "time": {
+    "$date": "2023-12-09T14:15:33.468Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657476c1da011f8b44bbfc03"
+  },
+  "time": {
+    "$date": "2023-12-09T14:16:33.857Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657476feda011f8b44bbfc04"
+  },
+  "time": {
+    "$date": "2023-12-09T14:17:34.187Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6574773ada011f8b44bbfc05"
+  },
+  "time": {
+    "$date": "2023-12-09T14:18:34.936Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65747777da011f8b44bbfc06"
+  },
+  "time": {
+    "$date": "2023-12-09T14:19:35.308Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657477b3da011f8b44bbfc07"
+  },
+  "time": {
+    "$date": "2023-12-09T14:20:35.642Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "657477f0da011f8b44bbfc08"
+  },
+  "time": {
+    "$date": "2023-12-09T14:21:36.022Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "6574782cda011f8b44bbfc09"
+  },
+  "time": {
+    "$date": "2023-12-09T14:22:36.363Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65747868da011f8b44bbfc0a"
+  },
+  "time": {
+    "$date": "2023-12-09T14:23:36.737Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657478a5da011f8b44bbfc0b"
+  },
+  "time": {
+    "$date": "2023-12-09T14:24:37.120Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657478e1da011f8b44bbfc0c"
+  },
+  "time": {
+    "$date": "2023-12-09T14:25:37.494Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574791dda011f8b44bbfc0d"
+  },
+  "time": {
+    "$date": "2023-12-09T14:26:37.864Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574795ada011f8b44bbfc0e"
+  },
+  "time": {
+    "$date": "2023-12-09T14:27:38.183Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747996da011f8b44bbfc0f"
+  },
+  "time": {
+    "$date": "2023-12-09T14:28:38.517Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657479d2da011f8b44bbfc10"
+  },
+  "time": {
+    "$date": "2023-12-09T14:29:38.835Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747a0fda011f8b44bbfc11"
+  },
+  "time": {
+    "$date": "2023-12-09T14:30:39.216Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747a4bda011f8b44bbfc12"
+  },
+  "time": {
+    "$date": "2023-12-09T14:31:39.593Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747a87da011f8b44bbfc13"
+  },
+  "time": {
+    "$date": "2023-12-09T14:32:39.982Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747ac4da011f8b44bbfc14"
+  },
+  "time": {
+    "$date": "2023-12-09T14:33:40.357Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747b00da011f8b44bbfc15"
+  },
+  "time": {
+    "$date": "2023-12-09T14:34:40.707Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747b3dda011f8b44bbfc16"
+  },
+  "time": {
+    "$date": "2023-12-09T14:35:41.042Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747b79da011f8b44bbfc17"
+  },
+  "time": {
+    "$date": "2023-12-09T14:36:41.393Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747bb5da011f8b44bbfc18"
+  },
+  "time": {
+    "$date": "2023-12-09T14:37:41.733Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747bf2da011f8b44bbfc19"
+  },
+  "time": {
+    "$date": "2023-12-09T14:38:42.108Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747c2eda011f8b44bbfc1a"
+  },
+  "time": {
+    "$date": "2023-12-09T14:39:42.431Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747c6ada011f8b44bbfc1b"
+  },
+  "time": {
+    "$date": "2023-12-09T14:40:42.819Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747ca7da011f8b44bbfc1c"
+  },
+  "time": {
+    "$date": "2023-12-09T14:41:43.153Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747ce3da011f8b44bbfc1d"
+  },
+  "time": {
+    "$date": "2023-12-09T14:42:43.494Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747d1fda011f8b44bbfc1e"
+  },
+  "time": {
+    "$date": "2023-12-09T14:43:43.813Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747d5cda011f8b44bbfc1f"
+  },
+  "time": {
+    "$date": "2023-12-09T14:44:44.165Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747d98da011f8b44bbfc20"
+  },
+  "time": {
+    "$date": "2023-12-09T14:45:44.540Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747dd4da011f8b44bbfc21"
+  },
+  "time": {
+    "$date": "2023-12-09T14:46:44.946Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747e11da011f8b44bbfc22"
+  },
+  "time": {
+    "$date": "2023-12-09T14:47:45.313Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747e4dda011f8b44bbfc23"
+  },
+  "time": {
+    "$date": "2023-12-09T14:48:45.696Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747e8ada011f8b44bbfc24"
+  },
+  "time": {
+    "$date": "2023-12-09T14:49:46.022Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747ec6da011f8b44bbfc25"
+  },
+  "time": {
+    "$date": "2023-12-09T14:50:46.406Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747f02da011f8b44bbfc26"
+  },
+  "time": {
+    "$date": "2023-12-09T14:51:46.785Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747f3fda011f8b44bbfc27"
+  },
+  "time": {
+    "$date": "2023-12-09T14:52:47.114Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747f7bda011f8b44bbfc28"
+  },
+  "time": {
+    "$date": "2023-12-09T14:53:47.490Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747fb7da011f8b44bbfc29"
+  },
+  "time": {
+    "$date": "2023-12-09T14:54:47.823Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65747ff4da011f8b44bbfc2a"
+  },
+  "time": {
+    "$date": "2023-12-09T14:55:48.198Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748030da011f8b44bbfc2b"
+  },
+  "time": {
+    "$date": "2023-12-09T14:56:48.581Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574806cda011f8b44bbfc2c"
+  },
+  "time": {
+    "$date": "2023-12-09T14:57:48.979Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657480a9da011f8b44bbfc2d"
+  },
+  "time": {
+    "$date": "2023-12-09T14:58:49.363Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657480e5da011f8b44bbfc2e"
+  },
+  "time": {
+    "$date": "2023-12-09T14:59:49.694Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748122da011f8b44bbfc2f"
+  },
+  "time": {
+    "$date": "2023-12-09T15:00:50.038Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574815eda011f8b44bbfc30"
+  },
+  "time": {
+    "$date": "2023-12-09T15:01:50.400Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574819ada011f8b44bbfc31"
+  },
+  "time": {
+    "$date": "2023-12-09T15:02:50.831Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657481d7da011f8b44bbfc32"
+  },
+  "time": {
+    "$date": "2023-12-09T15:03:51.160Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748213da011f8b44bbfc33"
+  },
+  "time": {
+    "$date": "2023-12-09T15:04:51.519Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574824fda011f8b44bbfc34"
+  },
+  "time": {
+    "$date": "2023-12-09T15:05:51.893Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574828cda011f8b44bbfc35"
+  },
+  "time": {
+    "$date": "2023-12-09T15:06:52.283Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657482c8da011f8b44bbfc36"
+  },
+  "time": {
+    "$date": "2023-12-09T15:07:52.642Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748305da011f8b44bbfc37"
+  },
+  "time": {
+    "$date": "2023-12-09T15:08:53.041Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748341da011f8b44bbfc38"
+  },
+  "time": {
+    "$date": "2023-12-09T15:09:53.392Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574837dda011f8b44bbfc39"
+  },
+  "time": {
+    "$date": "2023-12-09T15:10:53.785Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657483bada011f8b44bbfc3a"
+  },
+  "time": {
+    "$date": "2023-12-09T15:11:54.139Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657483f6da011f8b44bbfc3b"
+  },
+  "time": {
+    "$date": "2023-12-09T15:12:54.524Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748432da011f8b44bbfc3c"
+  },
+  "time": {
+    "$date": "2023-12-09T15:13:54.886Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574846fda011f8b44bbfc3d"
+  },
+  "time": {
+    "$date": "2023-12-09T15:14:55.288Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657484abda011f8b44bbfc3e"
+  },
+  "time": {
+    "$date": "2023-12-09T15:15:55.649Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657484e8da011f8b44bbfc3f"
+  },
+  "time": {
+    "$date": "2023-12-09T15:16:56.019Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748524da011f8b44bbfc40"
+  },
+  "time": {
+    "$date": "2023-12-09T15:17:56.389Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748560da011f8b44bbfc41"
+  },
+  "time": {
+    "$date": "2023-12-09T15:18:56.810Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574859dda011f8b44bbfc42"
+  },
+  "time": {
+    "$date": "2023-12-09T15:19:57.146Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657485d9da011f8b44bbfc43"
+  },
+  "time": {
+    "$date": "2023-12-09T15:20:57.480Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748615da011f8b44bbfc44"
+  },
+  "time": {
+    "$date": "2023-12-09T15:21:57.815Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748652da011f8b44bbfc45"
+  },
+  "time": {
+    "$date": "2023-12-09T15:22:58.199Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574868eda011f8b44bbfc46"
+  },
+  "time": {
+    "$date": "2023-12-09T15:23:58.579Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657486cada011f8b44bbfc47"
+  },
+  "time": {
+    "$date": "2023-12-09T15:24:58.919Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748707da011f8b44bbfc48"
+  },
+  "time": {
+    "$date": "2023-12-09T15:25:59.294Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748743da011f8b44bbfc49"
+  },
+  "time": {
+    "$date": "2023-12-09T15:26:59.681Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748780da011f8b44bbfc4a"
+  },
+  "time": {
+    "$date": "2023-12-09T15:28:00.058Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657487bcda011f8b44bbfc4b"
+  },
+  "time": {
+    "$date": "2023-12-09T15:29:00.492Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657487f8da011f8b44bbfc4c"
+  },
+  "time": {
+    "$date": "2023-12-09T15:30:00.868Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748835da011f8b44bbfc4d"
+  },
+  "time": {
+    "$date": "2023-12-09T15:31:01.248Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748871da011f8b44bbfc4e"
+  },
+  "time": {
+    "$date": "2023-12-09T15:32:01.627Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657488aeda011f8b44bbfc4f"
+  },
+  "time": {
+    "$date": "2023-12-09T15:33:02.128Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657488eada011f8b44bbfc50"
+  },
+  "time": {
+    "$date": "2023-12-09T15:34:02.502Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748926da011f8b44bbfc51"
+  },
+  "time": {
+    "$date": "2023-12-09T15:35:02.845Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748963da011f8b44bbfc52"
+  },
+  "time": {
+    "$date": "2023-12-09T15:36:03.250Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "6574899fda011f8b44bbfc53"
+  },
+  "time": {
+    "$date": "2023-12-09T15:37:03.637Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "657489dcda011f8b44bbfc54"
+  },
+  "time": {
+    "$date": "2023-12-09T15:38:04.012Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748a18da011f8b44bbfc55"
+  },
+  "time": {
+    "$date": "2023-12-09T15:39:04.352Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748a54da011f8b44bbfc56"
+  },
+  "time": {
+    "$date": "2023-12-09T15:40:04.689Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748a91da011f8b44bbfc57"
+  },
+  "time": {
+    "$date": "2023-12-09T15:41:05.061Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748acdda011f8b44bbfc58"
+  },
+  "time": {
+    "$date": "2023-12-09T15:42:05.437Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748b09da011f8b44bbfc59"
+  },
+  "time": {
+    "$date": "2023-12-09T15:43:05.813Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748b46da011f8b44bbfc5a"
+  },
+  "time": {
+    "$date": "2023-12-09T15:44:06.141Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748b82da011f8b44bbfc5b"
+  },
+  "time": {
+    "$date": "2023-12-09T15:45:06.472Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748bbeda011f8b44bbfc5c"
+  },
+  "time": {
+    "$date": "2023-12-09T15:46:06.794Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748bfbda011f8b44bbfc5d"
+  },
+  "time": {
+    "$date": "2023-12-09T15:47:07.174Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748c37da011f8b44bbfc5e"
+  },
+  "time": {
+    "$date": "2023-12-09T15:48:07.554Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748c73da011f8b44bbfc5f"
+  },
+  "time": {
+    "$date": "2023-12-09T15:49:07.936Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748cb0da011f8b44bbfc60"
+  },
+  "time": {
+    "$date": "2023-12-09T15:50:08.310Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748cecda011f8b44bbfc61"
+  },
+  "time": {
+    "$date": "2023-12-09T15:51:08.709Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748d29da011f8b44bbfc62"
+  },
+  "time": {
+    "$date": "2023-12-09T15:52:09.079Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 47
+},
+{
+  "_id": {
+    "$oid": "65748d65da011f8b44bbfc63"
+  },
+  "time": {
+    "$date": "2023-12-09T15:53:09.463Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748da1da011f8b44bbfc64"
+  },
+  "time": {
+    "$date": "2023-12-09T15:54:09.836Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748ddeda011f8b44bbfc65"
+  },
+  "time": {
+    "$date": "2023-12-09T15:55:10.225Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 46
+},
+{
+  "_id": {
+    "$oid": "65748e1ada011f8b44bbfc66"
+  },
+  "time": {
+    "$date": "2023-12-09T15:56:10.597Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65748e56da011f8b44bbfc67"
+  },
+  "time": {
+    "$date": "2023-12-09T15:57:10.989Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 45
+},
+{
+  "_id": {
+    "$oid": "65748e93da011f8b44bbfc68"
+  },
+  "time": {
+    "$date": "2023-12-09T15:58:11.318Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 44
+},
+{
+  "_id": {
+    "$oid": "65748ecfda011f8b44bbfc69"
+  },
+  "time": {
+    "$date": "2023-12-09T15:59:11.662Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 42
+},
+{
+  "_id": {
+    "$oid": "65748f0cda011f8b44bbfc6a"
+  },
+  "time": {
+    "$date": "2023-12-09T16:00:12.027Z"
+  },
+  "temperature_celsius": 20,
+  "temperature_fahrenheit": 68,
+  "humidity": 41
+}]
