@@ -273,10 +273,10 @@ const Content = (props) => {
     })
         .then(response => response.json())
         .then(data => {
-            console.log("Product added successfully:", data);
+            console.log("Research section added successfully:", data);
         })
         .catch(error => {
-            console.error("Error adding product:", error);
+            console.error("Error adding research section:", error);
         });
 }
 
@@ -310,15 +310,15 @@ function deleteMethod(id) {
 }
 
 function updateProductPrice() {
-  var productId = document.getElementById("productIdInput").value;
-  var newPrice = document.getElementById("newPriceInput").value;
+  var sectionId = document.getElementById("sectionIdInput").value;
+  var newText = document.getElementById("newTextInput").value;
 
   fetch("http://localhost:8081/api/research/update", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
-          id: productId,
-          $set: newPrice,
+          id: sectionId,
+          $set: newText,
       }),
   })
       .then(response => {
@@ -619,13 +619,13 @@ function updateProductPrice() {
         <hr style={{ marginTop: "20px", color: "#CC0001" }} />
 
             <form id="updateProductForm">
-                                <label htmlFor="productIdInput">ID:</label>
-                                <input type="text" id="productIdInput" required />
+                                <label htmlFor="sectionIdInput">ID:</label>
+                                <input type="text" id="sectionIdInput" required />
 
-                                <label htmlFor="newPriceInput">New Text:</label>
-                                <input type="text" id="newPriceInput" required />
+                                <label htmlFor="newTextInput">New Text:</label>
+                                <input type="text" id="newTextInput" required />
 
-                                <button type="button" onClick={updateProductPrice} >Update Price</button>
+                                <button type="button" onClick={updateProductPrice} >Update Text</button>
                             </form> 
         </div>
           
