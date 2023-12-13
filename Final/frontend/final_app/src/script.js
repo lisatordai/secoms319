@@ -306,7 +306,8 @@ const Content = (props) => {
         var container = document.getElementById("showData");
         container.innerHTML = JSON.stringify(data);
       })
-      .catch((err) => console.log("Error:" + err));
+      .catch((err) => console.log("Notice:" + err));
+      // .catch((err) => console.log("Error:" + err));
   }
 
   function updateProductPrice() {
