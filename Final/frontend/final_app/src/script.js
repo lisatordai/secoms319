@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect }
-from 'react'; 
+  from 'react';
 import 'chartjs-adapter-date-fns';
 import axios from 'axios';
 
@@ -28,15 +28,15 @@ const Header = (props) => {
 
       <div className="red-header left-aligned">
         {/* <img src="./images/logo.jpg" alt="Logo" /> */}
-
-        <img style={{ marginLeft: "180px" }} src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
-        <p style={{ marginLeft: "180px" }}><strong>Shared Plant Growth Facilities</strong></p>
+        <img style={{ marginLeft: "180px", marginTop: "7px" }} src="https://greenhouse.eeob.iastate.edu/themes/isubit/iastate8_theme/logo.svg" alt="Logo" />
+        <p style={{ marginLeft: "180px", marginBottom: "7px" }}><strong>Shared Plant Growth Facilities</strong></p>
       </div>
 
       <nav className="navbar2 navbar-dark" >
         <div className="container-fluid">
           <div style={{ marginLeft: "155px" }} className="row w-100 justify-content-between">
             <div className="col-auto text-left">
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
@@ -292,7 +292,7 @@ const Content = (props) => {
         container.innerHTML = JSON.stringify(data);
       })
       .catch((err) => console.log("Notice: " + err));
-      // .catch((err) => console.log("Error:" + err));
+    // .catch((err) => console.log("Error:" + err));
   }
 
   function updateProductPrice() {
@@ -351,8 +351,11 @@ const Content = (props) => {
                 </button>
               )}
               <hr />
+
             </div>
+
           ))}
+
         </div>
       );
       break;
