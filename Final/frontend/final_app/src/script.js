@@ -263,9 +263,9 @@ const Content = (props) => {
       const productData = {
           id: parseInt(document.getElementById('idInput').value),
           title: document.getElementById('titleInput').value,
-          price: parseFloat(document.getElementById('DescriptionInput').value),
+          text: parseFloat(document.getElementById('DescriptionInput').value),
       }
-      fetch("http://localhost:8081//api/research/add", {
+      fetch("http://localhost:8081/api/research/add", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(productData),
@@ -279,7 +279,59 @@ const Content = (props) => {
         });
 }
 
+function handleButtonClick() {
+  // Get the input element
+  var inputElement = document.getElementById("integerInput");
+  // Get the value entered by the user
+  var inputValue = inputElement.value;
+  // Convert the input value to an integer
+  var integerInput = parseInt(inputValue);
+  // Call your function with the integer parameter
+  deleteMethod(integerInput);
+}
 
+function deleteMethod(id) {
+  console.log("Lets do Delete ....", id);
+  fetch("http://localhost:8081/api/research/delete", {
+      method: "DELETE",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+          id: id,
+      }),
+  })
+      .then((response) => response.json())
+      .then((data) => {
+          console.log(data);
+          var container = document.getElementById("showData");
+          container.innerHTML = JSON.stringify(data);
+      })
+      .catch((err) => console.log("Error:" + err));
+}
+
+function updateProductPrice() {
+  var productId = document.getElementById("productIdInput").value;
+  var newPrice = document.getElementById("newPriceInput").value;
+
+  fetch("http://localhost:8081/api/research/update", {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+          id: productId,
+          $set: newPrice,
+      }),
+  })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error(`Error! Status: ${response.status}`);
+          }
+          return response.json();
+      })
+      .then(data => {
+          console.log(data);
+
+      })
+      .catch(error => console.error("Error:", error));
+}
 
 
   let content;
@@ -531,27 +583,55 @@ const Content = (props) => {
       );
       break
    
-    case 'page 6':
+      case 'page 6':
         content = (
-          <div id="green-house-container" style={{ marginTop: '30px}' }}>
-             <form id="productForm" style={{ maxWidth: '100%' }}>
-                                <label htmlFor="idInput">ID:</label>
-                                <input type="text" id="idInput" required />
+          <div id="green-house-container" style={{ marginTop: '30px' }}>
+             <h1 style={{ marginTop: "30px" }}>Add</h1>
+        <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+            <form id="productForm" style={{ maxWidth: '100%' }}>
+              <label htmlFor="idInput">ID:</label>
+              <input type="text" id="idInput" required />
+      
+              <label htmlFor="titleInput">Title:</label>
+              <input type="text" id="titleInput" required />
+      
+              <label htmlFor="DescriptionInput">Description:</label>
+              <input type="text" id="DescriptionInput" required />
+      
+              <button type="button" onClick={postProduct}>
+                Add Research
+              </button>
+            </form>
+            <h1 style={{ marginTop: "30px" }}>Delete</h1>
+        <hr style={{ marginTop: "20px", color: "#CC0001" }} />
+        <form id="productForm" style={{ maxWidth: '100%' }}>
+              <label htmlFor="integerInput">ID:</label>
+              <input type="text" id="integerInput" required />
+      
+              
+              <button type="button" onClick={handleButtonClick}>
+                Delete Research
+              </button>
+            </form>
 
-                                <label htmlFor="titleInput">Title:</label>
-                                <input type="text" id="titleInput" required />
+            <h1 style={{ marginTop: "30px" }}>Update</h1>
+        <hr style={{ marginTop: "20px", color: "#CC0001" }} />
 
-                                <label htmlFor="DescriptionInput">Description:</label>
-                                <input type="text" id="titleInput" required />
+            <form id="updateProductForm">
+                                <label htmlFor="productIdInput">ID:</label>
+                                <input type="text" id="productIdInput" required />
 
-                                <button type="button"onClick={postProduct}>
-                                    Add Research
-                                </button>
-              </form>
-           
-            </div>
-      );
+                                <label htmlFor="newPriceInput">New Text:</label>
+                                <input type="text" id="newPriceInput" required />
+
+                                <button type="button" onClick={updateProductPrice} >Update Price</button>
+                            </form> 
+        </div>
+          
+        );
         break;
+
+
     default:
 
     content = 
