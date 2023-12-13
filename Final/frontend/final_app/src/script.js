@@ -263,8 +263,9 @@ const Content = (props) => {
       const productData = {
           id: parseInt(document.getElementById('idInput').value),
           title: document.getElementById('titleInput').value,
-          text: parseFloat(document.getElementById('DescriptionInput').value),
+          text: document.getElementById('descriptionInput').value,
       }
+      console.log("ahhhhhhhhhhhhhhhhhhhhhhh" + JSON.stringify(productData))
       fetch("http://localhost:8081/api/research/add", {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -595,8 +596,8 @@ function updateProductPrice() {
               <label htmlFor="titleInput">Title:</label>
               <input type="text" id="titleInput" required />
       
-              <label htmlFor="DescriptionInput">Description:</label>
-              <input type="text" id="DescriptionInput" required />
+              <label htmlFor="descriptionInput">Description:</label>
+              <input type="text" id="descriptionInput" required />
       
               <button type="button" onClick={postProduct}>
                 Add Research
