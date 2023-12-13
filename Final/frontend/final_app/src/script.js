@@ -9,18 +9,18 @@ const Header = (props) => {
 
   return (
     <div>
-      <nav class="navbar navbar-dark">
-        <div style = {{marginLeft:"155px", marginRight:"155px"}} class="container-fluid">
-          <div class="row w-100 justify-content-between">
-            <div class="col-auto text-left">
-              <a href="https://www.iastate.edu" class="btn btn-outline-primary">iastate.edu</a>
-              <a href="https://www.iastate.edu/index/A" class="btn btn-outline-primary">Index</a>
+      <nav className="navbar navbar-dark">
+        <div style = {{marginLeft:"155px", marginRight:"155px"}} className="container-fluid">
+          <div className="row w-100 justify-content-between">
+            <div className="col-auto text-left">
+              <a href="https://www.iastate.edu" className="btn btn-outline-primary">iastate.edu</a>
+              <a href="https://www.iastate.edu/index/A" className="btn btn-outline-primary">Index</a>
             </div>
-            <div class="col-auto text-right">
-              <a href="https://info.iastate.edu/" class="btn btn-outline-primary">Directory</a>
-              <a href="https://www.fpm.iastate.edu/maps/" class="btn btn-outline-primary">Maps</a>
-              <a href="https://web.iastate.edu/safety/" class="btn btn-outline-primary">Safety</a>
-              <a href="https://iastate.okta.com/" class="btn btn-outline-primary">Sign Ons</a>
+            <div className="col-auto text-right">
+              <a href="https://info.iastate.edu/" className="btn btn-outline-primary">Directory</a>
+              <a href="https://www.fpm.iastate.edu/maps/" className="btn btn-outline-primary">Maps</a>
+              <a href="https://web.iastate.edu/safety/" className="btn btn-outline-primary">Safety</a>
+              <a href="https://iastate.okta.com/" className="btn btn-outline-primary">Sign Ons</a>
             </div>
           </div>
         </div>
@@ -33,18 +33,18 @@ const Header = (props) => {
         <p   style={{marginLeft:"180px"}}><strong>Shared Plant Growth Facilities</strong></p>
       </div>
 
-      <nav class="navbar2 navbar-dark" >
-        <div class="container-fluid">
-          <div style={{marginLeft:"155px"}} class="row w-100 justify-content-between">
-            <div class="col-auto text-left">
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('page 6') }}>Add Research</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a>
-              <a class="btn btn-outline-primary" onClick={() => { props.setView('Green House Data') }}>Green House Data</a> 
-              {/* <a class="btn btn-outline-primary">page6</a> */}
+      <nav className="navbar2 navbar-dark" >
+        <div className="container-fluid">
+          <div style={{marginLeft:"155px"}} className="row w-100 justify-content-between">
+            <div className="col-auto text-left">
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('page 6') }}>Add Research</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('Green House Data') }}>Green House Data</a> 
+              {/* <a className="btn btn-outline-primary">page6</a> */}
             </div>
           </div>
         </div>
