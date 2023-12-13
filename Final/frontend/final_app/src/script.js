@@ -41,6 +41,7 @@ const Header = (props) => {
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
+              <a class="btn btn-outline-primary" onClick={() => { props.setView('page 6') }}>Add Research</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a>
               <a class="btn btn-outline-primary" onClick={() => { props.setView('Green House Data') }}>Green House Data</a> 
               {/* <a class="btn btn-outline-primary">page6</a> */}
@@ -499,8 +500,45 @@ const Content = (props) => {
       );
       break
    
+    case 'page 6':
+        content = (
+          <div id="green-house-container">
+           
+        </div>
+      );
+        break;
     default:
-      content = <div>Default Content</div>;
+
+    content = 
+      <div id="green-house-container">
+          <img style={{marginTop:"30px"}} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House Image"></img>
+          <div style={{marginBottom:"30px"}} id="green-label">Horticulture Hall greenhouse</div>
+        {data.map((item) => (
+          <div key={item.id}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+            {item.url && (
+              <button
+                onClick={() => window.location.href = item.url}
+                style={{
+                  backgroundColor: '#1c3d1c',
+                  color: 'white',
+                  padding: '2px 170px', // Adjust the width by changing the padding
+                  borderRadius: '8px',
+                  display: 'block',
+                  margin: '0 auto',
+                  cursor: 'pointer',
+                  border: 'none'
+                }}
+              >
+                {item.url_button || 'Visit Website'}
+              </button>
+            )}
+            <hr />
+          </div>
+        ))}
+      </div>
+    
   }
 
   return <div>{content}</div>;
