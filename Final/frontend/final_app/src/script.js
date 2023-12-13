@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect, useRef }
-from 'react'; import Chart from 'chart.js/auto';
+import React, { useState, useEffect }
+from 'react'; 
 import 'chartjs-adapter-date-fns';
 import axios from 'axios';
 
@@ -245,20 +245,6 @@ const Content = (props) => {
       return acc;
     }, {}) : {};
 
-
-  // for data page
-  var left = 0;
-
-  //    function handleButtonClick() {
-  //     // Get the input element
-  //     var inputElement = document.getElementById("integerInput");
-  //     // Get the value entered by the user
-  //     var inputValue = inputElement.value;
-  //     // Convert the input value to an integer
-  //     var integerInput = parseInt(inputValue);
-  //     // Call your function with the integer parameter
-  //     deleteMethod(integerInput);
-  // }
   function postProduct() {
     const productData = {
       id: parseInt(document.getElementById('idInput').value),
@@ -517,7 +503,7 @@ const Content = (props) => {
             const averageTemperature = temperatures.reduce((acc, temp) => acc + temp, 0) / temperatures.length;
             const maxTemperature = Math.max(...temperatures);
             const minTemperature = Math.min(...temperatures);
-            if (index == 1) {
+            if (index === 1) {
 
               return (
                 < div>
