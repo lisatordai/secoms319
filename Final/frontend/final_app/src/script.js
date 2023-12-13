@@ -37,7 +37,6 @@ const Header = (props) => {
         <div className="container-fluid">
           <div style={{ marginLeft: "155px" }} className="row w-100 justify-content-between">
             <div className="col-auto text-left">
-              <a className="btn btn-outline-primary" onClick={() => { props.setView('Home') }}>Home</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('Managers') }}>Managers</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('the Greenhouses') }}>Greenhouses</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
@@ -328,7 +327,7 @@ const Content = (props) => {
     case 'Home':
       content = (
         <div id="green-house-container">
-          <img style={{ marginTop: "30px" }} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House Image"></img>
+          <img style={{ marginTop: "30px" }} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House"></img>
           <div style={{ marginBottom: "30px" }} id="green-label">Horticulture Hall greenhouse</div>
           {data.map((item) => (
             <div key={item.id}>
@@ -626,7 +625,7 @@ const Content = (props) => {
 
       content =
         <div id="green-house-container">
-          <img style={{ marginTop: "30px" }} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House Image"></img>
+          <img style={{ marginTop: "30px" }} id="green-house-image" src="./images/Horticulture.jpg" alt="Green House"></img>
           <div style={{ marginBottom: "30px" }} id="green-label">Horticulture Hall greenhouse</div>
           {data.map((item) => (
             <div key={item.id}>
