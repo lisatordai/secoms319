@@ -246,8 +246,39 @@ const Content = (props) => {
      }, {}): {};
 
 
-// for data page
+ // for data page
      var left = 0;
+
+  //    function handleButtonClick() {
+  //     // Get the input element
+  //     var inputElement = document.getElementById("integerInput");
+  //     // Get the value entered by the user
+  //     var inputValue = inputElement.value;
+  //     // Convert the input value to an integer
+  //     var integerInput = parseInt(inputValue);
+  //     // Call your function with the integer parameter
+  //     deleteMethod(integerInput);
+  // }
+     function postProduct() {
+      const productData = {
+          id: parseInt(document.getElementById('idInput').value),
+          title: document.getElementById('titleInput').value,
+          price: parseFloat(document.getElementById('DescriptionInput').value),
+      }
+      fetch("http://localhost:8081//api/research/add", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(productData),
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Product added successfully:", data);
+        })
+        .catch(error => {
+            console.error("Error adding product:", error);
+        });
+}
+
 
 
 
@@ -317,8 +348,8 @@ const Content = (props) => {
               <div className="card h-100">
                 <img src={GreenHouse.url} className="card-img-top" alt={GreenHouse.alt} />
                 <div className="card-body">
-                  <h5 className="card-title">{GreenHouse.GreenHouse}</h5>
-                  <p className="card-text">{GreenHouse.bio}</p>
+                  <h5 className="card-title">{GreenHouse.name}</h5>
+                  
                 </div>
               </div>
             </div>
@@ -502,9 +533,23 @@ const Content = (props) => {
    
     case 'page 6':
         content = (
-          <div id="green-house-container">
+          <div id="green-house-container" style={{ marginTop: '30px}' }}>
+             <form id="productForm" style={{ maxWidth: '100%' }}>
+                                <label htmlFor="idInput">ID:</label>
+                                <input type="text" id="idInput" required />
+
+                                <label htmlFor="titleInput">Title:</label>
+                                <input type="text" id="titleInput" required />
+
+                                <label htmlFor="DescriptionInput">Description:</label>
+                                <input type="text" id="titleInput" required />
+
+                                <button type="button"onClick={postProduct}>
+                                    Add Research
+                                </button>
+              </form>
            
-        </div>
+            </div>
       );
         break;
     default:
@@ -538,11 +583,10 @@ const Content = (props) => {
           </div>
         ))}
       </div>
-    
-  }
 
+              }
   return <div>{content}</div>;
-};
-export { Header, Footer, Content };
+} ;
 
+export { Header, Footer, Content };
 
