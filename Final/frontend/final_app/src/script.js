@@ -89,7 +89,7 @@ const Content = (props) => {
   const [data, setData] = useState([]);
    useEffect(() => {
       // Fetch data from the server
-      axios.get('http://localhost:4000/api/home/get')
+      axios.get('http://localhost:8081/api/home/get')
          .then((response) => {
             setData(response.data);
             console.log(response.data)
@@ -103,7 +103,7 @@ const Content = (props) => {
   const [managersData, setMData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('http://localhost:4000/api/manager/get')
+    fetch('http://localhost:8081/api/manager/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -122,7 +122,7 @@ const Content = (props) => {
    //Greenhouse import
   const [GreenHouse, setPlants] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:4000/api/greenhouse/get')
+    axios.get('http://localhost:8081/api/greenhouse/get')
       .then((GreenHouseData) => {
         // Log the fetched array data
         console.log(GreenHouseData.data);
@@ -143,7 +143,7 @@ const Content = (props) => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('http://localhost:4000/api/current_research/get')
+    fetch('http://localhost:8081/api/research/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -164,7 +164,7 @@ const Content = (props) => {
   const [rentalSpaces, setRData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('http://localhost:4000/api/greenhouse_space_rates/put')
+    fetch('http://localhost:8081/api/space/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -184,7 +184,7 @@ const Content = (props) => {
   const [EquipData, setEData] = useState([]);
   useEffect(() => {
     // Fetch data from Projects.json
-    fetch('http://localhost:4000/api/greenhouse_chamber_rental_rates/get')
+    fetch('http://localhost:8081/api/chamber/get')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -204,7 +204,7 @@ const Content = (props) => {
     const [PiData, setPiData] = useState([]);
     useEffect(() => {
       // Fetch data from Projects.json
-      fetch('http://localhost:4000/api/final.data/get')
+      fetch('http://localhost:8081/api/data/get')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -438,31 +438,30 @@ const Content = (props) => {
             <hr style={{ marginTop: "20px", color: "grey" }} />
               
               <div className="card-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <div className="card">
-                  <h4>Average Temperature</h4>
-                  <p>{`${averageTemperature.toFixed(2)}°F`}</p>
+                <div className="card"  >
+                  <h4 style={{ padding: "10px" }}>Average Temperature</h4>
+                  <p style={{ textAlign: "center" }}>{`${averageTemperature.toFixed(2)}°F`}</p>
                 </div>
                 <div className="card">
-                  <h4>Max Temperature</h4>
-                  <p>{`${maxTemperature.toFixed(2)}°F`}</p>
+                  <h4 style={{ padding: "10px" }}>Max Temperature</h4>
+                  <p style={{ textAlign: "center" }}>{`${maxTemperature.toFixed(2)}°F`}</p>
                 </div>
                 <div className="card">
-                  <h4>Min Temperature</h4>
-                  <p>{`${minTemperature.toFixed(2)}°F`}</p>
+                  <h4 style={{ padding: "10px" }}>Min Temperature</h4>
+                  <p style={{ textAlign: "center" }}>{`${minTemperature.toFixed(2)}°F`}</p>
                 </div>
               </div>
               </div>
               )}
 
             })}
-          <h1 style={{ marginTop: "30px" , textAlign: 'center'}}>Green House Data (fahrenheit)</h1>
+          <h3 style={{ marginTop: "30px" , textAlign: 'center'}}>Green House Data (fahrenheit)</h3>
           
           <div className="graph-container">
             
             {PiData.slice(0, 570).map((Pi, index) => {
               // Ensure Pi.time.$date is defined before attempting to split
-              const timeString = Pi.time ? Pi.time.$date.split('T')[1].split('.')[0].slice(0, 5) : '';
-      
+              const timeString = Pi.time && Pi.time ? Pi.time.split('T')[1].split('.')[0].slice(0, 5) : '';
               // Other code remains the same
               var height = Pi.temperature_fahrenheit;
               var lHeight = height + 5;
@@ -482,7 +481,7 @@ const Content = (props) => {
                     {/* Use the height and left variables in the style attribute */}
                     <div className="data-point" style={{ left: `${left}%`, bottom: `${height}%` }}></div>
                     <div className="day-label" style={{ left: `${left}%`, bottom: `${lHeight}%`, fontSize: '12px' }}>{`${height}`}</div>
-                    <div className="day-label" style={{ left: `${left}%`, fontSize: '12px' }}>{`${timeString}`}</div>
+                    <div className="day-label" style={{ left: `${left}%`, fontSize: '10px' }}>{`${timeString}`}</div>
                   </div>
                 );
 
