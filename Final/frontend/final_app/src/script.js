@@ -42,7 +42,7 @@ const Header = (props) => {
               <a className="btn btn-outline-primary" onClick={() => { props.setView('Current Research') }}>Current Research</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('page 6') }}>Add Research</a>
               <a className="btn btn-outline-primary" onClick={() => { props.setView('Available Equipment') }}>Available Rentals</a>
-              <a className="btn btn-outline-primary" onClick={() => { props.setView('Green House Data') }}>Green House Data</a>
+              <a className="btn btn-outline-primary" onClick={() => { props.setView('Green House Data') }}>Greenhouse Data</a>
               {/* <a className="btn btn-outline-primary">page6</a> */}
             </div>
           </div>
